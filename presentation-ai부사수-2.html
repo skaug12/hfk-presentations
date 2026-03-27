@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>오픈 클로 — AI부사수 세션 2회차</title>
+<title>STAR 프레임워크, 클로드 코드 시작하기 — AI부사수 세션 2회차</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
@@ -119,41 +119,91 @@
 <!-- ===== 0: TITLE ===== -->
 <section>
   <div style="display:flex; flex-direction:column; justify-content:center; height:100%; text-align:center;">
-    <h1>오픈 클로<br>시작하기</h1>
-    <p style="font-size:0.78em; color:var(--accent); font-weight:400; margin-top:16px;">Claude Code로 직접 해보는 시간</p>
-    <p class="dim" style="font-size:0.58em; margin-top:12px;">내 컴퓨터에 AI부사수를 들이는 법</p>
+    <h1>STAR 프레임워크,<br><span class="accent">클로드 코드 시작하기</span></h1>
+    <p style="font-size:0.78em; color:var(--text-sub); font-weight:400; margin-top:16px;">AI에게 뭘 시킬지 정리하고, 직접 설치해보는 시간</p>
     <p class="dim" style="font-size:0.46em; margin-top:40px;">AI부사수 세션 2회차 &middot; @Seulki.log</p>
   </div>
 </section>
 
-<!-- ===== 1: OPEN CLAW 소개 ===== -->
+<!-- ===== 1: 1회차 리캡 ===== -->
 <section>
-  <div class="label">Open Claw</div>
-  <h2>오픈 클로, 이게 뭐야?</h2>
+  <div class="label">Recap &mdash; 1회차</div>
+  <h2>지난 시간에 다룬 것</h2>
+  <div class="grid grid-3" style="gap:16px; margin-bottom:14px;">
+    <div class="card" style="padding:16px 20px;">
+      <h3 class="accent">클로드 코드란?</h3>
+      <p style="color:var(--text); margin-top:6px;">내 말을 이해하는 개발자. 한국어로 말하면 알아서 코드를 설계해 문제를 해결해주는 AI.</p>
+      <p class="dim" style="margin-top:6px;">ChatGPT는 "알려주는" AI, 클로드 코드는 <span class="bold">"실행하는" AI</span>.</p>
+    </div>
+    <div class="card" style="padding:16px 20px;">
+      <h3 class="accent2">스킬과 에이전트</h3>
+      <p style="color:var(--text); margin-top:6px;"><span class="bold">스킬 = 레시피</span><br>정해진 순서대로 실행</p>
+      <p style="margin-top:6px;"><span class="bold">에이전트 = 요리사</span><br>스스로 판단하며 여러 단계를 처리</p>
+    </div>
+    <div class="card" style="padding:16px 20px;">
+      <h3 class="accent3">반자동화 vs 완전자동화</h3>
+      <p style="color:var(--text); margin-top:6px;">클로드 코드는 <span class="bold">반자동화</span> 방식. 중간중간 "이렇게 할까요?" 확인하며 진행.</p>
+      <p class="dim" style="margin-top:6px;">매니저로서 프로세스를 직접 점검하고 주도.</p>
+    </div>
+  </div>
+  <div class="grid grid-2" style="gap:16px; margin-bottom:14px;">
+    <div class="card" style="padding:14px 20px;">
+      <h3 class="accent4">HFK 실전 사례</h3>
+      <p style="margin-top:6px;">Obsidian &rarr; 클로드 코드(41개 스킬) &rarr; 아임웹 쇼핑몰 &rarr; Slack·캘린더. 반복되는 운영 업무를 반자동화.</p>
+    </div>
+    <div class="card" style="padding:14px 20px;">
+      <h3 class="accent5">1회차 핵심 메시지</h3>
+      <p style="margin-top:6px;">"코딩을 몰라도 됨. 중요한 건 <span class="accent bold">'이걸로 뭘 할 수 있을까?'</span>를 상상하는 것."</p>
+    </div>
+  </div>
+  <div class="summary-card" style="padding:12px 20px;">
+    <p style="font-size:0.54em; color:var(--text); margin:0;">
+      <span class="accent bold">오늘의 흐름</span> &mdash;
+      <span class="sub">새 소식 &rarr; 2주간 Q&amp;A &rarr; STAR 프레임워크 &rarr; 설치 &rarr; 실습</span>
+    </p>
+  </div>
+</section>
+
+<!-- ===== 2: OPEN CLAW 소개 ===== -->
+<section>
+  <div class="label">What's New</div>
+  <h2>오픈 클로 &mdash; 컴퓨터 꺼도 일하는 AI</h2>
   <div class="grid grid-2" style="gap:24px;">
     <div>
-      <p style="font-size:0.62em; color:var(--text); font-weight:500;">클로드 코드를 누구나 쓸 수 있도록 열어둔 기능</p>
-      <p style="margin-top:10px;">1회차에서 소개했던 클로드 코드의 핵심 기능들을 이제 여러분의 컴퓨터에서 직접 실행해볼 차례임.</p>
-      <p style="margin-top:10px;">오늘 세션이 끝나면 각자 컴퓨터에 클로드 코드가 설치되어 있고, <span class="accent bold">자연어로 명령을 내려볼 수 있는 상태</span>가 되는 것이 목표임.</p>
+      <p style="font-size:0.62em; color:var(--text); font-weight:500;">Claude Code가 클라우드 기반 예약 작업 기능을 공식 출시</p>
+      <p style="margin-top:10px;">웹 버전에서 저장소와 프롬프트, 실행 일정만 잡아두면 <span class="accent bold">내 컴퓨터가 꺼진 상태에서도</span> Claude가 Anthropic 클라우드에서 알아서 처리함.</p>
+      <p style="margin-top:10px;">개발자들이 매일 반복하는 <span class="bold">야간 CI 실패 분석, PR 리뷰, 이슈 기반 기능 개발</span> &mdash; 이 세 가지를 한꺼번에 자동화할 수 있음.</p>
       <div class="card" style="margin-top:16px; padding:14px 20px;">
-        <p class="accent bold" style="font-size:0.54em;">오늘의 흐름</p>
-        <p class="dim">지난 2주 돌아보기 &rarr; 프레임워크 배우기 &rarr; 설치 &rarr; 실습</p>
+        <p class="accent bold" style="font-size:0.54em;">설정은 딱 3가지</p>
+        <div style="display:flex; gap:12px; margin-top:8px;">
+          <div class="card" style="flex:1; padding:10px 14px; text-align:center; background:rgba(61,90,128,0.06);">
+            <p class="accent2 bold" style="font-size:0.52em;">Repo</p>
+            <p class="dim" style="font-size:0.46em;">어떤 저장소?</p>
+          </div>
+          <div class="card" style="flex:1; padding:10px 14px; text-align:center; background:rgba(91,123,94,0.06);">
+            <p class="accent3 bold" style="font-size:0.52em;">시간</p>
+            <p class="dim" style="font-size:0.46em;">언제 실행?</p>
+          </div>
+          <div class="card" style="flex:1; padding:10px 14px; text-align:center; background:rgba(139,94,60,0.06);">
+            <p class="accent bold" style="font-size:0.52em;">프롬프트</p>
+            <p class="dim" style="font-size:0.46em;">뭘 시킬지?</p>
+          </div>
+        </div>
       </div>
     </div>
     <div>
       <div class="card" style="margin-bottom:14px;">
-        <h3 class="accent2">클로드 코드로 할 수 있는 것들</h3>
-        <ul>
-          <li>내 컴퓨터 파일 정리, 이름 바꾸기, 분류</li>
-          <li>문서 작성 &mdash; 보고서, 이메일, 후기</li>
-          <li>데이터 분석 &mdash; 엑셀, CSV 파일 처리</li>
-          <li>웹사이트 만들기 &mdash; HTML, 발표 자료</li>
-          <li>반복 작업 자동화 &mdash; 스킬로 저장</li>
+        <h3 class="accent2">비개발자에게는 어떤 의미?</h3>
+        <ul style="margin-top:8px;">
+          <li>지금까지: 내 컴퓨터 켜고 &rarr; 클로드 코드 열고 &rarr; 시킴</li>
+          <li>앞으로: 웹에서 예약만 걸면 &rarr; <span class="bold">알아서 처리</span></li>
+          <li>반복 작업을 아예 잊어도 되는 시대가 옴</li>
         </ul>
+        <p class="dim" style="margin-top:8px;">1회차에서 배운 "반자동화"가 "완전자동화"로 진화하는 첫 단계.</p>
       </div>
       <div class="card" style="padding:14px 20px;">
-        <p class="accent3 bold">시작일</p>
-        <p class="dim" style="margin:4px 0 0;">오늘부터. 세션 끝나면 바로 쓸 수 있음.</p>
+        <p class="accent4 bold">우리에게 지금 필요한 건</p>
+        <p class="dim" style="margin:6px 0 0;">자동화 전에, <span class="bold">"뭘 자동화할지"</span>부터 정리하는 것. &rarr; STAR 프레임워크로.</p>
       </div>
     </div>
   </div>
@@ -736,7 +786,7 @@
 
 <!-- Custom progress bar -->
 <div id="custom-progress">
-  <div class="seg" data-section="0" onclick="goSection(0)">Open Claw</div>
+  <div class="seg" data-section="0" onclick="goSection(0)">리캡</div>
   <div class="seg" data-section="1" onclick="goSection(1)">2주 Review</div>
   <div class="seg" data-section="2" onclick="goSection(2)">STAR</div>
   <div class="seg" data-section="3" onclick="goSection(3)">설치</div>
@@ -747,12 +797,12 @@
 <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.min.js"></script>
 <script>
   const sections = [
-    [0, 1],           // Open Claw (title + intro)
-    [2, 3, 4],        // 2주 Review (카드뉴스 Q&A + 학습·데이터 Q&A + 역량)
-    [5, 6, 7, 8],     // STAR (소개 + 나의STAR + 매트릭스 + 실습)
-    [9, 10, 11],      // 설치 (claude + vscode + 연결)
-    [12],             // 실습 (자연어 명령)
-    [13, 14, 15]      // 과제 + 6회차 + 마무리
+    [0, 1, 2],        // 리캡 (title + 1회차리캡 + 오픈클로)
+    [3, 4, 5],        // 2주 Review (카드뉴스 Q&A + 학습·데이터 Q&A + 역량)
+    [6, 7, 8, 9],     // STAR (소개 + 나의STAR + 매트릭스 + 실습)
+    [10, 11, 12],     // 설치 (claude + vscode + 연결)
+    [13],             // 실습 (자연어 명령)
+    [14, 15, 16]      // 과제 + 6회차 + 마무리
   ];
 
   function goSection(idx) {
