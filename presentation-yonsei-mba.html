@@ -105,6 +105,12 @@
 
   /* num */
   .num-big { font-size: 2em; font-weight: 800; line-height: 1; }
+
+  /* compact card variant */
+  .card-sm { padding: 14px 16px !important; }
+  .card-sm > * + * { margin-top: 8px !important; }
+  .card-sm .skill-tag + h3 { margin-top: 6px !important; }
+  .card-sm li + li { margin-top: 3px; }
 </style>
 </head>
 <body>
@@ -327,6 +333,58 @@
       <span style="color:#F1EFEA;">&gt;</span> <span class="cmd">/sync-products</span><br><br>
       <span class="comment"># Claude 구독에 포함 — 별도 ChatGPT 구독 불필요</span>
     </div>
+  </div>
+</section>
+
+<!-- 7.5: 핵심 개념 4가지 -->
+<section>
+  <div class="label">Core Concepts</div>
+  <h2>네 가지 핵심 개념 — Skill · Agent · API · MCP</h2>
+  <p style="margin-bottom:16px;">Claude Code를 이해하려면 이 네 가지만 알면 됩니다. <span style="color:var(--accent);font-weight:600;">카페 운영</span>에 비유해봅시다.</p>
+  <div class="grid grid-4" style="gap:18px;margin-bottom:18px;">
+    <div class="card" style="border-top:3px solid var(--accent);">
+      <p style="color:var(--accent);font-weight:700;font-size:0.64em;margin-bottom:2px;">Skill</p>
+      <h3>레시피</h3>
+      <p style="margin-top:8px;">"아메리카노 만드는 법"처럼<br>업무 절차를 적어둔 <span style="font-weight:600;">마크다운 파일</span></p>
+      <div style="margin-top:12px;padding:8px 10px;background:rgba(139,94,60,0.06);border-radius:6px;">
+        <p style="font-size:0.48em;color:var(--text);margin:0;"><span style="color:var(--accent);font-weight:600;">실제 예)</span> /sync-products<br>→ 노트 읽기 → HTML 변환 → 아임웹 반영</p>
+      </div>
+    </div>
+    <div class="card" style="border-top:3px solid var(--accent2);">
+      <p style="color:var(--accent2);font-weight:700;font-size:0.64em;margin-bottom:2px;">Agent</p>
+      <h3>매니저</h3>
+      <p style="margin-top:8px;">레시피 여러 개를 조합해서<br><span style="font-weight:600;">알바생들에게 순서대로 시키는 사람</span></p>
+      <div style="margin-top:12px;padding:8px 10px;background:rgba(61,90,128,0.06);border-radius:6px;">
+        <p style="font-size:0.48em;color:var(--text);margin:0;"><span style="color:var(--accent2);font-weight:600;">실제 예)</span> /run-season-ops<br>→ 일정 + 동기화 + 레터 + 슬랙 한 번에</p>
+      </div>
+    </div>
+    <div class="card" style="border-top:3px solid var(--accent3);">
+      <p style="color:var(--accent3);font-weight:700;font-size:0.64em;margin-bottom:2px;">API</p>
+      <h3>주문 창구</h3>
+      <p style="margin-top:8px;">외부 서비스와 데이터를 주고받는<br><span style="font-weight:600;">정해진 규격의 통로</span></p>
+      <div style="margin-top:12px;padding:8px 10px;background:rgba(91,123,94,0.06);border-radius:6px;">
+        <p style="font-size:0.48em;color:var(--text);margin:0;"><span style="color:var(--accent3);font-weight:600;">실제 예)</span> 아임웹 API<br>→ 상품 조회·수정·등록을 코드로 처리</p>
+      </div>
+    </div>
+    <div class="card" style="border-top:3px solid var(--accent4);">
+      <p style="color:var(--accent4);font-weight:700;font-size:0.64em;margin-bottom:2px;">MCP</p>
+      <h3>멀티탭</h3>
+      <p style="margin-top:8px;">API라는 플러그를 Claude Code에<br><span style="font-weight:600;">꽂을 수 있게 해주는 어댑터</span></p>
+      <div style="margin-top:12px;padding:8px 10px;background:rgba(123,107,138,0.06);border-radius:6px;">
+        <p style="font-size:0.48em;color:var(--text);margin:0;"><span style="color:var(--accent4);font-weight:600;">실제 예)</span> Slack MCP 서버<br>→ Claude가 직접 메시지 발송·채널 생성</p>
+      </div>
+    </div>
+  </div>
+  <div class="dflow" style="margin-bottom:0;">
+    <div class="dnode"><div class="dlabel">만든다</div><div class="dtitle" style="color:var(--accent);">Skill</div></div>
+    <div class="darrow">→</div>
+    <div class="dnode"><div class="dlabel">묶는다</div><div class="dtitle" style="color:var(--accent2);">Agent</div></div>
+    <div class="darrow">→</div>
+    <div class="dnode hl"><div class="dlabel">실행한다</div><div class="dtitle" style="color:var(--accent);">Claude Code</div></div>
+    <div class="darrow">↔</div>
+    <div class="dnode"><div class="dlabel">연결한다</div><div class="dtitle" style="color:var(--accent4);">MCP</div></div>
+    <div class="darrow">→</div>
+    <div class="dnode"><div class="dlabel">외부 서비스</div><div class="dtitle" style="color:var(--accent3);">API</div></div>
   </div>
 </section>
 
@@ -616,28 +674,28 @@
 <section>
   <div class="label">Skills &mdash; 상품 관리</div>
   <h2>상품 관리 스킬</h2>
-  <div class="grid grid-2" style="gap:18px;">
-    <div class="card">
+  <div class="grid grid-2" style="gap:14px;">
+    <div class="card card-sm">
       <span class="skill-tag" style="background:rgba(61,90,128,0.08);color:var(--accent2);">/sync-products</span>
       <h3>Obsidian 노트 → 아임웹 동기화</h3>
       <ul><li>Markdown 파싱 → HTML 생성 → API로 상품 업데이트</li><li>status: draft → synced 자동 전환</li></ul>
     </div>
-    <div class="card">
+    <div class="card card-sm">
       <span class="skill-tag" style="background:rgba(91,123,94,0.08);color:var(--accent3);">/backup-products</span>
       <h3>아임웹 → Obsidian 백업</h3>
       <ul><li>아임웹 상품 정보를 Markdown 노트로 역변환</li><li>시즌별 카테고리 선택 가능</li></ul>
     </div>
-    <div class="card">
+    <div class="card card-sm">
       <span class="skill-tag">/evaluate-notes</span>
       <h3>상품 노트 완성도 평가</h3>
       <ul><li>가이드라인 기준 100점 만점 자동 채점</li><li>긴급 이슈는 Apple 미리알림에 자동 추가</li></ul>
     </div>
-    <div class="card">
+    <div class="card card-sm">
       <span class="skill-tag" style="background:rgba(123,107,138,0.08);color:var(--accent4);">/expand-idea</span>
       <h3>아이디어 → 상품 초안</h3>
       <ul><li>간단한 메모에서 톤앤매너에 맞는 초안 자동 작성</li><li>헤드라인, 소개, 세션 구성까지 생성</li></ul>
     </div>
-    <div class="card">
+    <div class="card card-sm">
       <span class="skill-tag" style="background:rgba(90,123,123,0.08);color:var(--accent6);">/convert-to-imweb</span>
       <h3>Obsidian MD → Imweb HTML 변환</h3>
       <ul><li>마크다운을 아임웹 에디터 호환 HTML로 변환</li></ul>
@@ -1085,12 +1143,12 @@
 <div id="custom-progress">
   <div class="seg" data-range="0-0">Title</div>
   <div class="seg" data-range="1-5">Opening</div>
-  <div class="seg" data-range="6-11">Intro</div>
-  <div class="seg" data-range="12-14" id="seg-skills">Skills</div>
-  <div class="seg" data-range="15-20">스킬 목록</div>
-  <div class="seg" data-range="21-22">Workflow</div>
-  <div class="seg" data-range="23-26">Cases</div>
-  <div class="seg" data-range="27-29">Action</div>
+  <div class="seg" data-range="6-12">Intro</div>
+  <div class="seg" data-range="13-15" id="seg-skills">Skills</div>
+  <div class="seg" data-range="16-21">스킬 목록</div>
+  <div class="seg" data-range="22-23">Workflow</div>
+  <div class="seg" data-range="24-27">Cases</div>
+  <div class="seg" data-range="28-30">Action</div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.min.js"></script>
@@ -1111,7 +1169,7 @@
     });
   });
 
-  var skillNames = {12:'Skills — 커스텀', 13:'Skills — 내 서비스', 14:'Skills — 도식화'};
+  var skillNames = {13:'Skills — 커스텀', 14:'Skills — 내 서비스', 15:'Skills — 도식화'};
 
   function updateProgress() {
     var idx = Reveal.getIndices().h;
