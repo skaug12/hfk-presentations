@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Claude Code 치트시트 — 연세대 MBA</title>
+<title>Claude Code 요약본 — 연세대 MBA</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <style>
   :root { --bg: #F8F7F4; --text: #2C2C2C; --sub: #6B6B6B; --dim: #9A9A9A; --accent: #8B5E3C; --accent2: #3D5A80; --accent3: #5B7B5E; --accent4: #7B6B8A; --accent5: #8A5E5E; --card: #F1EFEA; }
@@ -35,44 +35,84 @@
 </head>
 <body>
 
-<h1>Claude Code 치트시트</h1>
-<p class="subtitle">연세대 MBA 테크동아리 · 2026.04.03</p>
+<h1>Claude Code 요약본</h1>
+<p class="subtitle">연세대 MBA 테크 그룹 · 2026.04.03</p>
 
-<!-- 설치 -->
-<h2>1. 설치</h2>
+<!-- 이 시간이 끝나고 기억할 세 가지 -->
+<h2>1. 이 시간이 끝나고 기억할 세 가지</h2>
+
+<div class="card" style="border-left:3px solid var(--accent);">
+  <h3>01 — 다양한 케이스 보기</h3>
+  <p>AI가 어디까지 하는지 최대한 많은 사례를 보자</p>
+</div>
+<div class="card" style="border-left:3px solid var(--accent2);">
+  <h3>02 — 하나를 제대로 쓰기</h3>
+  <p>여러 도구를 얕게 쓰는 것보다 하나를 깊이 쓰는 것이 낫다</p>
+</div>
+<div class="card" style="border-left:3px solid var(--accent3);">
+  <h3>03 — 기록하기</h3>
+  <p>결과물을 쌓아가는 것이 자산</p>
+</div>
+
+<!-- Claude Code vs ChatGPT -->
+<h2 style="color:var(--accent2); border-color:var(--accent2);">2. Claude Code vs ChatGPT</h2>
 
 <div class="card">
-  <h3>Mac</h3>
-  <div class="code">
-    <span class="comment"># 터미널(⌘+Space → 터미널) 열고 붙여넣기</span><br>
-    <span class="prompt">$</span> <span class="cmd">curl -fsSL https://claude.ai/install.sh | bash</span><br>
-    <span class="comment"># 터미널 껐다 켜고</span><br>
-    <span class="prompt">$</span> claude
-  </div>
+  <h3>ChatGPT — 대화형 분석</h3>
+  <ul>
+    <li>파일 업로드 후 텍스트로 요약/분석</li>
+    <li>큰 데이터는 샘플링 발생</li>
+    <li>중간 과정 검증 어려움</li>
+    <li>결과물 수작업 필요</li>
+  </ul>
 </div>
 
 <div class="card">
-  <h3>Windows</h3>
-  <div class="code">
-    <span class="comment"># 먼저 Git 설치: git-scm.com/downloads/win</span><br>
-    <span class="comment"># PowerShell(파란 창) 열고 붙여넣기</span><br>
-    <span class="prompt">&gt;</span> <span class="cmd">irm https://claude.ai/install.ps1 | iex</span><br>
-    <span class="comment"># 껐다 켜고</span><br>
-    <span class="prompt">&gt;</span> claude
-  </div>
+  <h3>Claude Code — 코드 실행형</h3>
+  <ul>
+    <li>Python 직접 실행으로 정확한 결과</li>
+    <li>전체 데이터 처리</li>
+    <li>코드 투명성</li>
+    <li>결과 파일 저장 · API 반영 가능</li>
+  </ul>
 </div>
 
+<!-- Claude Code, 어디서 쓸 수 있나? -->
+<h2 style="color:var(--accent3); border-color:var(--accent3);">3. Claude Code, 어디서 쓸 수 있나?</h2>
+
 <div class="card">
-  <h3>VS Code 확장</h3>
-  <div class="code">
-    <span class="prompt">$</span> node --version <span class="comment"># v18 이상 확인</span><br>
-    <span class="prompt">$</span> <span class="cmd">npm install -g @anthropic-ai/claude-code</span><br>
-    <span class="comment"># VS Code → Extensions(⌘⇧X) → "Claude Code" 검색 → 설치</span>
-  </div>
+  <ul>
+    <li><span class="tag tag-brown">터미널 CLI</span> 가장 강력한 방식</li>
+    <li><span class="tag tag-blue">VS Code 확장</span> 에디터 내 시각적 비교</li>
+    <li><span class="tag tag-green">웹 claude.ai/code</span> 설치 없이 브라우저에서</li>
+    <li><span class="tag tag-brown">데스크톱 앱</span> GUI 방식</li>
+  </ul>
+</div>
+
+<!-- 네 가지 핵심 개념 -->
+<h2 style="color:var(--accent4); border-color:var(--accent4);">4. 네 가지 핵심 개념 — Skill · Agent · API · MCP</h2>
+
+<div class="card">
+  <ul>
+    <li><strong>Skill</strong> — 업무 절차의 마크다운 파일</li>
+    <li><strong>Agent</strong> — 여러 스킬을 조합하는 매니저</li>
+    <li><strong>API</strong> — 외부 서비스와의 데이터 통로</li>
+    <li><strong>MCP</strong> — API를 Claude Code에 연결하는 어댑터</li>
+  </ul>
+</div>
+
+<!-- 식품 데이터 MI 대시보드 -->
+<h2 style="color:var(--accent5); border-color:var(--accent5);">5. 식품 데이터 MI 대시보드 — 파이프라인</h2>
+
+<div class="card">
+  <p style="margin-bottom:8px;"><strong>프로세스</strong></p>
+  <p>더미 데이터 생성(5,000건) → MI 분석 → HTML 대시보드 → Obsidian MD → GitHub Pages 배포</p>
+  <p style="margin-top:12px;"><strong>소요 시간</strong> — 기존 2~3일 → Claude Code 약 10초</p>
+  <p style="margin-top:8px; font-size:0.78em; color:var(--dim);">건강기능식품 +51.1% 성장 · 제로 키워드 1위 · 상위 3사 37.1% 점유</p>
 </div>
 
 <!-- 자주 쓰는 명령어 -->
-<h2>2. 자주 쓰는 명령어</h2>
+<h2>6. 자주 쓰는 명령어</h2>
 
 <div class="card">
   <ul>
@@ -84,50 +124,8 @@
   </ul>
 </div>
 
-<!-- 첫 스킬 만들기 -->
-<h2>3. 첫 번째 스킬 만들기</h2>
-
-<div class="card">
-  <h3>Step 1 — 폴더 만들기</h3>
-  <div class="code">
-    <span class="prompt">$</span> mkdir -p .claude/commands
-  </div>
-</div>
-
-<div class="card">
-  <h3>Step 2 — 마크다운 파일 작성</h3>
-  <p style="margin-bottom:8px;">.claude/commands/my-first-skill.md 파일을 만들고 업무 절차를 자연어로 작성</p>
-  <div class="code">
-    <span class="comment"># 예시: 주간 보고서 자동화</span><br>
-    1. 이번 주 작업 폴더에서 변경된 파일 목록을 확인한다<br>
-    2. 각 파일의 변경 내용을 요약한다<br>
-    3. 주간 보고서 양식에 맞춰 정리한다<br>
-    4. weekly-report.md 파일로 저장한다
-  </div>
-</div>
-
-<div class="card">
-  <h3>Step 3 — 실행</h3>
-  <div class="code">
-    <span class="prompt">$</span> claude<br>
-    <span style="color:#F1EFEA;">&gt;</span> <span class="cmd">/my-first-skill</span>
-  </div>
-</div>
-
-<!-- MCP 연동 -->
-<h2>4. MCP 서버 연동</h2>
-
-<div class="card">
-  <h3>Apple 미리알림 연동 예시</h3>
-  <div class="code">
-    <span class="prompt">$</span> claude mcp add apple-reminders -- npx -y @anthropic/apple-reminders-mcp<br>
-    <span class="prompt">$</span> claude mcp list <span class="comment"># 연결 확인</span>
-  </div>
-  <p style="margin-top:8px;">연동 후 "오늘 미리알림 보여줘", "내일까지 할 일 추가해줘" 등 자연어로 사용</p>
-</div>
-
 <!-- 토큰 절약 팁 -->
-<h2>5. 토큰 절약 팁</h2>
+<h2>7. 토큰 절약 팁</h2>
 
 <div class="card">
   <ul>
@@ -139,7 +137,7 @@
 </div>
 
 <!-- STAR 워크시트 -->
-<h2>6. STAR 프레임워크 — 내 AI 활용 계획</h2>
+<h2>8. STAR 프레임워크 — 내 AI 활용 계획</h2>
 
 <div class="card" style="border-left:3px solid var(--accent);">
   <h3 style="color:var(--accent);">S — Start</h3>
@@ -163,7 +161,7 @@
 </div>
 
 <!-- 추천 리소스 -->
-<h2>7. 추천 리소스</h2>
+<h2>9. 추천 리소스</h2>
 
 <a class="link-card" href="https://docs.anthropic.com/en/docs/claude-code" target="_blank">
   <h3>Claude Code 공식 문서</h3>
