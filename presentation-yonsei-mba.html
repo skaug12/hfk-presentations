@@ -127,36 +127,7 @@
   </div>
 </section>
 
-<!-- 1: 핵심 메시지 OPENING -->
-<section>
-  <div class="label">오늘의 핵심</div>
-  <h2>이 시간이 끝나고 기억할 세 가지</h2>
-  <div class="grid grid-3" style="gap:26px;margin-bottom:22px;">
-    <div class="card" style="text-align:center;padding:28px 18px;">
-      <div class="num-big" style="color:var(--accent);">01</div>
-      <h3 style="margin-top:14px;color:var(--accent);">다양한 케이스 보기</h3>
-      <p style="margin-top:10px;">AI가 어디까지 하는지<br>최대한 많은 사례를 보자</p>
-    </div>
-    <div class="card" style="text-align:center;padding:28px 18px;">
-      <div class="num-big" style="color:var(--accent2);">02</div>
-      <h3 style="margin-top:14px;color:var(--accent2);">하나를 제대로 쓰기</h3>
-      <p style="margin-top:10px;">여러 도구를 얕게 쓰는 것보다<br>하나를 깊이 쓰는 것이 낫다</p>
-    </div>
-    <div class="card" style="text-align:center;padding:28px 18px;">
-      <div class="num-big" style="color:var(--accent3);">03</div>
-      <h3 style="margin-top:14px;color:var(--accent3);">기록하기</h3>
-      <p style="margin-top:10px;">결과물을 쌓아가는 것이 자산</p>
-    </div>
-  </div>
-  <div class="summary-card">
-    <p style="font-size:0.58em;color:var(--text);margin:0;">
-      <span style="color:var(--accent);font-weight:600;">Claude Code는 도구입니다.</span>
-      <span class="sub"> 어떤 도구도 많이 보고, 깊이 쓰고, 꾸준히 기록해야 실력이 됩니다.</span>
-    </p>
-  </div>
-</section>
-
-<!-- 2: 설문 기반 기대사항 -->
+<!-- 1: 설문 기반 기대사항 -->
 <section>
   <div class="label">Your Questions</div>
   <h2>여러분이 궁금해한 것, 오늘 다루는 것</h2>
@@ -192,7 +163,130 @@
   </div>
 </section>
 
-<!-- 3: 센스의 재발견 -->
+<!-- 2: BACKGROUND -->
+<section>
+  <div class="label">Background</div>
+  <h2>AI, 함께 배우고 만들어 온 이야기</h2>
+  <div class="grid grid-4" style="gap:20px;margin-bottom:20px;">
+    <div class="card"><p style="color:var(--accent);font-weight:600;">2023</p><h3>AI 스터디 기획</h3><p>ChatGPT 등장 이후 AI를 실무에 어떻게 적용할지 함께 탐색</p></div>
+    <div class="card"><p style="color:var(--accent2);font-weight:600;">2023~현재</p><h3>AI부사수 팀 운영</h3><p>시즌마다 AI 활용 팀 운영, Work Breakdown으로 실무 적용</p></div>
+    <div class="card"><p style="color:var(--accent3);font-weight:600;">2025</p><h3>AI 컨퍼런스 개최</h3><p>&lt;AI에 대체되지 않는 사람들&gt; 비개발자 연사 3명의 실전</p></div>
+    <div class="card"><p style="color:var(--accent4);font-weight:600;">2025~</p><h3>Claude Code 도입</h3><p>커뮤니티 운영 업무를 44개 커스텀 스킬로 자동화</p></div>
+  </div>
+  <div class="summary-card">
+    <p style="font-size:0.58em;color:var(--text);margin:0;">
+      <span style="color:var(--accent);font-weight:600;">컨퍼런스 핵심 메시지</span> &mdash;
+      <span class="sub">"AI를 과소평가하지도, 과대평가하지도 말 것. 자신만의 베이스캠프를 정해 꾸준히 활용하는 것이 핵심이다."</span>
+    </p>
+  </div>
+</section>
+
+<!-- 3: 식품 데이터 케이스 — 파이프라인 -->
+<section>
+  <div class="label">Case Study &mdash; API 활용</div>
+  <h2>식품 데이터 MI 대시보드 — 파이프라인</h2>
+  <p style="margin-bottom:13px;"><span style="color:var(--accent);font-weight:600;">"데이터 기초 가공에 팀원들과 3일 밤을 샌다"</span> — CJ제일제당 멤버의 니즈에서 시작한 데모</p>
+  <div class="grid grid-2" style="gap:18px;">
+    <div class="code-block" style="font-size:0.45em;line-height:1.82;">
+      <span class="comment"># Claude에게 한 줄로 요청</span><br>
+      <span style="color:#F1EFEA;">&gt; 식약처 API 데이터로 식품 MI 대시보드 만들어줘.</span><br>
+      <span style="color:#F1EFEA;">&nbsp; 더미 데이터 5,000건 기반, 시장 트렌드·점유율·</span><br>
+      <span style="color:#F1EFEA;">&nbsp; 키워드 분석 포함해서 GitHub Pages로 배포까지.</span><br><br>
+      <span class="comment"># Claude가 5단계로 자동 실행</span><br>
+      <span style="color:#D4A574;">[1]</span> 더미 데이터 생성 완료 (5,000건 · 1초)<br>
+      <span style="color:#D4A574;">[2]</span> MI 분석 실행 완료 (인사이트 5개 · 1초)<br>
+      <span style="color:#D4A574;">[3]</span> HTML 대시보드 생성 완료 (2초)<br>
+      <span style="color:#D4A574;">[4]</span> Obsidian MD 문서 생성 완료<br>
+      <span style="color:#D4A574;">[5]</span> GitHub Pages 배포 완료 (30초)
+    </div>
+    <div style="display:flex;flex-direction:column;gap:13px;">
+      <div class="card">
+        <p style="color:var(--accent2);font-weight:600;font-size:0.54em;">5단계 파이프라인</p>
+        <div style="display:flex;gap:5px;flex-wrap:wrap;margin-top:8px;align-items:center;">
+          <span style="background:rgba(61,90,128,0.1);color:var(--accent2);font-size:0.44em;padding:3px 7px;border-radius:4px;">①수집</span>
+          <span style="color:var(--text-dim);font-size:0.5em;">→</span>
+          <span style="background:rgba(91,123,94,0.1);color:var(--accent3);font-size:0.44em;padding:3px 7px;border-radius:4px;">②가공</span>
+          <span style="color:var(--text-dim);font-size:0.5em;">→</span>
+          <span style="background:rgba(139,94,60,0.1);color:var(--accent);font-size:0.44em;padding:3px 7px;border-radius:4px;">③분석</span>
+          <span style="color:var(--text-dim);font-size:0.5em;">→</span>
+          <span style="background:rgba(123,107,138,0.1);color:var(--accent4);font-size:0.44em;padding:3px 7px;border-radius:4px;">④시각화</span>
+          <span style="color:var(--text-dim);font-size:0.5em;">→</span>
+          <span style="background:rgba(90,123,123,0.1);color:var(--accent6);font-size:0.44em;padding:3px 7px;border-radius:4px;">⑤배포</span>
+        </div>
+      </div>
+      <div class="card">
+        <p style="color:var(--accent);font-weight:600;font-size:0.54em;">소요 시간 비교</p>
+        <div class="grid grid-2" style="gap:9px;margin-top:8px;">
+          <div style="text-align:center;padding:9px;background:rgba(138,94,94,0.06);border-radius:6px;">
+            <p style="font-size:0.54em;color:var(--accent5);font-weight:600;margin:0;">기존 방식</p>
+            <p style="font-size:1.2em;font-weight:800;color:var(--accent5);margin:3px 0;">2~3일</p>
+          </div>
+          <div style="text-align:center;padding:9px;background:rgba(91,123,94,0.06);border-radius:6px;">
+            <p style="font-size:0.54em;color:var(--accent3);font-weight:600;margin:0;">Claude Code</p>
+            <p style="font-size:1.2em;font-weight:800;color:var(--accent3);margin:3px 0;">약 10초</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <p style="color:var(--accent3);font-weight:600;font-size:0.54em;">사용 기술</p>
+        <ul style="margin-top:8px;">
+          <li>식약처 오픈 API (foodsafetykorea.go.kr)</li>
+          <li>Python pandas, Chart.js (시각화)</li>
+          <li>GitHub Pages (무료 배포, URL 공유)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4: 식품 데이터 케이스 — 인사이트 -->
+<section>
+  <div class="label">Case Study &mdash; 결과</div>
+  <h2>식품 데이터 MI 대시보드 — 인사이트</h2>
+  <div class="grid grid-2" style="gap:18px;">
+    <div style="display:flex;flex-direction:column;gap:13px;">
+      <div class="card">
+        <p style="color:var(--accent);font-weight:600;font-size:0.54em;">핵심 인사이트 (자동 도출)</p>
+        <ul style="margin-top:8px;">
+          <li>건강기능식품 <span style="color:var(--accent3);font-weight:600;">+51.1%</span> — 가장 빠르게 성장</li>
+          <li>면류 <span style="color:var(--accent5);font-weight:600;">-19.8%</span> — 역성장, 시장 재편 신호</li>
+          <li>트렌드 키워드 1위 <span style="color:var(--accent2);font-weight:600;">'제로'</span> (5,288억원 규모)</li>
+          <li>상위 3사(CJ·롯데·농심) <span style="color:var(--accent4);font-weight:600;">37.1%</span> 점유</li>
+          <li>시장 CAGR <span style="color:var(--accent);font-weight:600;">27.9%</span> (2020~2025)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p style="color:var(--accent2);font-weight:600;font-size:0.54em;">대시보드 구성</p>
+        <ul style="margin-top:8px;">
+          <li>KPI 카드 4개 (시장규모, 성장률, 키워드, 건수)</li>
+          <li>품목별 트렌드 라인 차트</li>
+          <li>업체별 점유율 도넛 차트</li>
+          <li>분석 명령 입력창 (태그 클릭 또는 직접 입력)</li>
+        </ul>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:13px;">
+      <div class="code-block" style="font-size:0.45em;line-height:1.82;flex:1;">
+        <span class="comment"># 배포 URL (누구나 접근 가능)</span><br>
+        <span style="color:#D4A574;">https://skaug12.github.io/food-data-dashboard/</span><br><br>
+        <span class="comment"># 실제 데이터 연동: 식약처 API 키 등록</span><br>
+        <span style="color:#F1EFEA;">FOOD_SAFETY_API_KEY=발급받은키</span><br><br>
+        <span class="comment"># 사내 Excel도 같은 파이프라인 적용 가능</span><br>
+        <span style="color:#F1EFEA;">pd.read_excel("매출데이터.xlsx")</span><br><br>
+        <span class="comment"># 코드에는 데이터 없음 → 코드 자체는 공유 가능</span><br>
+        <span class="comment"># 실제 데이터는 로컬에서만 처리됨</span>
+      </div>
+      <div class="summary-card">
+        <p style="font-size:0.55em;color:var(--text);margin:0;">
+          <span style="color:var(--accent);font-weight:600;">핵심 원칙</span> &mdash;
+          <span class="sub">동료에게 코드를 주면, 그 동료가 자신의 데이터를 넣어서 실행하면 됩니다.</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5: 센스의 재발견 -->
 <section>
   <div class="label">Book Reference</div>
   <h2>센스의 재발견 &mdash; 미즈노 마나부</h2>
@@ -224,124 +318,36 @@
   </div>
 </section>
 
-<!-- 4: 두번째 지능 소개 -->
+<!-- 6: 오늘의 핵심 -->
 <section>
-  <div class="label">HFK</div>
-  <h2>두번째 지능이란?</h2>
-  <div class="grid grid-2" style="gap:22px;margin-bottom:20px;">
-    <div class="card">
-      <h3 style="color:var(--accent5);">첫번째 지능 — 타고난 능력</h3>
-      <ul style="margin-top:10px;">
-        <li>학습, 분석, 판단 등 인지적 능력</li>
-        <li>경험과 훈련으로 향상되지만 한계 존재</li>
-        <li>AI가 빠르게 대체하기 시작한 영역</li>
-      </ul>
+  <div class="label">오늘의 핵심</div>
+  <h2>이 시간이 끝나고 기억할 세 가지</h2>
+  <div class="grid grid-3" style="gap:26px;margin-bottom:22px;">
+    <div class="card" style="text-align:center;padding:28px 18px;">
+      <div class="num-big" style="color:var(--accent);">01</div>
+      <h3 style="margin-top:14px;color:var(--accent);">다양한 케이스 보기</h3>
+      <p style="margin-top:10px;">AI가 어디까지 하는지<br>최대한 많은 사례를 보자</p>
     </div>
-    <div class="card">
-      <h3 style="color:var(--accent);">두번째 지능 — AI로 확장된 능력</h3>
-      <ul style="margin-top:10px;">
-        <li>AI를 통해 가능해지는 새로운 실행력</li>
-        <li>기획자도 개발자의 눈을 가질 수 있다</li>
-        <li>미뤄뒀던 일, 엄두 못 냈던 영역에 도전</li>
-      </ul>
+    <div class="card" style="text-align:center;padding:28px 18px;">
+      <div class="num-big" style="color:var(--accent2);">02</div>
+      <h3 style="margin-top:14px;color:var(--accent2);">하나를 제대로 쓰기</h3>
+      <p style="margin-top:10px;">여러 도구를 얕게 쓰는 것보다<br>하나를 깊이 쓰는 것이 낫다</p>
+    </div>
+    <div class="card" style="text-align:center;padding:28px 18px;">
+      <div class="num-big" style="color:var(--accent3);">03</div>
+      <h3 style="margin-top:14px;color:var(--accent3);">기록하기</h3>
+      <p style="margin-top:10px;">결과물을 쌓아가는 것이 자산</p>
     </div>
   </div>
   <div class="summary-card">
     <p style="font-size:0.58em;color:var(--text);margin:0;">
-      <span style="color:var(--accent);font-weight:600;">HFK AI부사수 팀의 질문</span> &mdash;
-      <span class="sub">"나에게 AI 부사수가 생긴다면, 지금 당장 무엇부터 시킬 것인가?"</span>
+      <span style="color:var(--accent);font-weight:600;">Claude Code는 도구입니다.</span>
+      <span class="sub"> 어떤 도구도 많이 보고, 깊이 쓰고, 꾸준히 기록해야 실력이 됩니다.</span>
     </p>
   </div>
 </section>
 
-<!-- 5: STAR 프레임워크 -->
-<section>
-  <div class="label">Framework</div>
-  <h2>STAR 프레임워크 &mdash; 두번째 지능 활용법</h2>
-  <div class="grid grid-4" style="gap:18px;margin-bottom:20px;">
-    <div class="star-card">
-      <div class="star-letter" style="color:var(--accent);">S</div>
-      <h3 style="margin-top:10px;">Start</h3>
-      <p style="margin-top:8px;">미뤄왔던 일을 시작한다</p>
-    </div>
-    <div class="star-card">
-      <div class="star-letter" style="color:var(--accent2);">T</div>
-      <h3 style="margin-top:10px;">Try</h3>
-      <p style="margin-top:8px;">엄두 못 냈던 영역에 도전한다</p>
-    </div>
-    <div class="star-card">
-      <div class="star-letter" style="color:var(--accent3);">A</div>
-      <h3 style="margin-top:10px;">Amplify</h3>
-      <p style="margin-top:8px;">잘하는 것을 폭발적으로 증폭시킨다</p>
-    </div>
-    <div class="star-card">
-      <div class="star-letter" style="color:var(--accent4);">R</div>
-      <h3 style="margin-top:10px;">Recover</h3>
-      <p style="margin-top:8px;">확보된 시간으로 새로운 가능성을 탐색한다</p>
-    </div>
-  </div>
-  <div class="card">
-    <h3 style="color:var(--accent);">워크숍: 내 STAR 찾기</h3>
-    <div class="grid grid-4" style="gap:14px;margin-top:12px;">
-      <div><p style="font-size:0.56em;font-weight:600;color:var(--accent);">S — 무엇을 시작할까?</p><p style="font-size:0.52em;margin-top:4px;">오랫동안 미뤄온 업무 자동화가 있나요?</p></div>
-      <div><p style="font-size:0.56em;font-weight:600;color:var(--accent2);">T — 무엇에 도전할까?</p><p style="font-size:0.52em;margin-top:4px;">개발자에게 맡겨야 한다고 생각했던 것은?</p></div>
-      <div><p style="font-size:0.56em;font-weight:600;color:var(--accent3);">A — 무엇을 증폭할까?</p><p style="font-size:0.52em;margin-top:4px;">내가 이미 잘하는 것 + AI = ?</p></div>
-      <div><p style="font-size:0.56em;font-weight:600;color:var(--accent4);">R — 무엇을 탐색할까?</p><p style="font-size:0.52em;margin-top:4px;">시간이 생기면 하고 싶었던 것은?</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- 6: AI=기본기 HFK=인사이트 -->
-<section>
-  <div class="label">HFK Philosophy</div>
-  <h2>AI = 기본기 &nbsp;&middot;&nbsp; HFK = 인사이트와 센스</h2>
-  <div class="grid grid-2" style="gap:22px;margin-bottom:20px;">
-    <div class="card highlight-before">
-      <h3 style="color:var(--accent5);">AI만 있으면?</h3>
-      <ul style="margin-top:10px;">
-        <li>누구나 빠르게 기본기를 갖추게 된다</li>
-        <li>평균의 아웃풋이 올라간다</li>
-        <li>차별화가 어려워진다</li>
-        <li><span style="color:var(--accent5);font-weight:600;">AI = 평범함의 도구</span>가 될 수도 있다</li>
-      </ul>
-    </div>
-    <div class="card highlight-after">
-      <h3 style="color:var(--accent3);">AI + 인사이트/센스가 있으면?</h3>
-      <ul style="margin-top:10px;">
-        <li>기본기를 AI로 빠르게 처리</li>
-        <li>남는 시간에 인사이트와 센스를 키운다</li>
-        <li>업계 지식 + AI 실행력 = 진짜 강점</li>
-        <li>HFK는 그 인사이트·센스를 함께 키운다</li>
-      </ul>
-    </div>
-  </div>
-  <div class="summary-card">
-    <p style="font-size:0.58em;color:var(--text);margin:0;">
-      <span style="color:var(--accent);font-weight:600;">기본기를 AI로 빠르게 마스터하고, 비즈니스 인사이트와 센스를 기르는 것.</span>
-      <span class="sub"> 그것이 HFK와 함께하는 이유입니다.</span>
-    </p>
-  </div>
-</section>
-
-<!-- 7: BACKGROUND -->
-<section>
-  <div class="label">Background</div>
-  <h2>AI, 함께 배우고 만들어 온 이야기</h2>
-  <div class="grid grid-4" style="gap:20px;margin-bottom:20px;">
-    <div class="card"><p style="color:var(--accent);font-weight:600;">2023</p><h3>AI 스터디 기획</h3><p>ChatGPT 등장 이후 AI를 실무에 어떻게 적용할지 함께 탐색</p></div>
-    <div class="card"><p style="color:var(--accent2);font-weight:600;">2023~현재</p><h3>AI부사수 팀 운영</h3><p>시즌마다 AI 활용 팀 운영, Work Breakdown으로 실무 적용</p></div>
-    <div class="card"><p style="color:var(--accent3);font-weight:600;">2025</p><h3>AI 컨퍼런스 개최</h3><p>&lt;AI에 대체되지 않는 사람들&gt; 비개발자 연사 3명의 실전</p></div>
-    <div class="card"><p style="color:var(--accent4);font-weight:600;">2025~</p><h3>Claude Code 도입</h3><p>커뮤니티 운영 업무를 44개 커스텀 스킬로 자동화</p></div>
-  </div>
-  <div class="summary-card">
-    <p style="font-size:0.58em;color:var(--text);margin:0;">
-      <span style="color:var(--accent);font-weight:600;">컨퍼런스 핵심 메시지</span> &mdash;
-      <span class="sub">"AI를 과소평가하지도, 과대평가하지도 말 것. 자신만의 베이스캠프를 정해 꾸준히 활용하는 것이 핵심이다."</span>
-    </p>
-  </div>
-</section>
-
-<!-- 8: WHAT IS CLAUDE CODE -->
+<!-- 7: WHAT IS CLAUDE CODE -->
 <section>
   <div class="label">Introduction</div>
   <h2>Claude Code란?</h2>
@@ -372,7 +378,7 @@
   </div>
 </section>
 
-<!-- 8.5: 핵심 개념 4가지 -->
+<!-- 8: 핵심 개념 4가지 -->
 <section>
   <div class="label">Core Concepts</div>
   <h2>네 가지 핵심 개념 — Skill · Agent · API · MCP</h2>
@@ -615,7 +621,7 @@
   </div>
 </section>
 
-<!-- 14: 비개발자 헤매는 포인트 -->
+<!-- 14: 트러블슈팅 -->
 <section>
   <div class="label">Troubleshooting</div>
   <h2>처음 터미널을 여는 분을 위한 안내</h2>
@@ -650,7 +656,7 @@
   </div>
 </section>
 
-<!-- 15: 토큰 절약 팁 -->
+<!-- 15: 토큰 절약 -->
 <section>
   <div class="label">Cost Tips</div>
   <h2>토큰, 아껴 쓰는 법</h2>
@@ -806,7 +812,7 @@
   </div>
 </section>
 
-<!-- 19: 내가 잘 쓰는 서비스 -->
+<!-- 19: 내가 쓰는 서비스 -->
 <section>
   <div class="label">My Setup</div>
   <h2>내가 잘 쓰는 서비스 두 가지</h2>
@@ -840,7 +846,7 @@
   </div>
 </section>
 
-<!-- 20: 스킬 도식화 -->
+<!-- 20: 연결 구조 -->
 <section>
   <div class="label">Architecture</div>
   <h2>Claude Code 연결 구조</h2>
@@ -1092,7 +1098,7 @@
   </div>
 </section>
 
-<!-- 27: WORKFLOW -->
+<!-- 27: 시즌 오픈 자동화 -->
 <section>
   <div class="label">Workflow</div>
   <h2>시즌 오픈 자동화</h2>
@@ -1109,7 +1115,7 @@
   </div>
 </section>
 
-<!-- 28: MCP -->
+<!-- 28: MCP 서버 연동 -->
 <section>
   <div class="label">Integration</div>
   <h2>MCP 서버 연동</h2>
@@ -1125,7 +1131,106 @@
   <div class="code-block" style="text-align:center;padding:11px;font-size:0.5em;"><span class="prompt">$</span> claude mcp add <span class="cmd">[서버명]</span> -- <span class="cmd">[실행 명령]</span></div>
 </section>
 
-<!-- 29: 보안 -->
+<!-- 29: 두번째 지능 -->
+<section>
+  <div class="label">HFK</div>
+  <h2>두번째 지능이란?</h2>
+  <div class="grid grid-2" style="gap:22px;margin-bottom:20px;">
+    <div class="card">
+      <h3 style="color:var(--accent5);">첫번째 지능 — 타고난 능력</h3>
+      <ul style="margin-top:10px;">
+        <li>학습, 분석, 판단 등 인지적 능력</li>
+        <li>경험과 훈련으로 향상되지만 한계 존재</li>
+        <li>AI가 빠르게 대체하기 시작한 영역</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3 style="color:var(--accent);">두번째 지능 — AI로 확장된 능력</h3>
+      <ul style="margin-top:10px;">
+        <li>AI를 통해 가능해지는 새로운 실행력</li>
+        <li>기획자도 개발자의 눈을 가질 수 있다</li>
+        <li>미뤄뒀던 일, 엄두 못 냈던 영역에 도전</li>
+      </ul>
+    </div>
+  </div>
+  <div class="summary-card">
+    <p style="font-size:0.58em;color:var(--text);margin:0;">
+      <span style="color:var(--accent);font-weight:600;">HFK AI부사수 팀의 질문</span> &mdash;
+      <span class="sub">"나에게 AI 부사수가 생긴다면, 지금 당장 무엇부터 시킬 것인가?"</span>
+    </p>
+  </div>
+</section>
+
+<!-- 30: AI=기본기 -->
+<section>
+  <div class="label">HFK Philosophy</div>
+  <h2>AI = 기본기 &nbsp;&middot;&nbsp; HFK = 인사이트와 센스</h2>
+  <div class="grid grid-2" style="gap:22px;margin-bottom:20px;">
+    <div class="card highlight-before">
+      <h3 style="color:var(--accent5);">AI만 있으면?</h3>
+      <ul style="margin-top:10px;">
+        <li>누구나 빠르게 기본기를 갖추게 된다</li>
+        <li>평균의 아웃풋이 올라간다</li>
+        <li>차별화가 어려워진다</li>
+        <li><span style="color:var(--accent5);font-weight:600;">AI = 평범함의 도구</span>가 될 수도 있다</li>
+      </ul>
+    </div>
+    <div class="card highlight-after">
+      <h3 style="color:var(--accent3);">AI + 인사이트/센스가 있으면?</h3>
+      <ul style="margin-top:10px;">
+        <li>기본기를 AI로 빠르게 처리</li>
+        <li>남는 시간에 인사이트와 센스를 키운다</li>
+        <li>업계 지식 + AI 실행력 = 진짜 강점</li>
+        <li>HFK는 그 인사이트·센스를 함께 키운다</li>
+      </ul>
+    </div>
+  </div>
+  <div class="summary-card">
+    <p style="font-size:0.58em;color:var(--text);margin:0;">
+      <span style="color:var(--accent);font-weight:600;">기본기를 AI로 빠르게 마스터하고, 비즈니스 인사이트와 센스를 기르는 것.</span>
+      <span class="sub"> 그것이 HFK와 함께하는 이유입니다.</span>
+    </p>
+  </div>
+</section>
+
+<!-- 31: STAR 프레임워크 -->
+<section>
+  <div class="label">Framework</div>
+  <h2>STAR 프레임워크 &mdash; 두번째 지능 활용법</h2>
+  <div class="grid grid-4" style="gap:18px;margin-bottom:20px;">
+    <div class="star-card">
+      <div class="star-letter" style="color:var(--accent);">S</div>
+      <h3 style="margin-top:10px;">Start</h3>
+      <p style="margin-top:8px;">미뤄왔던 일을 시작한다</p>
+    </div>
+    <div class="star-card">
+      <div class="star-letter" style="color:var(--accent2);">T</div>
+      <h3 style="margin-top:10px;">Try</h3>
+      <p style="margin-top:8px;">엄두 못 냈던 영역에 도전한다</p>
+    </div>
+    <div class="star-card">
+      <div class="star-letter" style="color:var(--accent3);">A</div>
+      <h3 style="margin-top:10px;">Amplify</h3>
+      <p style="margin-top:8px;">잘하는 것을 폭발적으로 증폭시킨다</p>
+    </div>
+    <div class="star-card">
+      <div class="star-letter" style="color:var(--accent4);">R</div>
+      <h3 style="margin-top:10px;">Recover</h3>
+      <p style="margin-top:8px;">확보된 시간으로 새로운 가능성을 탐색한다</p>
+    </div>
+  </div>
+  <div class="card">
+    <h3 style="color:var(--accent);">워크숍: 내 STAR 찾기</h3>
+    <div class="grid grid-4" style="gap:14px;margin-top:12px;">
+      <div><p style="font-size:0.56em;font-weight:600;color:var(--accent);">S — 무엇을 시작할까?</p><p style="font-size:0.52em;margin-top:4px;">오랫동안 미뤄온 업무 자동화가 있나요?</p></div>
+      <div><p style="font-size:0.56em;font-weight:600;color:var(--accent2);">T — 무엇에 도전할까?</p><p style="font-size:0.52em;margin-top:4px;">개발자에게 맡겨야 한다고 생각했던 것은?</p></div>
+      <div><p style="font-size:0.56em;font-weight:600;color:var(--accent3);">A — 무엇을 증폭할까?</p><p style="font-size:0.52em;margin-top:4px;">내가 이미 잘하는 것 + AI = ?</p></div>
+      <div><p style="font-size:0.56em;font-weight:600;color:var(--accent4);">R — 무엇을 탐색할까?</p><p style="font-size:0.52em;margin-top:4px;">시간이 생기면 하고 싶었던 것은?</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 32: 보안 -->
 <section>
   <div class="label">Security</div>
   <h2>Gen AI 보안 리스크 관리</h2>
@@ -1147,7 +1252,7 @@
   </div>
 </section>
 
-<!-- 30: 멤버 Q&A -->
+<!-- 33: 멤버 Q&A -->
 <section>
   <div class="label">Q&amp;A</div>
   <h2>멤버 대표 질문</h2>
@@ -1183,112 +1288,7 @@
   </div>
 </section>
 
-<!-- 31: 식품 데이터 케이스 1 -->
-<section>
-  <div class="label">Case Study &mdash; API 활용</div>
-  <h2>식품 데이터 MI 대시보드 — 파이프라인</h2>
-  <p style="margin-bottom:13px;"><span style="color:var(--accent);font-weight:600;">"데이터 기초 가공에 팀원들과 3일 밤을 샌다"</span> — CJ제일제당 멤버의 니즈에서 시작한 데모</p>
-  <div class="grid grid-2" style="gap:18px;">
-    <div class="code-block" style="font-size:0.45em;line-height:1.82;">
-      <span class="comment"># Claude에게 한 줄로 요청</span><br>
-      <span style="color:#F1EFEA;">&gt; 식약처 API 데이터로 식품 MI 대시보드 만들어줘.</span><br>
-      <span style="color:#F1EFEA;">&nbsp; 더미 데이터 5,000건 기반, 시장 트렌드·점유율·</span><br>
-      <span style="color:#F1EFEA;">&nbsp; 키워드 분석 포함해서 GitHub Pages로 배포까지.</span><br><br>
-      <span class="comment"># Claude가 5단계로 자동 실행</span><br>
-      <span style="color:#D4A574;">[1]</span> 더미 데이터 생성 완료 (5,000건 · 1초)<br>
-      <span style="color:#D4A574;">[2]</span> MI 분석 실행 완료 (인사이트 5개 · 1초)<br>
-      <span style="color:#D4A574;">[3]</span> HTML 대시보드 생성 완료 (2초)<br>
-      <span style="color:#D4A574;">[4]</span> Obsidian MD 문서 생성 완료<br>
-      <span style="color:#D4A574;">[5]</span> GitHub Pages 배포 완료 (30초)
-    </div>
-    <div style="display:flex;flex-direction:column;gap:13px;">
-      <div class="card">
-        <p style="color:var(--accent2);font-weight:600;font-size:0.54em;">5단계 파이프라인</p>
-        <div style="display:flex;gap:5px;flex-wrap:wrap;margin-top:8px;align-items:center;">
-          <span style="background:rgba(61,90,128,0.1);color:var(--accent2);font-size:0.44em;padding:3px 7px;border-radius:4px;">①수집</span>
-          <span style="color:var(--text-dim);font-size:0.5em;">→</span>
-          <span style="background:rgba(91,123,94,0.1);color:var(--accent3);font-size:0.44em;padding:3px 7px;border-radius:4px;">②가공</span>
-          <span style="color:var(--text-dim);font-size:0.5em;">→</span>
-          <span style="background:rgba(139,94,60,0.1);color:var(--accent);font-size:0.44em;padding:3px 7px;border-radius:4px;">③분석</span>
-          <span style="color:var(--text-dim);font-size:0.5em;">→</span>
-          <span style="background:rgba(123,107,138,0.1);color:var(--accent4);font-size:0.44em;padding:3px 7px;border-radius:4px;">④시각화</span>
-          <span style="color:var(--text-dim);font-size:0.5em;">→</span>
-          <span style="background:rgba(90,123,123,0.1);color:var(--accent6);font-size:0.44em;padding:3px 7px;border-radius:4px;">⑤배포</span>
-        </div>
-      </div>
-      <div class="card">
-        <p style="color:var(--accent);font-weight:600;font-size:0.54em;">소요 시간 비교</p>
-        <div class="grid grid-2" style="gap:9px;margin-top:8px;">
-          <div style="text-align:center;padding:9px;background:rgba(138,94,94,0.06);border-radius:6px;">
-            <p style="font-size:0.54em;color:var(--accent5);font-weight:600;margin:0;">기존 방식</p>
-            <p style="font-size:1.2em;font-weight:800;color:var(--accent5);margin:3px 0;">2~3일</p>
-          </div>
-          <div style="text-align:center;padding:9px;background:rgba(91,123,94,0.06);border-radius:6px;">
-            <p style="font-size:0.54em;color:var(--accent3);font-weight:600;margin:0;">Claude Code</p>
-            <p style="font-size:1.2em;font-weight:800;color:var(--accent3);margin:3px 0;">약 10초</p>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <p style="color:var(--accent3);font-weight:600;font-size:0.54em;">사용 기술</p>
-        <ul style="margin-top:8px;">
-          <li>식약처 오픈 API (foodsafetykorea.go.kr)</li>
-          <li>Python pandas, Chart.js (시각화)</li>
-          <li>GitHub Pages (무료 배포, URL 공유)</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 32: 식품 데이터 케이스 2 -->
-<section>
-  <div class="label">Case Study &mdash; 결과</div>
-  <h2>식품 데이터 MI 대시보드 — 인사이트</h2>
-  <div class="grid grid-2" style="gap:18px;">
-    <div style="display:flex;flex-direction:column;gap:13px;">
-      <div class="card">
-        <p style="color:var(--accent);font-weight:600;font-size:0.54em;">핵심 인사이트 (자동 도출)</p>
-        <ul style="margin-top:8px;">
-          <li>건강기능식품 <span style="color:var(--accent3);font-weight:600;">+51.1%</span> — 가장 빠르게 성장</li>
-          <li>면류 <span style="color:var(--accent5);font-weight:600;">-19.8%</span> — 역성장, 시장 재편 신호</li>
-          <li>트렌드 키워드 1위 <span style="color:var(--accent2);font-weight:600;">'제로'</span> (5,288억원 규모)</li>
-          <li>상위 3사(CJ·롯데·농심) <span style="color:var(--accent4);font-weight:600;">37.1%</span> 점유</li>
-          <li>시장 CAGR <span style="color:var(--accent);font-weight:600;">27.9%</span> (2020~2025)</li>
-        </ul>
-      </div>
-      <div class="card">
-        <p style="color:var(--accent2);font-weight:600;font-size:0.54em;">대시보드 구성</p>
-        <ul style="margin-top:8px;">
-          <li>KPI 카드 4개 (시장규모, 성장률, 키워드, 건수)</li>
-          <li>품목별 트렌드 라인 차트</li>
-          <li>업체별 점유율 도넛 차트</li>
-          <li>분석 명령 입력창 (태그 클릭 또는 직접 입력)</li>
-        </ul>
-      </div>
-    </div>
-    <div style="display:flex;flex-direction:column;gap:13px;">
-      <div class="code-block" style="font-size:0.45em;line-height:1.82;flex:1;">
-        <span class="comment"># 배포 URL (누구나 접근 가능)</span><br>
-        <span style="color:#D4A574;">https://skaug12.github.io/food-data-dashboard/</span><br><br>
-        <span class="comment"># 실제 데이터 연동: 식약처 API 키 등록</span><br>
-        <span style="color:#F1EFEA;">FOOD_SAFETY_API_KEY=발급받은키</span><br><br>
-        <span class="comment"># 사내 Excel도 같은 파이프라인 적용 가능</span><br>
-        <span style="color:#F1EFEA;">pd.read_excel("매출데이터.xlsx")</span><br><br>
-        <span class="comment"># 코드에는 데이터 없음 → 코드 자체는 공유 가능</span><br>
-        <span class="comment"># 실제 데이터는 로컬에서만 처리됨</span>
-      </div>
-      <div class="summary-card">
-        <p style="font-size:0.55em;color:var(--text);margin:0;">
-          <span style="color:var(--accent);font-weight:600;">핵심 원칙</span> &mdash;
-          <span class="sub">동료에게 코드를 주면, 그 동료가 자신의 데이터를 넣어서 실행하면 됩니다.</span>
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 33: PHILOSOPHY -->
+<!-- 34: 심플하게 -->
 <section>
   <div class="label">Philosophy</div>
   <h2>심플하게, 이것 하나만 제대로</h2>
@@ -1320,7 +1320,7 @@
   </div>
 </section>
 
-<!-- 34: 워크스페이스 만들기 -->
+<!-- 35: 워크스페이스 만들기 -->
 <section>
   <div class="label">Action</div>
   <h2>지금까지 본 것을 바탕으로 — 내 워크스페이스 만들기</h2>
@@ -1339,7 +1339,7 @@
   </div>
 </section>
 
-<!-- 35: 마무리 핵심 메시지 -->
+<!-- 36: 마무리 -->
 <section>
   <div style="display:flex;flex-direction:column;justify-content:center;height:100%;">
     <div class="label" style="text-align:center;">마무리</div>
@@ -1375,15 +1375,13 @@
 
 <div id="custom-progress">
   <div class="seg" data-range="0-0">Title</div>
-  <div class="seg" data-range="1-2">Opening</div>
-  <div class="seg" data-range="3-7">Why</div>
-  <div class="seg" data-range="8-10">Intro</div>
-  <div class="seg" data-range="11-16">Setup</div>
-  <div class="seg" data-range="17-19" id="seg-skills">Skills</div>
-  <div class="seg" data-range="20-21">연결</div>
-  <div class="seg" data-range="22-27">스킬 목록</div>
-  <div class="seg" data-range="28-29">Workflow</div>
-  <div class="seg" data-range="30-33">Cases</div>
+  <div class="seg" data-range="1-6">Hook</div>
+  <div class="seg" data-range="7-10">Intro</div>
+  <div class="seg" data-range="11-15">Setup</div>
+  <div class="seg" data-range="16-18" id="seg-skills">Workshop</div>
+  <div class="seg" data-range="19-20">연결</div>
+  <div class="seg" data-range="21-28">스킬+MCP</div>
+  <div class="seg" data-range="29-33">Yours</div>
   <div class="seg" data-range="34-36">Action</div>
 </div>
 
@@ -1405,7 +1403,7 @@
     });
   });
 
-  var skillNames = {13:'Skills — 커스텀', 14:'Skills — 내 서비스', 15:'Skills — 도식화'};
+  var skillNames = {18:'Skills — 커스텀', 19:'Skills — 내 서비스', 20:'Skills — 도식화'};
 
   function updateProgress() {
     var idx = Reveal.getIndices().h;
