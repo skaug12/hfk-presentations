@@ -149,8 +149,7 @@
 
   .qblock {
     background: rgba(139,94,60,0.06);
-    border-left: 3px solid var(--accent);
-    border-radius: 0 8px 8px 0;
+    border-radius: 8px;
     padding: 14px 18px;
   }
 
@@ -382,20 +381,20 @@
   <h2>한눈에 보기</h2>
   <div class="stat-grid" style="margin-bottom:14px;">
     <div class="stat-card">
-      <p class="stat-num">12+</p>
+      <p class="stat-num">18+</p>
       <p class="stat-label">신규/수정 스킬</p>
     </div>
     <div class="stat-card">
-      <p class="stat-num" style="color:var(--accent2);">12</p>
+      <p class="stat-num" style="color:var(--accent2);">19</p>
       <p class="stat-label">생성한 핸드아웃 (2주치)</p>
     </div>
     <div class="stat-card">
-      <p class="stat-num" style="color:var(--accent3);">2</p>
-      <p class="stat-label">시즌레터 (#4 #5)</p>
+      <p class="stat-num" style="color:var(--accent3);">3</p>
+      <p class="stat-label">시즌레터 (#4 #5 #6)</p>
     </div>
     <div class="stat-card">
       <p class="stat-num" style="color:var(--accent4);">1</p>
-      <p class="stat-label">새 컴퓨터 환경 이관</p>
+      <p class="stat-label">시즌 운영 대시보드</p>
     </div>
   </div>
   <div class="stack">
@@ -406,12 +405,15 @@
         <li><span class="bold">3/30</span> 새 컴퓨터 세팅, credentials 통일, 7팀 핸드아웃</li>
         <li><span class="bold">4/2</span> 수요일 루틴 풀가동, 5팀 핸드아웃, 레터 #5, 멤버 리포트 스킬 4종</li>
         <li><span class="bold">4/3</span> 성장 트랙 프레임워크, 발표 자료 업데이트, 팀 페이지 수정</li>
+        <li><span class="bold">4/7</span> 이벤트 참석자 댓글 자동 발송 스킬 신규</li>
+        <li><span class="bold">4/8</span> 수요일 루틴 8단계, 미반응자 리마인드 스킬, 핸드아웃 7팀, 레터 #6</li>
+        <li><span class="bold">4/10</span> 시즌 운영 대시보드 구축 + GitHub Pages 배포</li>
       </ul>
     </div>
     <div class="card">
-      <h3 class="accent3">관통하는 한 가지</h3>
+      <h3 class="accent3">2주간의 패턴</h3>
       <p style="margin-top:6px;">전부 <span class="bold">"같은 작업이 반복될 때 스킬로 만들어두기"</span>의 결과물. 한 번 만든 흐름이 다음 주에 다시 굴러감.</p>
-      <p class="dim" style="margin-top:6px;">새 컴퓨터로 옮겨도 <span class="accent">.env + credentials.json 두 파일</span>만 있으면 동일한 작업 환경 복원.</p>
+      <p class="dim" style="margin-top:6px;">이번 주 추가: 슬랙 미반응자 자동 리마인드, 이벤트 참석자 댓글 자동 발송, 시즌 운영 대시보드.</p>
     </div>
   </div>
 </div>
@@ -536,6 +538,91 @@
   </div>
 </div>
 
+<!-- Slack 자동화 2종 -->
+<div class="slide-section">
+  <div class="label">Output 5 &middot; Slack 자동화</div>
+  <h2>공지 미반응자 리마인드 + 이벤트 참석자 댓글</h2>
+  <div class="stack">
+    <div class="card">
+      <h3 class="accent">미반응자 자동 리마인드 (4/8)</h3>
+      <ul style="margin-top:6px;">
+        <li>7개 팀 공지에 반응 안 한 멤버를 멤버십 시트 기준으로 자동 추출</li>
+        <li>파트너/외부인 자동 제외, 어드벤처 신청자도 제외</li>
+        <li>총 <span class="accent bold">24명</span>에게 멘션 리마인드</li>
+      </ul>
+      <p class="dim" style="margin-top:6px;">스킬: <code class="accent">/check-reactions</code></p>
+    </div>
+    <div class="card">
+      <h3 class="accent2">이벤트 참석자 댓글 자동 발송 (4/7)</h3>
+      <ul style="margin-top:6px;">
+        <li>아임웹 입력폼 엑셀 → 신청자 파싱 → Slack display_name 매칭</li>
+        <li>정원 초과 시 선착순 + 우선 선발(ODC, 뉴멤버)</li>
+        <li>무비토크, 저자 북토크 2건 발송 완료</li>
+      </ul>
+      <p class="dim" style="margin-top:6px;">스킬: <code class="accent">/post-event-attendees</code></p>
+    </div>
+    <div class="qblock">
+      <p style="font-size:14px; color:var(--text); margin:0;">
+        <span class="accent bold">포인트</span> &mdash; 공지 반응을 눈으로 세고, 참석자를 수작업으로 확인하던 일이 한 번의 명령으로.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- 시즌 운영 대시보드 -->
+<div class="slide-section">
+  <div class="label">Output 6 &middot; 시즌 운영 대시보드</div>
+  <h2>기획부터 운영까지 한 곳에서</h2>
+  <div class="stack">
+    <div class="card">
+      <h3 class="accent">무엇을 만들었나</h3>
+      <ul style="margin-top:6px;">
+        <li>인터랙티브 HTML 대시보드 (4개 탭)</li>
+        <li><span class="bold">개요</span>: KPI, 시즌 현황, 다음 할 일</li>
+        <li><span class="bold">현시즌 운영</span>: 5방향 성장 트랙별 13팀 + 체크리스트</li>
+        <li><span class="bold">다음시즌 기획</span>: 팀 구성 + 인사이트 반영률</li>
+        <li><span class="bold">타임라인</span>: 16주 Gantt 차트</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3 class="accent3">인사이트 추적 + 일정 교체</h3>
+      <ul style="margin-top:6px;">
+        <li>기획 항목마다 출처 태그: idea-log, meeting-log, 서베이, AAR</li>
+        <li>시즌별 인사이트 반영률 막대 차트</li>
+        <li><code class="accent">/swap-schedule CMO씽킹 소통의기술</code> &mdash; 상품 노트, 대시보드, 캘린더 12개 이벤트를 한 번에 교체</li>
+      </ul>
+    </div>
+    <div class="qblock">
+      <p style="font-size:14px; color:var(--text); margin:0;">
+        <span class="accent bold">의미</span> &mdash; 기획과 운영이 흩어져 있으면 빠지는 게 생김. 한 곳에 모아두면 빠짐이 줄어듦.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- 레디투킥 팀 후기 -->
+<div class="slide-section">
+  <div class="label">From Member &middot; 레디투킥 팀</div>
+  <h2>"매주 수요일, 저희도 클로드 코드 모임을 하고 있어요"</h2>
+  <div class="stack">
+    <div class="card">
+      <p style="line-height:1.8;">"AI부사수에서 배웠던 내용을 토대로 복습 겸 업무 효율을 높이기 위해 <span class="accent bold">매주 수요일 레디투킥 팀에서도 클로드 코드 모임</span>을 갖고 있어요."</p>
+      <p style="line-height:1.8; margin-top:10px;">"그래픽 디자이너님은 어도비와 연동하여 <span class="accent bold">2주 걸리는 작업을 3시간 만에</span> 끝내기도 했어요."</p>
+      <p style="line-height:1.8; margin-top:10px;">"중간에 막히는 게 있어도 <span class="accent bold">클로드와 끝까지 해결</span>한 경우가 있어서 믿음이 생겼습니다."</p>
+    </div>
+    <div class="card">
+      <h3 class="accent">레디투킥 팀 Use Cases</h3>
+      <ul style="margin-top:8px;">
+        <li><span class="bold">아침 뉴스레터 자동 발송</span> &mdash; 폴인/캐릿 → Gmail API/크롤링 → 슬랙 자동 발송</li>
+        <li><span class="bold">월 매출 요약</span> &mdash; 카페24/스마트스토어/29CM 채널별 순매출 + YoY/MoM → 슬랙</li>
+        <li><span class="bold">META 광고 성과</span> &mdash; Meta API → 소재별 ROAS/CPA → 시트 + 슬랙</li>
+        <li><span class="bold">일별 매출 현황</span> &mdash; 매일 출근 시 전날 매출 자동 발송</li>
+        <li><span class="bold">어도비 일러스트레이터 자동화</span> &mdash; 구글 시트 → 일러스트레이터 연동 → 스티커 일괄 생성. <span class="accent bold">수작업 2주 → 3시간</span></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
 <!-- ===== Part 3: S 자세히 ===== -->
 <div class="section-separator" id="sec-s"><span class="sep-label">Part 3 — S 사분면</span></div>
 <div class="slide-section">
@@ -548,19 +635,19 @@
 <div class="slide-section">
   <h2>S 사분면이 어디에 있는지 다시 보기</h2>
   <div class="stack">
-    <div class="card" style="border-top:4px solid var(--accent);">
-      <h3 class="accent">S &middot; Start (오늘 다룸 ★)</h3>
-      <p style="margin-top:6px;">하고 싶었는데 미뤄왔던 일 &mdash; 습관 형성</p>
+    <div class="card" style="background:var(--accent); color:#F8F7F4;">
+      <h3 style="color:#F8F7F4;">S &middot; Start (오늘 다룸 ★)</h3>
+      <p style="margin-top:6px; color:rgba(255,255,255,0.85);">하고 싶었는데 미뤄왔던 일 &mdash; 습관 형성</p>
     </div>
-    <div class="card" style="border-top:3px solid var(--accent2); opacity:0.6;">
+    <div class="card" style="opacity:0.6;">
       <h3 class="accent2">T &middot; Try</h3>
       <p style="margin-top:6px;">평소 잘 못한다고 생각했던 것 &mdash; 도전</p>
     </div>
-    <div class="card" style="border-top:3px solid var(--accent3); opacity:0.6;">
+    <div class="card" style="opacity:0.6;">
       <h3 class="accent3">A &middot; Amplify</h3>
       <p style="margin-top:6px;">이미 잘하지만 더 잘하고 싶은 것 &mdash; 차별화</p>
     </div>
-    <div class="card" style="border-top:3px solid var(--accent4); opacity:0.6;">
+    <div class="card" style="opacity:0.6;">
       <h3 class="accent4">R &middot; Recover</h3>
       <p style="margin-top:6px;">반복 작업을 효율화 &mdash; 시간 회수</p>
     </div>
@@ -638,22 +725,22 @@
   <div class="label">Workshop &middot; Intro</div>
   <h2>오늘 워크숍 흐름</h2>
   <div class="stack">
-    <div class="card" style="border-left:3px solid var(--accent);">
+    <div class="card">
       <p class="accent bold" style="font-size:13px;">STEP 1 &middot; 5분</p>
       <h3 style="margin-top:6px;">미뤄둔 일 떠올리기</h3>
       <p style="margin-top:6px;">머릿속에 떠오르는 "해야지 하면서 미뤘던 일" 3개 적기.</p>
     </div>
-    <div class="card" style="border-left:3px solid var(--accent2);">
+    <div class="card">
       <p class="accent2 bold" style="font-size:13px;">STEP 2 &middot; 5분</p>
       <h3 style="margin-top:6px;">하나만 고르기</h3>
       <p style="margin-top:6px;">3개 중 가장 가벼운 것 1개. 거창한 것 금지.</p>
     </div>
-    <div class="card" style="border-left:3px solid var(--accent3);">
+    <div class="card">
       <p class="accent3 bold" style="font-size:13px;">STEP 3 &middot; 10분</p>
       <h3 style="margin-top:6px;">명령 만들기</h3>
       <p style="margin-top:6px;">트리거 / 소스 / 처리 / 결과 4칸에 한 줄씩.</p>
     </div>
-    <div class="card" style="border-left:3px solid var(--accent4);">
+    <div class="card">
       <p class="accent4 bold" style="font-size:13px;">STEP 4 &middot; 15분</p>
       <h3 style="margin-top:6px;">실제 실행</h3>
       <p style="margin-top:6px;">클로드 코드 창에 그대로 붙여 넣고 결과 확인.</p>
