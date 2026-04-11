@@ -46,10 +46,8 @@
     padding-right: 8px;
   }
   aside .label {
-    font-size: 11px;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--accent);
+    font-size: 13px;
+    color: var(--text-dim);
     font-weight: 600;
     margin-bottom: 14px;
   }
@@ -71,19 +69,17 @@
     font-size: 14px;
     line-height: 1.5;
     position: relative;
-    border-left: 2px solid transparent;
-    transition: color 0.15s, border-color 0.15s;
+    transition: color 0.15s;
   }
   aside nav a::before {
     content: counter(toc);
     position: absolute;
-    left: 10px;
+    left: 0;
     color: var(--text-dim);
     font-variant-numeric: tabular-nums;
   }
   aside nav a:hover {
     color: var(--text);
-    border-left-color: var(--accent);
   }
   main { min-width: 0; }
   header.intro {
@@ -92,10 +88,8 @@
     margin-bottom: 48px;
   }
   header.intro .label {
-    font-size: 12px;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--accent);
+    font-size: 13px;
+    color: var(--text-dim);
     font-weight: 600;
     margin-bottom: 12px;
   }
@@ -119,12 +113,11 @@
   }
   section.q:last-of-type { border-bottom: none; }
   section.q .num {
-    font-size: 12px;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--accent);
+    font-size: 13px;
+    color: var(--text-dim);
     font-weight: 600;
     margin-bottom: 8px;
+    font-variant-numeric: tabular-nums;
   }
   section.q h2 {
     font-size: 26px;
@@ -138,10 +131,9 @@
     font-weight: 600;
     color: var(--text-sub);
     margin: 0 0 24px;
-    padding: 14px 18px;
+    padding: 16px 20px;
     background: var(--card-bg);
-    border-left: 3px solid var(--accent);
-    border-radius: 2px;
+    border-radius: 6px;
     line-height: 1.55;
   }
   section.q p { margin: 0 0 16px; }
@@ -155,7 +147,7 @@
     background: var(--card-bg);
     padding: 2px 6px;
     border-radius: 4px;
-    color: var(--accent);
+    color: var(--text);
   }
   section.q table {
     width: 100%;
@@ -190,10 +182,9 @@
   }
   .principle {
     margin: 24px 0;
-    padding: 20px 22px;
+    padding: 22px 24px;
     background: var(--card-bg);
     border-radius: 8px;
-    border-left: 3px solid var(--accent2);
   }
   .principle h4 {
     margin: 0 0 8px;
