@@ -671,7 +671,67 @@
   </div>
 </section>
 
-<!-- ===== 18: WORKSHOP INTRO ===== -->
+<!-- ===== 18: T 예시 3 · 모션 인식 아트 ===== -->
+<section>
+  <div class="label">T in Detail &middot; 예시 3</div>
+  <h2>웹캠 모션 인식으로 인터랙티브 아트 만들기</h2>
+  <div class="grid grid-2" style="gap:20px;">
+    <div>
+      <div class="card" style="padding:14px 20px; margin-bottom:12px;">
+        <h3 class="accent2">왜 이 예시가 T의 정수인가</h3>
+        <ul style="margin-top:6px;">
+          <li>"미디어 아트는 <span class="bold">예술+공학 전공</span>자가 하는 것"이라는 인식</li>
+          <li>실제로는 <span class="bold">HTML 한 줄 + ml5.js PoseNet</span>이면 시작 가능</li>
+          <li>그동안 <span class="accent2 bold">진입 자체가 막혀 있던</span> 영역 &mdash; AI로 문이 열림</li>
+        </ul>
+        <p class="dim" style="margin-top:8px;">결과물이 "감각적"이라 성공 경험이 오래 남음.</p>
+      </div>
+      <div class="card" style="padding:14px 20px;">
+        <h3 class="accent">처음 명령 (맥락 고백)</h3>
+        <div class="code-block" style="margin-top:8px; padding:10px 16px; line-height:1.7; font-size:0.46em;">
+          <span class="comment"># 맥락 고백</span><br>
+          <span style="color:#F1EFEA;">코딩 처음. HTML 띄우는 법만 앎.</span><br>
+          <span class="comment"># 작은 목표</span><br>
+          <span style="color:#F1EFEA;">웹캠으로 내 손 위치를 인식해서</span><br>
+          <span style="color:#F1EFEA;">화면에 원이 따라다니게 하기.</span><br>
+          <span class="comment"># 원하는 결과 형식</span><br>
+          <span style="color:#F1EFEA;">HTML 파일 1개, 브라우저에서 바로 실행.</span><br>
+          <span class="comment"># 체크 방법</span><br>
+          <span style="color:#F1EFEA;">코드 전에 뭘 설치해야 하는지 먼저 알려줘.</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="card" style="padding:14px 20px; margin-bottom:12px;">
+        <h3 class="accent3">진화 과정 (5번의 반복)</h3>
+        <ol style="margin-top:6px;">
+          <li><span class="bold">v1</span> &mdash; p5.js + ml5.js 연결. 콘솔에 손 좌표만 찍힘</li>
+          <li><span class="bold">v2</span> &mdash; 좌표 위치에 원 그리기. "아, 되는구나"</li>
+          <li><span class="bold">v3</span> &mdash; 원에 색 그라데이션. "어떤 색 좋을까?" 선택지 3개 요청</li>
+          <li><span class="bold">v4</span> &mdash; 이전 위치 잔상 남기기. 물감 번지는 느낌</li>
+          <li><span class="bold">v5</span> &mdash; 손 속도에 따라 붓 두께 변화. "내가 만든 도구"가 됨</li>
+        </ol>
+      </div>
+      <div class="card" style="padding:14px 20px; margin-bottom:12px;">
+        <h3 class="accent4">실제로 본인이 알아야 한 것</h3>
+        <ul style="margin-top:6px;">
+          <li>HTML 파일을 브라우저로 열 줄 아는 것</li>
+          <li>"카메라 권한을 허용"을 누를 줄 아는 것</li>
+          <li>"이게 왜 이래?"를 클로드에게 물어볼 수 있는 것</li>
+        </ul>
+        <p class="dim" style="margin-top:6px;">p5.js도 PoseNet도 수학도 몰라도 됨.</p>
+      </div>
+      <div class="qblock">
+        <p style="font-size:0.56em; color:var(--text); margin:0;">
+          <span class="accent2 bold">T의 정수</span> &mdash;
+          "나는 못해"에서 "이걸 내가 만들었다"까지, <span class="bold">한 세션 2시간</span>이면 충분한 시대.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 19: WORKSHOP INTRO ===== -->
 <section>
   <div class="label">Workshop &middot; Intro</div>
   <h2>오늘 워크숍 흐름</h2>
@@ -948,9 +1008,9 @@
     [0, 1],                 // 타이틀 + 3회차 리캡
     [2, 3, 4, 5, 6, 7],     // AI 트렌드 (인트로 + Opus 4.7 x2 + Figma x2 + Skills)
     [8, 9, 10, 11, 12, 13], // 2주 작업 (인트로 + Overview + Output 1~4)
-    [14, 15, 16, 17],       // T 자세히 (인트로 + 위치 + 디테일 + 작동원리)
-    [18, 19, 20, 21, 22, 23], // 워크숍 (인트로 + Step 1~4 + 마무리)
-    [24, 25]                // 예고 + 클로징
+    [14, 15, 16, 17, 18],   // T 자세히 (인트로 + 위치 + 디테일 + 작동원리 + 모션아트)
+    [19, 20, 21, 22, 23, 24], // 워크숍 (인트로 + Step 1~4 + 마무리)
+    [25, 26]                // 예고 + 클로징
   ];
 
   function goSection(idx) {
