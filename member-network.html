@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HFK 26봄시즌 멤버 네트워크</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<style>
+  :root {
+    --bg: #F8F7F4;
+    --surface: #F1EFEA;
+    --surface-2: #E8E5DF;
+    --text: #2C2C2C;
+    --muted: #6B6B6B;
+    --accent: #980000;
+    --edge-team: rgba(120, 120, 120, 0.25);
+    --edge-cross: rgba(152, 0, 0, 0.55);
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    height: 100%;
+    font-family: 'Pretendard', -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    overflow: hidden;
+  }
+  header {
+    position: fixed; top: 0; left: 0; right: 0;
+    padding: 16px 24px;
+    background: var(--bg);
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+    z-index: 10;
+    display: flex; align-items: baseline; justify-content: space-between;
+  }
+  header h1 { font-size: 1.1em; font-weight: 700; margin: 0; }
+  header p { font-size: 0.8em; color: var(--muted); margin: 0; }
+  header a { color: var(--muted); text-decoration: underline; font-size: 0.8em; }
+
+  #graph {
+    position: absolute; top: 60px; left: 0; right: 280px; bottom: 0;
+  }
+  #graph svg { width: 100%; height: 100%; display: block; }
+
+  aside {
+    position: fixed; top: 60px; right: 0; bottom: 0; width: 280px;
+    background: var(--surface);
+    border-left: 1px solid rgba(0,0,0,0.06);
+    padding: 20px;
+    overflow-y: auto;
+  }
+  aside h2 { font-size: 0.8em; font-weight: 700; margin: 0 0 8px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
+  aside section { margin-bottom: 24px; }
+
+  .stat-row { font-size: 0.85em; color: var(--muted); line-height: 1.8; }
+  .stat-row strong { color: var(--text); font-weight: 600; }
+
+  .slider-row { display: flex; align-items: center; gap: 10px; font-size: 0.8em; color: var(--muted); }
+  .slider-row input[type=range] { flex: 1; }
+  .slider-row output { font-weight: 600; color: var(--text); min-width: 20px; text-align: right; }
+
+  .legend-item {
+    display: flex; align-items: center; gap: 8px;
+    padding: 4px 6px;
+    font-size: 0.82em;
+    border-radius: 6px;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.15s;
+  }
+  .legend-item:hover { background: var(--surface-2); }
+  .legend-item.off { opacity: 0.35; }
+  .legend-dot {
+    width: 10px; height: 10px; border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .legend-item .count { margin-left: auto; color: var(--muted); font-size: 0.85em; }
+
+  .legend-edge { display: flex; align-items: center; gap: 8px; font-size: 0.82em; margin-bottom: 6px; color: var(--muted); }
+  .legend-edge .bar { width: 24px; height: 2px; background: var(--edge-team); }
+  .legend-edge .bar.cross { background: var(--edge-cross); height: 2px; }
+
+  #tooltip {
+    position: fixed;
+    pointer-events: none;
+    background: var(--text);
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 0.82em;
+    line-height: 1.5;
+    opacity: 0;
+    transition: opacity 0.15s;
+    max-width: 240px;
+    z-index: 100;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+  }
+  #tooltip .name { font-weight: 700; font-size: 1.05em; margin-bottom: 2px; }
+  #tooltip .sub { color: #D0D0D0; font-size: 0.9em; }
+  #tooltip .meta { margin-top: 6px; color: #F0F0F0; font-size: 0.9em; }
+
+  .node.dim { opacity: 0.12; }
+  .link.dim { opacity: 0.05; }
+  .node.highlight circle { stroke-width: 2.5; }
+
+  button.reset {
+    background: transparent;
+    border: 1px solid rgba(0,0,0,0.15);
+    color: var(--muted);
+    font-family: inherit;
+    font-size: 0.75em;
+    padding: 4px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  button.reset:hover { background: var(--surface-2); }
+
+  .team-section-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+  .team-section-head .actions { display: flex; gap: 4px; }
+  .team-section-head .actions a { font-size: 0.7em; color: var(--muted); cursor: pointer; text-decoration: underline; }
+
+  @media (max-width: 780px) {
+    aside { position: static; width: 100%; height: auto; top: auto; border-left: none; border-top: 1px solid rgba(0,0,0,0.06); }
+    #graph { position: static; height: 60vh; top: auto; right: 0; }
+    header { position: static; }
+    html, body { overflow: auto; }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>HFK 26봄시즌 멤버 네트워크</h1>
+      <p>팀 세션 + 이벤트 참석 기록 기반</p>
+    </div>
+    <a href="index.html">← 목록</a>
+  </header>
+
+  <div id="graph"><svg></svg></div>
+
+  <aside>
+    <section>
+      <h2>네트워크</h2>
+      <div class="stat-row">
+        멤버 <strong id="stat-nodes">-</strong>명 · 연결 <strong id="stat-edges">-</strong>개 · <strong id="stat-teams">-</strong>개 팀
+      </div>
+    </section>
+
+    <section>
+      <h2>최소 공동 참석</h2>
+      <div class="slider-row">
+        <input type="range" id="min-count" min="1" max="6" value="1" step="1">
+        <output id="min-count-out">1</output>회 이상
+      </div>
+    </section>
+
+    <section>
+      <h2>엣지</h2>
+      <div class="legend-edge"><span class="bar"></span> 같은 팀 (세션)</div>
+      <div class="legend-edge"><span class="bar cross"></span> 다른 팀 (이벤트)</div>
+    </section>
+
+    <section>
+      <div class="team-section-head">
+        <h2 style="margin:0;">팀 (클릭=토글)</h2>
+        <div class="actions">
+          <a id="team-all">전체</a>
+          <a id="team-none">해제</a>
+        </div>
+      </div>
+      <div id="legend"></div>
+    </section>
+
+    <section style="display:flex; justify-content:space-between; align-items:center;">
+      <button class="reset" id="reset-zoom">줌 리셋</button>
+      <span style="font-size:0.72em; color:var(--muted);">파트너는 테두리 진하게</span>
+    </section>
+  </aside>
+
+  <div id="tooltip"></div>
+
+<script>
+const DATA_URL = './data/26spring-member-network.json';
+
+const svg = d3.select('#graph svg');
+const tooltip = d3.select('#tooltip');
+const gRoot = svg.append('g');
+const gLinks = gRoot.append('g').attr('class', 'links');
+const gNodes = gRoot.append('g').attr('class', 'nodes');
+
+let state = {
+  disabledTeams: new Set(),
+  minCount: 1,
+  selectedNode: null,
+};
+
+let data;
+let simulation;
+let linkSel, nodeSel;
+
+function size() {
+  const el = document.getElementById('graph');
+  return { w: el.clientWidth, h: el.clientHeight };
+}
+
+d3.json(DATA_URL).then(d => {
+  data = d;
+  document.getElementById('stat-nodes').textContent = d.stats.node_count;
+  document.getElementById('stat-edges').textContent = d.stats.edge_count;
+  document.getElementById('stat-teams').textContent = d.stats.team_count;
+  buildLegend();
+  render();
+});
+
+function buildLegend() {
+  const counts = {};
+  data.nodes.forEach(n => { counts[n.team] = (counts[n.team]||0) + 1; });
+  const legend = d3.select('#legend');
+  legend.selectAll('div').data(data.teams).join('div')
+    .attr('class', 'legend-item')
+    .attr('data-team', d => d.name)
+    .on('click', function(ev, d) {
+      if (state.disabledTeams.has(d.name)) state.disabledTeams.delete(d.name);
+      else state.disabledTeams.add(d.name);
+      d3.select(this).classed('off', state.disabledTeams.has(d.name));
+      applyFilter();
+    })
+    .html(d => `
+      <span class="legend-dot" style="background:${d.color}"></span>
+      <span>${d.name}</span>
+      <span class="count">${counts[d.name]||0}</span>
+    `);
+
+  d3.select('#team-all').on('click', () => {
+    state.disabledTeams.clear();
+    d3.selectAll('.legend-item').classed('off', false);
+    applyFilter();
+  });
+  d3.select('#team-none').on('click', () => {
+    state.disabledTeams = new Set(data.teams.map(t => t.name));
+    d3.selectAll('.legend-item').classed('off', true);
+    applyFilter();
+  });
+
+  d3.select('#min-count').on('input', function() {
+    state.minCount = +this.value;
+    document.getElementById('min-count-out').textContent = this.value;
+    applyFilter();
+  });
+
+  d3.select('#reset-zoom').on('click', () => {
+    svg.transition().duration(500).call(zoom.transform, d3.zoomIdentity);
+  });
+}
+
+const teamColor = {};
+let zoom;
+
+function render() {
+  data.teams.forEach(t => teamColor[t.name] = t.color);
+
+  const { w, h } = size();
+  svg.attr('viewBox', `0 0 ${w} ${h}`);
+
+  zoom = d3.zoom().scaleExtent([0.3, 5]).on('zoom', (e) => {
+    gRoot.attr('transform', e.transform);
+  });
+  svg.call(zoom);
+
+  // node radius by total attendance
+  const maxAtt = d3.max(data.nodes, n => n.team_attendance + n.event_attendance) || 1;
+  const rScale = d3.scaleSqrt().domain([0, maxAtt]).range([5, 14]);
+
+  // edge width by count
+  const maxC = d3.max(data.edges, e => e.count) || 1;
+  const wScale = d3.scaleLinear().domain([1, maxC]).range([0.6, 3.5]);
+
+  linkSel = gLinks.selectAll('line')
+    .data(data.edges, d => d.source + '→' + d.target)
+    .join('line')
+    .attr('class', d => 'link ' + d.kind)
+    .attr('stroke', d => d.kind === 'cross' ? 'var(--edge-cross)' : 'var(--edge-team)')
+    .attr('stroke-width', d => wScale(d.count));
+
+  nodeSel = gNodes.selectAll('g.node')
+    .data(data.nodes, d => d.id)
+    .join(enter => {
+      const g = enter.append('g').attr('class', 'node');
+      g.append('circle')
+        .attr('r', d => rScale(d.team_attendance + d.event_attendance))
+        .attr('fill', d => teamColor[d.team])
+        .attr('stroke', d => d.is_partner ? 'var(--accent)' : '#fff')
+        .attr('stroke-width', d => d.is_partner ? 2.2 : 1.2);
+      g.append('text')
+        .attr('dy', d => rScale(d.team_attendance + d.event_attendance) + 11)
+        .attr('text-anchor', 'middle')
+        .attr('font-size', 10)
+        .attr('fill', 'var(--text)')
+        .attr('pointer-events', 'none')
+        .text(d => d.name);
+      return g;
+    });
+
+  nodeSel
+    .on('mouseover', (ev, d) => showTooltip(ev, d))
+    .on('mousemove', moveTooltip)
+    .on('mouseout', hideTooltip)
+    .on('click', (ev, d) => {
+      if (state.selectedNode === d.id) {
+        state.selectedNode = null;
+      } else {
+        state.selectedNode = d.id;
+      }
+      applyHighlight();
+    })
+    .call(d3.drag()
+      .on('start', (ev, d) => { if (!ev.active) simulation.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
+      .on('drag',  (ev, d) => { d.fx = ev.x; d.fy = ev.y; })
+      .on('end',   (ev, d) => { if (!ev.active) simulation.alphaTarget(0); d.fx = null; d.fy = null; })
+    );
+
+  simulation = d3.forceSimulation(data.nodes)
+    .force('link', d3.forceLink(data.edges).id(d => d.id)
+      .distance(d => d.kind === 'cross' ? 80 : 40)
+      .strength(d => Math.min(0.9, 0.15 + d.count * 0.08)))
+    .force('charge', d3.forceManyBody().strength(-120))
+    .force('center', d3.forceCenter(w/2, h/2))
+    .force('collide', d3.forceCollide().radius(d => rScale(d.team_attendance + d.event_attendance) + 4))
+    .on('tick', ticked);
+}
+
+function ticked() {
+  linkSel
+    .attr('x1', d => d.source.x)
+    .attr('y1', d => d.source.y)
+    .attr('x2', d => d.target.x)
+    .attr('y2', d => d.target.y);
+  nodeSel.attr('transform', d => `translate(${d.x},${d.y})`);
+}
+
+function applyFilter() {
+  const disabled = state.disabledTeams;
+  nodeSel.style('display', d => disabled.has(d.team) ? 'none' : null);
+  linkSel.style('display', d => {
+    if (disabled.has(d.source.team) || disabled.has(d.target.team)) return 'none';
+    if (d.count < state.minCount) return 'none';
+    return null;
+  });
+  simulation.alpha(0.3).restart();
+}
+
+function applyHighlight() {
+  if (!state.selectedNode) {
+    nodeSel.classed('dim', false).classed('highlight', false);
+    linkSel.classed('dim', false);
+    return;
+  }
+  const id = state.selectedNode;
+  const neighbors = new Set([id]);
+  data.edges.forEach(e => {
+    const s = typeof e.source === 'object' ? e.source.id : e.source;
+    const t = typeof e.target === 'object' ? e.target.id : e.target;
+    if (s === id) neighbors.add(t);
+    if (t === id) neighbors.add(s);
+  });
+  nodeSel.classed('dim', d => !neighbors.has(d.id))
+         .classed('highlight', d => d.id === id);
+  linkSel.classed('dim', d => {
+    const s = typeof d.source === 'object' ? d.source.id : d.source;
+    const t = typeof d.target === 'object' ? d.target.id : d.target;
+    return !(s === id || t === id);
+  });
+}
+
+function showTooltip(ev, d) {
+  const total = d.team_attendance + d.event_attendance;
+  tooltip
+    .style('opacity', 1)
+    .html(`
+      <div class="name">${d.name}${d.is_partner ? ' <span class="sub">· 파트너</span>' : ''}</div>
+      <div class="sub">${d.team}${d.company ? ' · ' + d.company : ''}</div>
+      <div class="meta">세션 ${d.team_attendance}회 · 이벤트 ${d.event_attendance}회 (합계 ${total})</div>
+    `);
+  moveTooltip(ev);
+}
+function moveTooltip(ev) {
+  const pad = 14;
+  tooltip.style('left', (ev.clientX + pad) + 'px')
+         .style('top', (ev.clientY + pad) + 'px');
+}
+function hideTooltip() { tooltip.style('opacity', 0); }
+
+window.addEventListener('resize', () => {
+  if (!simulation) return;
+  const { w, h } = size();
+  svg.attr('viewBox', `0 0 ${w} ${h}`);
+  simulation.force('center', d3.forceCenter(w/2, h/2));
+  simulation.alpha(0.3).restart();
+});
+</script>
+</body>
+</html>
