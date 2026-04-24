@@ -14,7 +14,7 @@
     --text: #2C2C2C;
     --muted: #6B6B6B;
     --accent: #980000;
-    --edge-team: rgba(120, 120, 120, 0.25);
+    --edge-team: rgba(140, 140, 140, 0.14);
     --edge-cross: rgba(152, 0, 0, 0.55);
   }
   * { box-sizing: border-box; }
@@ -28,32 +28,76 @@
   }
   header {
     position: fixed; top: 0; left: 0; right: 0;
-    padding: 16px 24px;
+    padding: 14px 24px;
     background: var(--bg);
     border-bottom: 1px solid rgba(0,0,0,0.06);
     z-index: 10;
     display: flex; align-items: baseline; justify-content: space-between;
   }
-  header h1 { font-size: 1.1em; font-weight: 700; margin: 0; }
-  header p { font-size: 0.8em; color: var(--muted); margin: 0; }
+  header h1 { font-size: 1.05em; font-weight: 700; margin: 0; }
+  header p { font-size: 0.78em; color: var(--muted); margin: 2px 0 0; }
   header a { color: var(--muted); text-decoration: underline; font-size: 0.8em; }
 
   #graph {
-    position: absolute; top: 60px; left: 0; right: 280px; bottom: 0;
+    position: absolute; top: 58px; left: 0; right: 300px; bottom: 0;
   }
-  #graph svg { width: 100%; height: 100%; display: block; }
+  #graph svg { width: 100%; height: 100%; display: block; cursor: grab; }
+  #graph svg:active { cursor: grabbing; }
 
   aside {
-    position: fixed; top: 60px; right: 0; bottom: 0; width: 280px;
+    position: fixed; top: 58px; right: 0; bottom: 0; width: 300px;
     background: var(--surface);
     border-left: 1px solid rgba(0,0,0,0.06);
-    padding: 20px;
+    padding: 18px 20px;
     overflow-y: auto;
   }
-  aside h2 { font-size: 0.8em; font-weight: 700; margin: 0 0 8px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
-  aside section { margin-bottom: 24px; }
+  aside h2 {
+    font-size: 0.72em; font-weight: 700; margin: 0 0 8px;
+    color: var(--muted); text-transform: uppercase; letter-spacing: 0.6px;
+  }
+  aside section { margin-bottom: 20px; }
 
-  .stat-row { font-size: 0.85em; color: var(--muted); line-height: 1.8; }
+  .search-box {
+    position: relative;
+  }
+  .search-box input {
+    width: 100%;
+    padding: 9px 12px;
+    font-family: inherit;
+    font-size: 0.88em;
+    border: 1px solid rgba(0,0,0,0.12);
+    border-radius: 8px;
+    background: #fff;
+    color: var(--text);
+    outline: none;
+    transition: border-color 0.15s;
+  }
+  .search-box input:focus { border-color: var(--accent); }
+  .search-results {
+    position: absolute; top: 100%; left: 0; right: 0;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin-top: 4px;
+    max-height: 220px;
+    overflow-y: auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    z-index: 20;
+    display: none;
+  }
+  .search-results.open { display: block; }
+  .search-results .item {
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 0.85em;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .search-results .item:hover { background: var(--surface); }
+  .search-results .item .dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+  .search-results .item .meta { color: var(--muted); font-size: 0.88em; margin-left: auto; }
+  .search-results .empty { padding: 12px; color: var(--muted); font-size: 0.82em; text-align: center; }
+
+  .stat-row { font-size: 0.82em; color: var(--muted); line-height: 1.7; }
   .stat-row strong { color: var(--text); font-weight: 600; }
 
   .slider-row { display: flex; align-items: center; gap: 10px; font-size: 0.8em; color: var(--muted); }
@@ -71,38 +115,49 @@
   }
   .legend-item:hover { background: var(--surface-2); }
   .legend-item.off { opacity: 0.35; }
-  .legend-dot {
-    width: 10px; height: 10px; border-radius: 50%;
-    flex-shrink: 0;
-  }
+  .legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
   .legend-item .count { margin-left: auto; color: var(--muted); font-size: 0.85em; }
 
-  .legend-edge { display: flex; align-items: center; gap: 8px; font-size: 0.82em; margin-bottom: 6px; color: var(--muted); }
-  .legend-edge .bar { width: 24px; height: 2px; background: var(--edge-team); }
+  .legend-edge { display: flex; align-items: center; gap: 8px; font-size: 0.8em; margin-bottom: 6px; color: var(--muted); }
+  .legend-edge .bar { width: 24px; height: 2px; background: rgba(140,140,140,0.35); }
   .legend-edge .bar.cross { background: var(--edge-cross); height: 2px; }
+
+  .top-list { font-size: 0.84em; }
+  .top-list .row {
+    display: flex; align-items: center; gap: 8px;
+    padding: 5px 4px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .top-list .row:hover { background: var(--surface-2); }
+  .top-list .rank { color: var(--muted); font-variant-numeric: tabular-nums; width: 18px; }
+  .top-list .dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+  .top-list .name { flex: 1; }
+  .top-list .val { color: var(--muted); font-variant-numeric: tabular-nums; }
 
   #tooltip {
     position: fixed;
     pointer-events: none;
     background: var(--text);
     color: #fff;
-    padding: 10px 14px;
+    padding: 9px 13px;
     border-radius: 8px;
     font-size: 0.82em;
     line-height: 1.5;
     opacity: 0;
-    transition: opacity 0.15s;
+    transition: opacity 0.12s;
     max-width: 240px;
     z-index: 100;
     box-shadow: 0 4px 16px rgba(0,0,0,0.18);
   }
   #tooltip .name { font-weight: 700; font-size: 1.05em; margin-bottom: 2px; }
-  #tooltip .sub { color: #D0D0D0; font-size: 0.9em; }
+  #tooltip .sub { color: #CFCFCF; font-size: 0.9em; }
   #tooltip .meta { margin-top: 6px; color: #F0F0F0; font-size: 0.9em; }
 
-  .node.dim { opacity: 0.12; }
-  .link.dim { opacity: 0.05; }
-  .node.highlight circle { stroke-width: 2.5; }
+  .node text { display: none; font-size: 10px; fill: var(--text); pointer-events: none; font-family: inherit; }
+  .node.show-label text { display: block; }
+  .node.dim { opacity: 0.1; }
+  .link.dim { opacity: 0.04; }
 
   button.reset {
     background: transparent;
@@ -110,17 +165,19 @@
     color: var(--muted);
     font-family: inherit;
     font-size: 0.75em;
-    padding: 4px 10px;
+    padding: 5px 12px;
     border-radius: 6px;
     cursor: pointer;
   }
   button.reset:hover { background: var(--surface-2); }
 
   .team-section-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
-  .team-section-head .actions { display: flex; gap: 4px; }
-  .team-section-head .actions a { font-size: 0.7em; color: var(--muted); cursor: pointer; text-decoration: underline; }
+  .team-section-head .actions { display: flex; gap: 8px; }
+  .team-section-head .actions a { font-size: 0.72em; color: var(--muted); cursor: pointer; text-decoration: underline; }
 
-  @media (max-width: 780px) {
+  .helper { font-size: 0.7em; color: var(--muted); margin-top: 4px; }
+
+  @media (max-width: 860px) {
     aside { position: static; width: 100%; height: auto; top: auto; border-left: none; border-top: 1px solid rgba(0,0,0,0.06); }
     #graph { position: static; height: 60vh; top: auto; right: 0; }
     header { position: static; }
@@ -141,6 +198,14 @@
 
   <aside>
     <section>
+      <div class="search-box">
+        <input id="search" type="text" placeholder="이름·회사 검색" autocomplete="off">
+        <div id="search-results" class="search-results"></div>
+      </div>
+      <div class="helper">노드 호버하면 이름이 뜹니다</div>
+    </section>
+
+    <section>
       <h2>네트워크</h2>
       <div class="stat-row">
         멤버 <strong id="stat-nodes">-</strong>명 · 연결 <strong id="stat-edges">-</strong>개 · <strong id="stat-teams">-</strong>개 팀
@@ -150,9 +215,19 @@
     <section>
       <h2>최소 공동 참석</h2>
       <div class="slider-row">
-        <input type="range" id="min-count" min="1" max="6" value="1" step="1">
-        <output id="min-count-out">1</output>회 이상
+        <input type="range" id="min-count" min="1" max="6" value="2" step="1">
+        <output id="min-count-out">2</output>회 이상
       </div>
+    </section>
+
+    <section>
+      <h2>연결 많은 허브 Top 5</h2>
+      <div id="top-hubs" class="top-list"></div>
+    </section>
+
+    <section>
+      <h2>팀 밖 연결 Top 5</h2>
+      <div id="top-cross" class="top-list"></div>
     </section>
 
     <section>
@@ -183,6 +258,14 @@
 <script>
 const DATA_URL = './data/26spring-member-network.json';
 
+// 선명한 팔레트 (13팀 + 여유)
+const PALETTE = [
+  '#E53935', '#D81B60', '#8E24AA', '#5E35B1', '#3949AB',
+  '#1E88E5', '#039BE5', '#00ACC1', '#00897B', '#43A047',
+  '#7CB342', '#FDD835', '#FB8C00', '#F4511E', '#6D4C41',
+  '#546E7A'
+];
+
 const svg = d3.select('#graph svg');
 const tooltip = d3.select('#tooltip');
 const gRoot = svg.append('g');
@@ -191,13 +274,16 @@ const gNodes = gRoot.append('g').attr('class', 'nodes');
 
 let state = {
   disabledTeams: new Set(),
-  minCount: 1,
+  minCount: 2,
   selectedNode: null,
 };
 
 let data;
 let simulation;
 let linkSel, nodeSel;
+let zoom;
+const teamColor = {};
+const teamAnchor = {};  // 팀별 중심 좌표
 
 function size() {
   const el = document.getElementById('graph');
@@ -206,12 +292,62 @@ function size() {
 
 d3.json(DATA_URL).then(d => {
   data = d;
+  // 팔레트 덮어쓰기 (선명한 버전)
+  data.teams.forEach((t, i) => { t.color = PALETTE[i % PALETTE.length]; teamColor[t.name] = t.color; });
+
   document.getElementById('stat-nodes').textContent = d.stats.node_count;
   document.getElementById('stat-edges').textContent = d.stats.edge_count;
   document.getElementById('stat-teams').textContent = d.stats.team_count;
+
+  computeTopLists();
   buildLegend();
+  buildSearch();
   render();
 });
+
+function computeTopLists() {
+  const degree = {};
+  const crossDegree = {};
+  data.nodes.forEach(n => { degree[n.id] = 0; crossDegree[n.id] = 0; });
+  data.edges.forEach(e => {
+    degree[e.source] = (degree[e.source]||0) + 1;
+    degree[e.target] = (degree[e.target]||0) + 1;
+    if (e.kind === 'cross') {
+      crossDegree[e.source] = (crossDegree[e.source]||0) + 1;
+      crossDegree[e.target] = (crossDegree[e.target]||0) + 1;
+    }
+  });
+  const byId = Object.fromEntries(data.nodes.map(n => [n.id, n]));
+
+  const fill = (el, list, label) => {
+    el.innerHTML = '';
+    list.forEach((item, i) => {
+      const node = byId[item.id];
+      const row = document.createElement('div');
+      row.className = 'row';
+      row.innerHTML = `
+        <span class="rank">${i+1}</span>
+        <span class="dot" style="background:${teamColor[node.team]}"></span>
+        <span class="name">${node.name}</span>
+        <span class="val">${item.v}</span>
+      `;
+      row.onclick = () => focusNode(node.id);
+      el.appendChild(row);
+    });
+    if (list.length === 0) el.innerHTML = `<div class="helper">데이터 없음</div>`;
+  };
+
+  const hubs = Object.entries(degree)
+    .map(([id, v]) => ({id, v}))
+    .sort((a,b) => b.v - a.v).slice(0, 5);
+  fill(document.getElementById('top-hubs'), hubs, '연결');
+
+  const cross = Object.entries(crossDegree)
+    .filter(([_, v]) => v > 0)
+    .map(([id, v]) => ({id, v}))
+    .sort((a,b) => b.v - a.v).slice(0, 5);
+  fill(document.getElementById('top-cross'), cross, '팀 밖');
+}
 
 function buildLegend() {
   const counts = {};
@@ -254,27 +390,88 @@ function buildLegend() {
   });
 }
 
-const teamColor = {};
-let zoom;
+function buildSearch() {
+  const input = document.getElementById('search');
+  const results = document.getElementById('search-results');
+  const update = () => {
+    const q = input.value.trim().toLowerCase();
+    if (!q) { results.classList.remove('open'); return; }
+    const matched = data.nodes.filter(n =>
+      n.name.toLowerCase().includes(q) ||
+      (n.company && n.company.toLowerCase().includes(q)) ||
+      n.team.toLowerCase().includes(q)
+    ).slice(0, 20);
+    if (!matched.length) {
+      results.innerHTML = '<div class="empty">결과 없음</div>';
+    } else {
+      results.innerHTML = matched.map(n => `
+        <div class="item" data-id="${n.id}">
+          <span class="dot" style="background:${teamColor[n.team]}"></span>
+          <span>${n.name}</span>
+          <span class="meta">${n.team}</span>
+        </div>
+      `).join('');
+      results.querySelectorAll('.item').forEach(el => {
+        el.onclick = () => {
+          focusNode(el.dataset.id);
+          input.value = '';
+          results.classList.remove('open');
+        };
+      });
+    }
+    results.classList.add('open');
+  };
+  input.addEventListener('input', update);
+  input.addEventListener('focus', update);
+  document.addEventListener('click', (e) => {
+    if (!results.contains(e.target) && e.target !== input) results.classList.remove('open');
+  });
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      const first = results.querySelector('.item');
+      if (first) first.click();
+    } else if (e.key === 'Escape') {
+      input.value = '';
+      results.classList.remove('open');
+    }
+  });
+}
+
+function focusNode(id) {
+  state.selectedNode = id;
+  applyHighlight();
+  // 줌인
+  const node = data.nodes.find(n => n.id === id);
+  if (node && node.x != null) {
+    const { w, h } = size();
+    const scale = 1.6;
+    const t = d3.zoomIdentity
+      .translate(w/2 - scale * node.x, h/2 - scale * node.y)
+      .scale(scale);
+    svg.transition().duration(600).call(zoom.transform, t);
+  }
+}
 
 function render() {
-  data.teams.forEach(t => teamColor[t.name] = t.color);
-
   const { w, h } = size();
   svg.attr('viewBox', `0 0 ${w} ${h}`);
+
+  // 팀 앵커 좌표: 원형 배치
+  const n = data.teams.length;
+  const R = Math.min(w, h) * 0.32;
+  data.teams.forEach((t, i) => {
+    const angle = (i / n) * Math.PI * 2 - Math.PI / 2;
+    teamAnchor[t.name] = { x: w/2 + R * Math.cos(angle), y: h/2 + R * Math.sin(angle) };
+  });
 
   zoom = d3.zoom().scaleExtent([0.3, 5]).on('zoom', (e) => {
     gRoot.attr('transform', e.transform);
   });
   svg.call(zoom);
 
-  // node radius by total attendance
-  const maxAtt = d3.max(data.nodes, n => n.team_attendance + n.event_attendance) || 1;
-  const rScale = d3.scaleSqrt().domain([0, maxAtt]).range([5, 14]);
-
-  // edge width by count
+  // 엣지 두께: count 비례
   const maxC = d3.max(data.edges, e => e.count) || 1;
-  const wScale = d3.scaleLinear().domain([1, maxC]).range([0.6, 3.5]);
+  const wScale = d3.scaleLinear().domain([1, maxC]).range([0.5, 3]);
 
   linkSel = gLinks.selectAll('line')
     .data(data.edges, d => d.source + '→' + d.target)
@@ -288,30 +485,27 @@ function render() {
     .join(enter => {
       const g = enter.append('g').attr('class', 'node');
       g.append('circle')
-        .attr('r', d => rScale(d.team_attendance + d.event_attendance))
+        .attr('r', d => d.is_partner ? 8 : 6)
         .attr('fill', d => teamColor[d.team])
         .attr('stroke', d => d.is_partner ? 'var(--accent)' : '#fff')
-        .attr('stroke-width', d => d.is_partner ? 2.2 : 1.2);
+        .attr('stroke-width', d => d.is_partner ? 2.5 : 1.2);
       g.append('text')
-        .attr('dy', d => rScale(d.team_attendance + d.event_attendance) + 11)
+        .attr('dy', d => (d.is_partner ? 8 : 6) + 11)
         .attr('text-anchor', 'middle')
-        .attr('font-size', 10)
-        .attr('fill', 'var(--text)')
-        .attr('pointer-events', 'none')
         .text(d => d.name);
       return g;
     });
 
   nodeSel
-    .on('mouseover', (ev, d) => showTooltip(ev, d))
+    .on('mouseover', (ev, d) => { showTooltip(ev, d); d3.select(ev.currentTarget).classed('show-label', true); })
     .on('mousemove', moveTooltip)
-    .on('mouseout', hideTooltip)
+    .on('mouseout', (ev, d) => {
+      hideTooltip();
+      if (d.id !== state.selectedNode) d3.select(ev.currentTarget).classed('show-label', false);
+    })
     .on('click', (ev, d) => {
-      if (state.selectedNode === d.id) {
-        state.selectedNode = null;
-      } else {
-        state.selectedNode = d.id;
-      }
+      ev.stopPropagation();
+      state.selectedNode = state.selectedNode === d.id ? null : d.id;
       applyHighlight();
     })
     .call(d3.drag()
@@ -320,22 +514,26 @@ function render() {
       .on('end',   (ev, d) => { if (!ev.active) simulation.alphaTarget(0); d.fx = null; d.fy = null; })
     );
 
+  // 배경 클릭: 선택 해제
+  svg.on('click', () => { state.selectedNode = null; applyHighlight(); });
+
   simulation = d3.forceSimulation(data.nodes)
     .force('link', d3.forceLink(data.edges).id(d => d.id)
-      .distance(d => d.kind === 'cross' ? 80 : 40)
-      .strength(d => Math.min(0.9, 0.15 + d.count * 0.08)))
-    .force('charge', d3.forceManyBody().strength(-120))
-    .force('center', d3.forceCenter(w/2, h/2))
-    .force('collide', d3.forceCollide().radius(d => rScale(d.team_attendance + d.event_attendance) + 4))
+      .distance(d => d.kind === 'cross' ? 120 : 28)
+      .strength(d => d.kind === 'cross' ? 0.15 : Math.min(0.9, 0.3 + d.count * 0.1)))
+    .force('charge', d3.forceManyBody().strength(-80))
+    .force('x', d3.forceX(d => teamAnchor[d.team].x).strength(0.12))
+    .force('y', d3.forceY(d => teamAnchor[d.team].y).strength(0.12))
+    .force('collide', d3.forceCollide().radius(d => (d.is_partner ? 8 : 6) + 3))
     .on('tick', ticked);
+
+  applyFilter();
 }
 
 function ticked() {
   linkSel
-    .attr('x1', d => d.source.x)
-    .attr('y1', d => d.source.y)
-    .attr('x2', d => d.target.x)
-    .attr('y2', d => d.target.y);
+    .attr('x1', d => d.source.x).attr('y1', d => d.source.y)
+    .attr('x2', d => d.target.x).attr('y2', d => d.target.y);
   nodeSel.attr('transform', d => `translate(${d.x},${d.y})`);
 }
 
@@ -343,16 +541,16 @@ function applyFilter() {
   const disabled = state.disabledTeams;
   nodeSel.style('display', d => disabled.has(d.team) ? 'none' : null);
   linkSel.style('display', d => {
-    if (disabled.has(d.source.team) || disabled.has(d.target.team)) return 'none';
+    if (disabled.has(d.source.team || d.source) || disabled.has(d.target.team || d.target)) return 'none';
     if (d.count < state.minCount) return 'none';
     return null;
   });
-  simulation.alpha(0.3).restart();
+  if (simulation) simulation.alpha(0.3).restart();
 }
 
 function applyHighlight() {
   if (!state.selectedNode) {
-    nodeSel.classed('dim', false).classed('highlight', false);
+    nodeSel.classed('dim', false).classed('show-label', false);
     linkSel.classed('dim', false);
     return;
   }
@@ -365,7 +563,7 @@ function applyHighlight() {
     if (t === id) neighbors.add(s);
   });
   nodeSel.classed('dim', d => !neighbors.has(d.id))
-         .classed('highlight', d => d.id === id);
+         .classed('show-label', d => neighbors.has(d.id));
   linkSel.classed('dim', d => {
     const s = typeof d.source === 'object' ? d.source.id : d.source;
     const t = typeof d.target === 'object' ? d.target.id : d.target;
@@ -380,7 +578,7 @@ function showTooltip(ev, d) {
     .html(`
       <div class="name">${d.name}${d.is_partner ? ' <span class="sub">· 파트너</span>' : ''}</div>
       <div class="sub">${d.team}${d.company ? ' · ' + d.company : ''}</div>
-      <div class="meta">세션 ${d.team_attendance}회 · 이벤트 ${d.event_attendance}회 (합계 ${total})</div>
+      <div class="meta">세션 ${d.team_attendance}회 · 이벤트 ${d.event_attendance}회</div>
     `);
   moveTooltip(ev);
 }
@@ -395,7 +593,15 @@ window.addEventListener('resize', () => {
   if (!simulation) return;
   const { w, h } = size();
   svg.attr('viewBox', `0 0 ${w} ${h}`);
-  simulation.force('center', d3.forceCenter(w/2, h/2));
+  // 앵커 재계산
+  const n = data.teams.length;
+  const R = Math.min(w, h) * 0.32;
+  data.teams.forEach((t, i) => {
+    const angle = (i / n) * Math.PI * 2 - Math.PI / 2;
+    teamAnchor[t.name] = { x: w/2 + R * Math.cos(angle), y: h/2 + R * Math.sin(angle) };
+  });
+  simulation.force('x', d3.forceX(d => teamAnchor[d.team].x).strength(0.12));
+  simulation.force('y', d3.forceY(d => teamAnchor[d.team].y).strength(0.12));
   simulation.alpha(0.3).restart();
 });
 </script>
