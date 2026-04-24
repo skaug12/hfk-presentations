@@ -237,6 +237,46 @@
   </div>
 </section>
 
+<!-- ===== 4.5: Opus vs GPT 갑론을박 ===== -->
+<section>
+  <div class="label">News 1 &middot; 갑론을박</div>
+  <h2>"GPT-5.5가 6주 만에 1위 탈환"? &mdash; "1위"란 무엇인가</h2>
+  <div class="grid grid-2" style="gap:20px;">
+    <div>
+      <div class="card" style="padding:16px 20px; margin-bottom:12px;">
+        <h3 class="accent">커뮤니티에서 나오는 얘기</h3>
+        <ul style="margin-top:6px;">
+          <li>OpenAI GPT-5.5가 여러 벤치마크에서 Opus 4.7을 앞섰다는 발표</li>
+          <li><a href="https://www.reddit.com/r/ClaudeAI/" target="_blank" style="color:var(--accent);text-decoration:underline">Reddit 개발자 커뮤니티</a>: 실제 코딩 작업에선 Opus 4.7 여전히 선호한다는 의견 다수</li>
+          <li>"모델 순위"가 6주마다 뒤집힘 &rarr; 추적 피로</li>
+        </ul>
+      </div>
+      <div class="card" style="padding:16px 20px;">
+        <h3 class="accent2">왜 순위가 계속 바뀌나</h3>
+        <p style="margin-top:6px;">프론티어 모델이 <span class="bold">분기에 한 번꼴로</span> 갱신됩니다. 각 회사가 자기 벤치마크 기준으로 1위를 주장 &rarr; 기준이 다르니 해석이 엇갈립니다.</p>
+      </div>
+    </div>
+    <div>
+      <div class="card" style="padding:16px 20px; margin-bottom:12px;">
+        <h3 class="accent3">"1위"는 단일 순위가 아닙니다</h3>
+        <ul style="margin-top:6px;">
+          <li><a href="https://lmarena.ai" target="_blank" style="color:var(--accent3);text-decoration:underline"><span class="bold">LMArena</span></a> &mdash; 사용자 블라인드 투표 기반 종합 선호도</li>
+          <li><a href="https://www.swebench.com" target="_blank" style="color:var(--accent3);text-decoration:underline"><span class="bold">SWE-bench</span></a> &mdash; 실제 GitHub 이슈 해결 성공률(코딩)</li>
+          <li><span class="bold">HLE</span> &mdash; 인간 최종 시험(복잡한 추론)</li>
+          <li><span class="bold">AIME / MATH</span> &mdash; 수학 문제</li>
+        </ul>
+        <p class="dim" style="margin-top:8px;">모델마다 강한 영역이 다르고, "종합 1위"는 없는 경우가 대부분.</p>
+      </div>
+      <div class="qblock">
+        <p style="font-size:0.56em; color:var(--text); margin:0; line-height:1.7;">
+          <span class="accent2 bold">우리가 취할 태도</span> &mdash;
+          "1위 모델"을 좇지 말고, <span class="bold">내 작업에 맞는 모델</span>을 고르기. 스킬 58개를 Opus/Sonnet/Haiku 3등급으로 나눈 것도 같은 원리입니다.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ===== 5: FIGMA X CLAUDE - 1 ===== -->
 <section>
   <div class="label">News 2 &middot; Claude Code × Figma</div>
@@ -337,6 +377,52 @@
         <p style="margin-top:6px;">Opus 4.7(긴 맥락·판단), Sonnet 4.6(일반 판단·실행), Haiku 4.5(단순 변환). <span class="bold">스킬 52개를 3등급으로 재배치</span>한 이야기는 뒤(Output 1)에서 자세히.</p>
       </div>
       <p class="dim" style="font-size:0.46em; margin-top:10px;">※ 세부 기능은 Anthropic 공식 문서 기준이며, 실제 활용 사례는 HFK 운영 환경 기반입니다.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 7.8: Skill vs Agent 궁금점 ===== -->
+<section>
+  <div class="label">News 3 &middot; 궁금점 답변</div>
+  <h2>"Skill이 공식 기능이 되었다" &mdash; 예전엔? 에이전트는?</h2>
+  <div class="grid grid-2" style="gap:20px;">
+    <div>
+      <div class="card" style="padding:16px 20px; margin-bottom:12px;">
+        <h3 class="accent">Skill은 원래 "관행"이었습니다</h3>
+        <ul style="margin-top:6px;">
+          <li>Claude Code는 <code class="accent">.claude/commands/</code> 폴더의 마크다운을 <span class="bold">슬래시 명령</span>으로 불러 쓰는 기능을 오래 가지고 있었음</li>
+          <li>이걸 "Skill"이라 부른 건 커뮤니티·각 팀의 관행이었음</li>
+          <li>공통 양식도, 배포 방식도 없었음</li>
+        </ul>
+      </div>
+      <div class="card" style="padding:16px 20px;">
+        <h3 class="accent2">이번에 달라진 것</h3>
+        <ul style="margin-top:6px;">
+          <li><span class="bold">정식 이름과 규격</span>이 생김 &mdash; 프론트매터·설명·트리거 명세</li>
+          <li>스킬 간 호출, MCP 도구 호출이 공식 인터페이스로</li>
+          <li>팀·커뮤니티가 <span class="bold">공유·설치</span>할 기반이 마련됨</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <div class="card" style="padding:16px 20px; margin-bottom:12px;">
+        <h3 class="accent3">에이전트(<a href="https://docs.claude.com/en/api/agent-sdk/overview" target="_blank" style="color:var(--accent3);text-decoration:underline">Agent</a>)는?</h3>
+        <p style="margin-top:6px;"><span class="bold">이미 공식 기능</span>입니다. Claude Agent SDK · Subagent 등이 그 이름으로 정리되어 있음. Claude Code 안에서도 <span class="bold">Task 도구</span>로 서브에이전트를 실행합니다.</p>
+      </div>
+      <div class="card" style="padding:16px 20px; margin-bottom:12px;">
+        <h3 class="accent4">Skill vs Agent &mdash; 차이 한 줄</h3>
+        <ul style="margin-top:6px;">
+          <li><span class="accent bold">Skill</span> &mdash; 정해진 레시피를 순서대로 따르는 일</li>
+          <li><span class="accent3 bold">Agent</span> &mdash; 상황 보고 스스로 판단하며 실행하는 일</li>
+          <li>복잡한 스킬 안에서 에이전트를 호출하는 것도 가능</li>
+        </ul>
+      </div>
+      <div class="qblock">
+        <p style="font-size:0.56em; color:var(--text); margin:0;">
+          <span class="accent2 bold">정리</span> &mdash;
+          "기능이 없었다"가 아니라, <span class="bold">"공식 이름과 규격이 없었다"</span>가 맞는 표현.
+        </p>
+      </div>
     </div>
   </div>
 </section>
@@ -445,8 +531,8 @@
   <h2>2주간의 작업 한눈에 보기</h2>
   <div class="grid grid-4" style="gap:14px; margin-bottom:14px;">
     <div class="card" style="text-align:center; padding:16px 14px;">
-      <p class="stat-num">52</p>
-      <p class="stat-label">스킬 총 개수 (+8)</p>
+      <p class="stat-num">58</p>
+      <p class="stat-label">스킬 총 개수 (+14)</p>
     </div>
     <div class="card" style="text-align:center; padding:16px 14px;">
       <p class="stat-num accent2">15</p>
@@ -454,7 +540,7 @@
     </div>
     <div class="card" style="text-align:center; padding:16px 14px;">
       <p class="stat-num accent3">2</p>
-      <p class="stat-label">컴퓨터 동기화 안정화</p>
+      <p class="stat-label">멤버 리포트 버전(신규·재등록)</p>
     </div>
     <div class="card" style="text-align:center; padding:16px 14px;">
       <p class="stat-num accent4">1</p>
@@ -472,6 +558,9 @@
         <li><span class="bold">4/17</span> 26여름 시즌 준비, 상품 완성도 인덱스</li>
         <li><span class="bold">4/18</span> memory 폴더 git 관리, run-daily-note Step 0 원격 동기화</li>
         <li><span class="bold">4/19</span> 스킬 감사 52개, 모델 재배치, 멤버 마스터 빌드 스크립트</li>
+        <li><span class="bold">4/22</span> 멤버 로드맵 페이지 + 발표 자료 보완 + 스킬 2종 추가</li>
+        <li><span class="bold">4/23</span> 스킬별 모델 고정, 주간 모델 리뷰 자동화</li>
+        <li><span class="bold">4/24</span> 이벤트봇 복구, 4회차 발표 자료 보강, 성찰 장표 추가</li>
       </ul>
     </div>
     <div class="card" style="padding:14px 20px;">
@@ -635,6 +724,47 @@
   </div>
 </section>
 
+<!-- ===== 13.5: OUTPUT 5 - 멤버 리포트 신규/재등록 ===== -->
+<section>
+  <div class="label">Output 5 &middot; <a href="https://skaug12.github.io/hfk-member-report/" target="_blank" style="color:var(--accent);text-decoration:underline">멤버 리포트</a></div>
+  <h2>신규 멤버 · 재등록 멤버 각각에게 맞는 리포트</h2>
+  <div class="grid grid-2" style="gap:20px;">
+    <div>
+      <div class="card" style="padding:14px 20px; margin-bottom:12px;">
+        <h3 class="accent">신규 멤버 버전</h3>
+        <ul style="margin-top:6px;">
+          <li>처음 등록한 멤버 대상</li>
+          <li>이번 시즌 일정·팀·파트너 소개</li>
+          <li>HFK 운영 방식 · 커뮤니케이션 가이드</li>
+          <li>첫 시즌을 <span class="bold">"잘 시작하게"</span> 돕는 온보딩 문서</li>
+        </ul>
+      </div>
+      <div class="card" style="padding:14px 20px;">
+        <h3 class="accent2">재등록 멤버 버전</h3>
+        <ul style="margin-top:6px;">
+          <li>기존에 한 번 이상 참여한 멤버 대상</li>
+          <li>이번 시즌 안내 + <span class="bold">개인 로드맵</span></li>
+          <li>지난 시즌 활동 요약, 성장 트랙 위치</li>
+          <li>"다음 시즌엔 어디로"의 제안까지</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <div class="card" style="padding:14px 20px; margin-bottom:12px;">
+        <h3 class="accent3">왜 두 버전으로 나눴나</h3>
+        <p style="margin-top:6px;">같은 리포트를 보내면 한쪽은 "당연한 안내", 다른 쪽은 "맥락이 없는 설명". 등록 이력에 따라 <span class="bold">궁금한 것 자체가 다름</span>.</p>
+        <p style="margin-top:6px;">Output 4에서 만든 UUID 마스터가 있어야 가능한 분기입니다. 한 멤버의 <span class="accent2 bold">첫 등록·재등록 이력</span>이 정확히 잡혀야 해요.</p>
+      </div>
+      <div class="qblock">
+        <p style="font-size:0.56em; color:var(--text); margin:0; line-height:1.7;">
+          <span class="accent2 bold">의미</span> &mdash;
+          리포트가 <span class="bold">전체 공지</span>에서 <span class="bold">"당신을 위한 문서"</span>로 전환. 개인화의 첫 단계입니다.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ===== 14: PART 3 HEADER ===== -->
 <section>
   <div style="display:flex; flex-direction:column; justify-content:center; height:100%;">
@@ -702,7 +832,7 @@
       </ul>
     </div>
     <div class="card" style="padding:16px 22px;">
-      <h3 class="accent3">슬기의 T 영역 사례 (실제 시도한 것)</h3>
+      <h3 class="accent3">나의 T 영역 사례 (실제 시도한 것)</h3>
       <ul style="margin-top:8px;">
         <li><code class="accent">/edit-premiere-xml</code> &mdash; 영상 편집 잘 못함 &rarr; 프리미어 프로 XML을 텍스트로 편집</li>
         <li><code class="accent">/update-card-news</code> &mdash; 디자인 비전공 &rarr; 카드뉴스 v3 (a/b/c)까지 반복 개선</li>
@@ -741,7 +871,7 @@
       <div class="card" style="padding:16px 22px;">
         <h3 class="accent">T 영역 공통 구조</h3>
         <ol style="margin-top:8px;">
-          <li><span class="bold">맥락 고백</span> &mdash; "이 분야 처음입니다. 기본 개념부터 알려주세요."</li>
+          <li><span class="bold">맥락</span> &mdash; "이 분야 처음입니다. 기본 개념부터 알려주세요."</li>
           <li><span class="bold">작은 목표</span> &mdash; "완벽한 결과" 대신 "일단 한 번 돌아가는 것"</li>
           <li><span class="bold">관찰</span> &mdash; 첫 결과의 어디가 어색한지 구체적으로 지목</li>
           <li><span class="bold">반복</span> &mdash; "이것만 고쳐보자"를 3~5번</li>
@@ -773,9 +903,9 @@
         <p class="dim" style="margin-top:8px;">결과물이 "감각적"이라 성공 경험이 오래 남음.</p>
       </div>
       <div class="card" style="padding:14px 20px;">
-        <h3 class="accent">처음 명령 (맥락 고백)</h3>
+        <h3 class="accent">처음 명령 (맥락)</h3>
         <div class="code-block" style="margin-top:8px; padding:10px 16px; line-height:1.7; font-size:0.46em;">
-          <span class="comment"># 맥락 고백</span><br>
+          <span class="comment"># 맥락</span><br>
           <span style="color:#F1EFEA;">코딩 처음. HTML 띄우는 법만 앎.</span><br>
           <span class="comment"># 작은 목표</span><br>
           <span style="color:#F1EFEA;">웹캠으로 내 손 위치를 인식해서</span><br>
@@ -823,22 +953,22 @@
   <h2>오늘 워크숍 흐름</h2>
   <div class="grid grid-4" style="gap:14px;">
     <div class="card" style="padding:14px 18px;">
-      <p class="accent bold" style="font-size:0.5em;">STEP 1 &middot; 5분</p>
+      <p class="accent bold" style="font-size:0.5em;">STEP 1</p>
       <h3 style="margin-top:6px;">못한다고 생각한 것</h3>
       <p style="margin-top:6px;">"내 분야 아니라서" 미뤄왔던 일 3개를 적어봅니다.</p>
     </div>
     <div class="card" style="padding:14px 18px;">
-      <p class="accent2 bold" style="font-size:0.5em;">STEP 2 &middot; 5분</p>
+      <p class="accent2 bold" style="font-size:0.5em;">STEP 2</p>
       <h3 style="margin-top:6px;">하나 고르기</h3>
       <p style="margin-top:6px;">3개 중 가장 가벼운 것 1개. 거창한 건 나중에.</p>
     </div>
     <div class="card" style="padding:14px 18px;">
-      <p class="accent3 bold" style="font-size:0.5em;">STEP 3 &middot; 10분</p>
+      <p class="accent3 bold" style="font-size:0.5em;">STEP 3</p>
       <h3 style="margin-top:6px;">첫 명령 만들기</h3>
-      <p style="margin-top:6px;">맥락 고백 / 작은 목표 / 원하는 결과 / 체크 방법 4칸.</p>
+      <p style="margin-top:6px;">맥락 / 작은 목표 / 원하는 결과 / 체크 방법 4칸.</p>
     </div>
     <div class="card" style="padding:14px 18px;">
-      <p class="accent4 bold" style="font-size:0.5em;">STEP 4 &middot; 15분</p>
+      <p class="accent4 bold" style="font-size:0.5em;">STEP 4</p>
       <h3 style="margin-top:6px;">실행 + 반복</h3>
       <p style="margin-top:6px;">첫 결과를 보고 "뭐가 어색한지"를 3번만 피드백해봅니다.</p>
     </div>
@@ -854,7 +984,7 @@
 <!-- ===== 19: STEP 1 ===== -->
 <section>
   <div class="label">Workshop &middot; Step 1</div>
-  <h2>STEP 1 &mdash; 못한다고 생각했던 것 떠올리기 (5분)</h2>
+  <h2>STEP 1 &mdash; 못한다고 생각했던 것 떠올리기</h2>
   <div class="grid grid-2" style="gap:20px;">
     <div>
       <div class="card" style="padding:16px 22px;">
@@ -875,7 +1005,6 @@
           <li>간단한 홍보 포스터를 직접 만들어보기</li>
           <li>엑셀 매크로로 반복 작업 자동화</li>
           <li>유튜브 영상 자르기 / 자막 넣기</li>
-          <li><span class="bold">웹캠 모션 인식으로 인터랙티브 아트 만들기</span> (p5.js + 카메라)</li>
           <li>간단한 랜딩페이지 만들기</li>
           <li>설문 데이터 시각화 (차트 그리기)</li>
           <li>블로그/뉴스레터 레이아웃 꾸미기</li>
@@ -894,7 +1023,7 @@
 <!-- ===== 20: STEP 2 ===== -->
 <section>
   <div class="label">Workshop &middot; Step 2</div>
-  <h2>STEP 2 &mdash; 가장 가벼운 1개 고르기 (5분)</h2>
+  <h2>STEP 2 &mdash; 가장 가벼운 1개 고르기</h2>
   <div class="grid grid-2" style="gap:20px;">
     <div>
       <div class="card" style="padding:16px 22px;">
@@ -917,7 +1046,7 @@
       </div>
       <div class="qblock" style="margin-top:14px;">
         <p style="font-size:0.56em; color:var(--text); margin:0;">
-          <span class="accent2 bold">활동</span> &mdash; 3개 중 가장 작고 무해한 것에 <span class="bold">동그라미 하나</span>. 오늘 우리가 만들 T 도전의 주제입니다.
+          <span class="accent2 bold">활동</span> &mdash; 가장 작은 범위의 일에 도전해봅니다.
         </p>
       </div>
     </div>
@@ -927,25 +1056,24 @@
 <!-- ===== 21: STEP 3 ===== -->
 <section>
   <div class="label">Workshop &middot; Step 3</div>
-  <h2>STEP 3 &mdash; 첫 명령 만들기 (10분)</h2>
+  <h2>STEP 3 &mdash; 첫 명령 만들기</h2>
   <div class="grid grid-2" style="gap:18px;">
     <div>
       <div class="card" style="padding:16px 22px;">
         <h3 class="accent2">T 영역 4칸 양식</h3>
         <ol style="margin-top:8px;">
-          <li><span class="bold">맥락 고백</span> &mdash; "이 분야 처음입니다. 기본부터 알려주세요."</li>
+          <li><span class="bold">맥락</span> &mdash; "이 분야 처음입니다. 기본부터 알려주세요."</li>
           <li><span class="bold">작은 목표</span> &mdash; "일단 한 번 돌아가는 결과 1개"</li>
           <li><span class="bold">원하는 결과 형식</span> &mdash; "HTML 파일 / PNG 1장 / 차트 1개"</li>
           <li><span class="bold">체크 방법</span> &mdash; "결과 보여주고 물어봐주세요"</li>
         </ol>
-        <p class="dim" style="margin-top:8px;">S와의 차이: <span class="bold">"처음 해봅니다"를 명시</span>하는 것.</p>
       </div>
     </div>
     <div>
       <div class="card" style="padding:14px 22px;">
         <h3 class="accent3">완성 예시 &mdash; "홍보 포스터 처음 만들기"</h3>
         <div class="code-block" style="margin-top:8px; padding:10px 16px; line-height:1.7; font-size:0.46em;">
-          <span class="comment"># 맥락 고백</span><br>
+          <span class="comment"># 맥락</span><br>
           <span style="color:#F1EFEA;">디자인 비전공. 포스터 만들어본 적 없음.</span><br>
           <span class="comment"># 작은 목표</span><br>
           <span style="color:#F1EFEA;">인스타용 정사각형 1장이면 충분.</span><br>
@@ -968,14 +1096,14 @@
 <!-- ===== 22: STEP 4 ===== -->
 <section>
   <div class="label">Workshop &middot; Step 4</div>
-  <h2>STEP 4 &mdash; 실행 + 3번 피드백 (15분)</h2>
+  <h2>STEP 4 &mdash; 실행 + 3번 피드백</h2>
   <div class="grid grid-2" style="gap:20px;">
     <div>
       <div class="card" style="padding:16px 22px;">
         <h3 class="accent2">실행 방법</h3>
         <ol style="margin-top:8px;">
           <li><a href="https://code.visualstudio.com" target="_blank" style="color:var(--accent);text-decoration:underline">VS Code</a> 클로드 코드 채팅창 열기</li>
-          <li>4칸 내용을 그대로 한국어로 풀어서 입력</li>
+          <li>4칸 내용을 일상 언어로 풀어서 입력</li>
           <li>첫 결과를 받음 &mdash; <span class="bold">"엉성할 것을 예상"</span></li>
           <li>어디가 어색한지 구체적으로 1~2개 피드백</li>
           <li>3번째 반복까지만 진행. 그 이상은 나중에</li>
@@ -985,7 +1113,7 @@
         <h3 class="accent">자주 막히는 곳</h3>
         <ul style="margin-top:6px;">
           <li>"잘 모르겠어요" &rarr; 클로드에게 <span class="bold">선택지 3개를 제시</span>해달라고 요청</li>
-          <li>결과가 전혀 엉뚱함 &rarr; 맥락 고백을 더 자세히 (왜 처음인지, 어디서 막혔는지)</li>
+          <li>결과가 전혀 엉뚱함 &rarr; 맥락을 더 자세히 (왜 처음인지, 어디서 막혔는지)</li>
           <li>한 번에 완벽하게 하려는 유혹 &rarr; "다음 1개만 고쳐줘"로 좁히기</li>
         </ul>
       </div>
@@ -1010,10 +1138,39 @@
   </div>
 </section>
 
+<!-- ===== 22.5: WORKSHOP EXAMPLE - 생각정리 ===== -->
+<section>
+  <div class="label">Workshop &middot; 예시</div>
+  <h2>명확한 기획으로 가기까지 &mdash; 생각정리를 그대로 풀어내기</h2>
+  <div class="grid grid-2" style="gap:20px;">
+    <div>
+      <img src="img-planning-example.jpeg" alt="생각정리 예시 슬라이드" style="width:100%; border-radius:8px; display:block;">
+      <p class="dim" style="font-size:0.44em; margin-top:8px;">참고: 마케터클럽 시즌4 발표 화면</p>
+    </div>
+    <div>
+      <div class="card" style="padding:14px 20px; margin-bottom:12px;">
+        <h3 class="accent">어떤 말을 AI에게 던졌나</h3>
+        <p style="margin-top:6px;">"기존 에세이 문법의 정반대를 가보고 싶어. 에세이 매대에서 눈에 잘 띄었으면 좋겠어."</p>
+        <p style="margin-top:6px;">"야구=일본광고라는 건 너무 개인적인 판단이야. 다른 관계에서 찾아볼까?"</p>
+        <p style="margin-top:6px;">"감정을 느낄 수 있는 건 사람의 표정, 특히 눈. 클로즈업이어야 할 것 같고, 정면은 부담스러우니 어딘가를 보는 사연/깊이감 있는 눈."</p>
+      </div>
+      <div class="card" style="padding:14px 20px;">
+        <h3 class="accent2">이게 왜 좋은 예시인가</h3>
+        <ul style="margin-top:6px;">
+          <li>정제된 브리프가 아닌 <span class="bold">생각의 흐름 그대로</span></li>
+          <li>싫은 것(가족책·우정책·일차원 일본)과 좋은 것(눈·영화 장면)을 함께</li>
+          <li>AI에게 <span class="bold">나의 취향과 판단</span>을 전달 &rarr; 구체적 결과로 나옴</li>
+          <li>STEP 4의 <span class="accent2 bold">"일상 언어로 풀어서 입력"</span>이 정확히 이런 모양</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ===== 23: WORKSHOP WRAP ===== -->
 <section>
   <div class="label">Workshop &middot; Wrap</div>
-  <h2>오늘 뚫은 T를 어떻게 키워갈까</h2>
+  <h2>오늘 다룬 T를 어떻게 키워갈까</h2>
   <div class="grid grid-3" style="gap:14px; margin-bottom:14px;">
     <div class="card" style="padding:14px 18px;">
       <h3 class="accent">오늘 밤</h3>
@@ -1091,12 +1248,12 @@
 <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.min.js"></script>
 <script>
   const sections = [
-    [0, 1],                       // 타이틀 + 3회차 리캡
-    [2, 3, 4, 5, 6, 7, 8, 9],     // AI 트렌드 (인트로 + Opus 4.7 x2 + Figma x2 + Skills + 성찰 x2)
-    [10, 11, 12, 13, 14, 15],     // 2주 작업 (인트로 + Overview + Output 1~4)
-    [16, 17, 18, 19, 20],         // T 자세히 (인트로 + 위치 + 디테일 + 작동원리 + 모션아트)
-    [21, 22, 23, 24, 25, 26],     // 워크숍 (인트로 + Step 1~4 + 마무리)
-    [27, 28]                      // 예고 + 클로징
+    [0, 1],                                       // 타이틀 + 3회차 리캡
+    [2, 3, 4, 5, 6, 7, 8, 9, 10, 11],             // AI 트렌드 (인트로 + Opus x2 + 갑론을박 + Figma x2 + Skills + Skill vs Agent + 성찰 x2)
+    [12, 13, 14, 15, 16, 17, 18],                 // 2주 작업 (인트로 + Overview + Output 1~5)
+    [19, 20, 21, 22, 23],                         // T 자세히
+    [24, 25, 26, 27, 28, 29, 30],                 // 워크숍 (인트로 + Step 1~4 + 예시 + 마무리)
+    [31, 32]                                      // 예고 + 클로징
   ];
 
   function goSection(idx) {

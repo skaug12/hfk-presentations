@@ -286,6 +286,41 @@
   </div>
 </div>
 
+<!-- ===== 3b: Opus vs GPT 갑론을박 ===== -->
+<div class="slide-section">
+  <div class="label">News 1 &middot; 갑론을박</div>
+  <h2>"GPT-5.5가 6주 만에 1위 탈환"? &mdash; "1위"란 무엇인가</h2>
+  <div class="stack" style="margin-top:14px;">
+    <div class="card">
+      <h3 class="accent">커뮤니티 얘기</h3>
+      <ul style="margin-top:6px;">
+        <li>OpenAI GPT-5.5가 여러 벤치마크에서 Opus 4.7을 앞섰다는 발표</li>
+        <li><a href="https://www.reddit.com/r/ClaudeAI/" target="_blank" style="color:var(--accent);text-decoration:underline">Reddit 개발자 커뮤니티</a>: 실사용 코딩에선 Opus 4.7 여전히 선호한다는 의견 다수</li>
+        <li>"모델 순위"가 6주마다 뒤집힘 &rarr; 추적 피로</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3 class="accent2">왜 순위가 계속 바뀌나</h3>
+      <p style="margin-top:6px;">프론티어 모델이 분기에 한 번꼴로 갱신됨. 각 회사가 자기 벤치마크 기준으로 1위를 주장 &rarr; 기준이 다르니 해석이 엇갈림.</p>
+    </div>
+    <div class="card">
+      <h3 class="accent3">"1위"는 단일 순위가 아닙니다</h3>
+      <ul style="margin-top:6px;">
+        <li><a href="https://lmarena.ai" target="_blank" style="color:var(--accent3);text-decoration:underline"><span class="bold">LMArena</span></a> &mdash; 사용자 블라인드 투표</li>
+        <li><a href="https://www.swebench.com" target="_blank" style="color:var(--accent3);text-decoration:underline"><span class="bold">SWE-bench</span></a> &mdash; 실제 GitHub 이슈 해결(코딩)</li>
+        <li><span class="bold">HLE</span> &mdash; 인간 최종 시험(복잡 추론)</li>
+        <li><span class="bold">AIME / MATH</span> &mdash; 수학</li>
+      </ul>
+      <p class="dim" style="margin-top:6px;">모델마다 강한 영역이 다르고, "종합 1위"는 없는 경우가 대부분.</p>
+    </div>
+    <div class="qblock">
+      <p style="font-size:14px; color:var(--text); margin:0;">
+        <span class="accent2 bold">우리가 취할 태도</span> &mdash; "1위 모델"을 좇지 말고, <span class="bold">내 작업에 맞는 모델</span>을 고르기. 스킬 58개를 Opus/Sonnet/Haiku 3등급으로 나눈 것도 같은 원리.
+      </p>
+    </div>
+  </div>
+</div>
+
 <!-- ===== 4: Figma × Claude ===== -->
 <div class="slide-section">
   <div class="label">News 2 &middot; Claude Code × Figma</div>
@@ -374,6 +409,47 @@
   </div>
 </div>
 
+<!-- ===== 5b: Skill vs Agent 궁금점 ===== -->
+<div class="slide-section">
+  <div class="label">News 3 &middot; 궁금점 답변</div>
+  <h2>"Skill이 공식 기능이 됐다" &mdash; 예전엔? 에이전트는?</h2>
+  <div class="stack" style="margin-top:14px;">
+    <div class="card">
+      <h3 class="accent">Skill은 원래 "관행"</h3>
+      <ul style="margin-top:6px;">
+        <li>Claude Code는 <code>.claude/commands/</code> 폴더의 마크다운을 슬래시 명령으로 불러 쓰는 기능을 오래 가지고 있었음</li>
+        <li>"Skill"이라는 이름은 커뮤니티·각 팀의 관행</li>
+        <li>공통 양식도, 배포 방식도 없었음</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3 class="accent2">이번에 달라진 것</h3>
+      <ul style="margin-top:6px;">
+        <li><span class="bold">정식 이름과 규격</span>이 생김 &mdash; 프론트매터·설명·트리거</li>
+        <li>스킬·MCP 도구 호출이 공식 인터페이스로</li>
+        <li>팀·커뮤니티가 <span class="bold">공유·설치</span>할 기반</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3 class="accent3">에이전트(<a href="https://docs.claude.com/en/api/agent-sdk/overview" target="_blank" style="color:var(--accent3);text-decoration:underline">Agent</a>)는?</h3>
+      <p style="margin-top:6px;"><span class="bold">이미 공식 기능</span>. Claude Agent SDK · Subagent로 정리되어 있음. Claude Code 안에서도 Task 도구로 서브에이전트 실행.</p>
+    </div>
+    <div class="card">
+      <h3 class="accent4">Skill vs Agent &mdash; 차이 한 줄</h3>
+      <ul style="margin-top:6px;">
+        <li><span class="accent bold">Skill</span> &mdash; 정해진 레시피를 순서대로 따름</li>
+        <li><span class="accent3 bold">Agent</span> &mdash; 상황 보고 스스로 판단하며 실행</li>
+        <li>스킬 안에서 에이전트를 호출하는 것도 가능</li>
+      </ul>
+    </div>
+    <div class="qblock">
+      <p style="font-size:14px; color:var(--text); margin:0;">
+        <span class="accent2 bold">정리</span> &mdash; "기능이 없었다"가 아니라, <span class="bold">"공식 이름과 규격이 없었다"</span>가 맞는 표현.
+      </p>
+    </div>
+  </div>
+</div>
+
 <!-- ===== 6a: 능력의 종말 (Trend Reflection 1) ===== -->
 <div class="slide-section">
   <div class="label">Trend Reflection &middot; 1</div>
@@ -437,8 +513,8 @@
   <h2>한눈에 보기</h2>
   <div class="stat-grid" style="margin-bottom:14px;">
     <div class="stat-card">
-      <p class="stat-num">52</p>
-      <p class="stat-label">스킬 총 개수 (+8)</p>
+      <p class="stat-num">58</p>
+      <p class="stat-label">스킬 총 개수 (+14)</p>
     </div>
     <div class="stat-card">
       <p class="stat-num" style="color:var(--accent2);">15</p>
@@ -446,7 +522,7 @@
     </div>
     <div class="stat-card">
       <p class="stat-num" style="color:var(--accent3);">2</p>
-      <p class="stat-label">컴퓨터 동기화 안정화</p>
+      <p class="stat-label">멤버 리포트 버전(신규·재등록)</p>
     </div>
     <div class="stat-card">
       <p class="stat-num" style="color:var(--accent4);">1</p>
@@ -464,6 +540,9 @@
         <li><span class="bold">4/17</span> 26여름 시즌 준비, 상품 완성도 인덱스</li>
         <li><span class="bold">4/18</span> memory git 관리, run-daily-note 원격 동기화</li>
         <li><span class="bold">4/19</span> 스킬 감사 52개, 모델 재배치, 멤버 마스터 빌드</li>
+        <li><span class="bold">4/22</span> 멤버 로드맵 페이지 + 발표 자료 보완 + 스킬 2종</li>
+        <li><span class="bold">4/23</span> 스킬별 모델 고정, 주간 모델 리뷰 자동화</li>
+        <li><span class="bold">4/24</span> 이벤트봇 복구, 4회차 발표 자료 보강, 성찰 장표 추가</li>
       </ul>
     </div>
     <div class="card">
@@ -604,6 +683,42 @@
   </div>
 </div>
 
+<!-- Output 5: 멤버 리포트 신규/재등록 -->
+<div class="slide-section">
+  <div class="label">Output 5 &middot; <a href="https://skaug12.github.io/hfk-member-report/" target="_blank" style="color:var(--accent);text-decoration:underline">멤버 리포트</a></div>
+  <h2>신규 · 재등록 각각에게 맞는 리포트</h2>
+  <div class="stack" style="margin-top:14px;">
+    <div class="card">
+      <h3 class="accent">신규 멤버 버전</h3>
+      <ul style="margin-top:6px;">
+        <li>처음 등록한 멤버 대상</li>
+        <li>이번 시즌 일정·팀·파트너 소개</li>
+        <li>HFK 운영 방식 · 커뮤니케이션 가이드</li>
+        <li>첫 시즌을 <span class="bold">"잘 시작하게"</span> 돕는 온보딩 문서</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3 class="accent2">재등록 멤버 버전</h3>
+      <ul style="margin-top:6px;">
+        <li>한 번 이상 참여한 멤버 대상</li>
+        <li>이번 시즌 안내 + <span class="bold">개인 로드맵</span></li>
+        <li>지난 시즌 활동 요약, 성장 트랙 위치</li>
+        <li>"다음 시즌엔 어디로"의 제안까지</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3 class="accent3">왜 두 버전으로 나눴나</h3>
+      <p style="margin-top:6px;">같은 리포트를 보내면 한쪽은 "당연한 안내", 다른 쪽은 "맥락이 없는 설명". 등록 이력에 따라 <span class="bold">궁금한 것 자체가 다름</span>.</p>
+      <p style="margin-top:6px;">Output 4의 UUID 마스터가 있어야 가능한 분기. 한 멤버의 <span class="accent2 bold">첫 등록·재등록 이력</span>이 정확히 잡혀야 합니다.</p>
+    </div>
+    <div class="qblock">
+      <p style="font-size:14px; color:var(--text); margin:0;">
+        <span class="accent2 bold">의미</span> &mdash; 리포트가 <span class="bold">전체 공지</span>에서 <span class="bold">"당신을 위한 문서"</span>로 전환. 개인화의 첫 단계.
+      </p>
+    </div>
+  </div>
+</div>
+
 <!-- ===== Part 3: T 자세히 ===== -->
 <div class="section-separator" id="sec-t"><span class="sep-label">Part 3 — T 사분면</span></div>
 <div class="slide-section">
@@ -651,7 +766,7 @@
       </ul>
     </div>
     <div class="card">
-      <h3 class="accent3">슬기의 T 영역 사례 (실제 시도)</h3>
+      <h3 class="accent3">나의 T 영역 사례 (실제 시도)</h3>
       <ul style="margin-top:6px;">
         <li><code>/edit-premiere-xml</code> 영상 편집 &rarr; XML 텍스트로 편집</li>
         <li><code>/update-card-news</code> 디자인 &rarr; 카드뉴스 v3(a/b/c)</li>
@@ -685,7 +800,7 @@
     <div class="card">
       <h3 class="accent">T 영역 공통 구조</h3>
       <ol style="margin-top:6px;">
-        <li><span class="bold">맥락 고백</span> &mdash; "이 분야 처음입니다"</li>
+        <li><span class="bold">맥락</span> &mdash; "이 분야 처음입니다"</li>
         <li><span class="bold">작은 목표</span> &mdash; "일단 한 번 돌아가는 것"</li>
         <li><span class="bold">관찰</span> &mdash; 어디가 어색한지 구체적 지목</li>
         <li><span class="bold">반복</span> &mdash; "이것만 고쳐보자"를 3~5번</li>
@@ -715,9 +830,9 @@
       <p class="dim" style="margin-top:6px;">결과물이 "감각적"이라 성공 경험이 오래 남음.</p>
     </div>
     <div class="card">
-      <h3 class="accent">처음 명령 (맥락 고백)</h3>
+      <h3 class="accent">처음 명령 (맥락)</h3>
       <div class="code-block" style="margin-top:8px;">
-        <span class="comment"># 맥락 고백</span><br>
+        <span class="comment"># 맥락</span><br>
         코딩 처음. HTML 띄우는 법만 앎.<br>
         <span class="comment"># 작은 목표</span><br>
         웹캠으로 내 손 위치를 인식해서<br>
@@ -775,7 +890,7 @@
     <div class="card">
       <p class="accent3 bold" style="font-size:13px;">STEP 3 &middot; 10분</p>
       <h3 style="margin-top:6px;">첫 명령 만들기</h3>
-      <p style="margin-top:6px;">맥락 고백 / 작은 목표 / 원하는 결과 / 체크 방법 4칸.</p>
+      <p style="margin-top:6px;">맥락 / 작은 목표 / 원하는 결과 / 체크 방법 4칸.</p>
     </div>
     <div class="card">
       <p class="accent4 bold" style="font-size:13px;">STEP 4 &middot; 15분</p>
@@ -790,7 +905,7 @@
 
 <div class="slide-section">
   <div class="label">Workshop &middot; Step 1</div>
-  <h2>STEP 1 &mdash; 못한다고 생각했던 것 떠올리기 (5분)</h2>
+  <h2>STEP 1 &mdash; 못한다고 생각했던 것 떠올리기</h2>
   <div class="stack">
     <div class="card">
       <h3 class="accent2">"못한다"의 정의</h3>
@@ -808,7 +923,6 @@
         <li>간단한 홍보 포스터 직접 만들기</li>
         <li>엑셀 매크로로 반복 작업 자동화</li>
         <li>유튜브 영상 자르기 / 자막 넣기</li>
-        <li><span class="bold">웹캠 모션 인식으로 인터랙티브 아트</span> (p5.js + 카메라)</li>
         <li>간단한 랜딩페이지 만들기</li>
         <li>설문 데이터 시각화</li>
         <li>블로그/뉴스레터 레이아웃</li>
@@ -825,7 +939,7 @@
 
 <div class="slide-section">
   <div class="label">Workshop &middot; Step 2</div>
-  <h2>STEP 2 &mdash; 가장 가벼운 1개 고르기 (5분)</h2>
+  <h2>STEP 2 &mdash; 가장 가벼운 1개 고르기</h2>
   <div class="stack">
     <div class="card">
       <h3 class="accent2">고르는 기준 3가지</h3>
@@ -845,7 +959,7 @@
     </div>
     <div class="qblock">
       <p style="font-size:14px; color:var(--text); margin:0;">
-        <span class="accent2 bold">활동</span> &mdash; 3개 중 가장 작고 무해한 것에 <span class="bold">동그라미 하나</span>.
+        <span class="accent2 bold">활동</span> &mdash; 가장 작은 범위의 일에 도전해봅니다.
       </p>
     </div>
   </div>
@@ -853,22 +967,21 @@
 
 <div class="slide-section">
   <div class="label">Workshop &middot; Step 3</div>
-  <h2>STEP 3 &mdash; 첫 명령 만들기 (10분)</h2>
+  <h2>STEP 3 &mdash; 첫 명령 만들기</h2>
   <div class="stack">
     <div class="card">
       <h3 class="accent2">T 영역 4칸 양식</h3>
       <ol style="margin-top:6px;">
-        <li><span class="bold">맥락 고백</span> &mdash; "이 분야 처음입니다"</li>
+        <li><span class="bold">맥락</span> &mdash; "이 분야 처음입니다"</li>
         <li><span class="bold">작은 목표</span> &mdash; "일단 한 번 돌아가는 결과 1개"</li>
         <li><span class="bold">원하는 결과 형식</span> &mdash; "HTML / PNG / 차트 1개"</li>
         <li><span class="bold">체크 방법</span> &mdash; "결과 보여주고 물어봐주세요"</li>
       </ol>
-      <p class="dim" style="margin-top:6px;">S와의 차이: <span class="bold">"처음 해봅니다"를 명시</span>.</p>
     </div>
     <div class="card">
       <h3 class="accent3">완성 예시 &mdash; "홍보 포스터 처음 만들기"</h3>
       <div class="code-block" style="margin-top:8px;">
-        <span class="comment"># 맥락 고백</span><br>
+        <span class="comment"># 맥락</span><br>
         디자인 비전공. 포스터 만들어본 적 없음.<br>
         <span class="comment"># 작은 목표</span><br>
         인스타용 정사각형 1장이면 충분.<br>
@@ -886,13 +999,13 @@
 
 <div class="slide-section">
   <div class="label">Workshop &middot; Step 4</div>
-  <h2>STEP 4 &mdash; 실행 + 3번 피드백 (15분)</h2>
+  <h2>STEP 4 &mdash; 실행 + 3번 피드백</h2>
   <div class="stack">
     <div class="card">
       <h3 class="accent2">실행 방법</h3>
       <ol style="margin-top:6px;">
         <li><a href="https://code.visualstudio.com" target="_blank" style="color:var(--accent);text-decoration:underline">VS Code</a> 클로드 코드 채팅창 열기</li>
-        <li>4칸 내용을 한국어로 풀어 입력</li>
+        <li>4칸 내용을 일상 언어로 풀어 입력</li>
         <li>첫 결과 받음 &mdash; <span class="bold">"엉성할 것을 예상"</span></li>
         <li>어디가 어색한지 구체적으로 1~2개 피드백</li>
         <li>3번째 반복까지만. 그 이상은 나중에</li>
@@ -917,8 +1030,33 @@
       <h3 class="accent">자주 막히는 곳</h3>
       <ul style="margin-top:6px;">
         <li>"잘 모르겠어요" &rarr; 클로드에게 <span class="bold">선택지 3개</span>를 달라고 요청</li>
-        <li>결과가 엉뚱함 &rarr; 맥락 고백을 더 자세히</li>
+        <li>결과가 엉뚱함 &rarr; 맥락을 더 자세히</li>
         <li>한 번에 완벽하게 하려는 유혹 &rarr; "다음 1개만 고쳐줘"로 좁히기</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Workshop Example: 생각정리 -->
+<div class="slide-section">
+  <div class="label">Workshop &middot; 예시</div>
+  <h2>명확한 기획으로 가기까지 &mdash; 생각정리를 그대로 풀어내기</h2>
+  <img src="img-planning-example.jpeg" alt="생각정리 예시 슬라이드" style="width:100%; border-radius:8px; margin-top:14px; display:block;">
+  <p class="dim" style="font-size:13px; margin-top:8px;">참고: 마케터클럽 시즌4 발표 화면</p>
+  <div class="stack" style="margin-top:14px;">
+    <div class="card">
+      <h3 class="accent">어떤 말을 AI에게 던졌나</h3>
+      <p style="margin-top:6px;">"기존 에세이 문법의 정반대를 가보고 싶어. 에세이 매대에서 눈에 잘 띄었으면 좋겠어."</p>
+      <p style="margin-top:6px;">"야구=일본광고라는 건 너무 개인적인 판단이야. 다른 관계에서 찾아볼까?"</p>
+      <p style="margin-top:6px;">"감정을 느낄 수 있는 건 사람의 표정, 특히 눈. 클로즈업이어야 할 것 같고, 정면은 부담스러우니 어딘가를 보는 사연/깊이감 있는 눈."</p>
+    </div>
+    <div class="card">
+      <h3 class="accent2">이게 왜 좋은 예시인가</h3>
+      <ul style="margin-top:6px;">
+        <li>정제된 브리프가 아닌 <span class="bold">생각의 흐름 그대로</span></li>
+        <li>싫은 것과 좋은 것을 함께 전달</li>
+        <li>AI에게 <span class="bold">나의 취향과 판단</span>을 전달 &rarr; 구체적 결과로 나옴</li>
+        <li>STEP 4의 <span class="accent2 bold">"일상 언어로 풀어서 입력"</span>이 정확히 이런 모양</li>
       </ul>
     </div>
   </div>
@@ -926,7 +1064,7 @@
 
 <div class="slide-section">
   <div class="label">Workshop &middot; Wrap</div>
-  <h2>오늘 뚫은 T를 어떻게 키워갈까</h2>
+  <h2>오늘 다룬 T를 어떻게 키워갈까</h2>
   <div class="stack">
     <div class="card">
       <h3 class="accent">오늘 밤</h3>
