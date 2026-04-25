@@ -158,6 +158,7 @@
   .node.show-label text { display: block; }
   .node.dim { opacity: 0.1; }
   .link.dim { opacity: 0.04; }
+  .link.weak { stroke-dasharray: 2 3; opacity: 0.55; }
 
   button.reset {
     background: transparent;
@@ -215,8 +216,8 @@
     <section>
       <h2>최소 공동 참석</h2>
       <div class="slider-row">
-        <input type="range" id="min-count" min="1" max="6" value="2" step="1">
-        <output id="min-count-out">2</output>회 이상
+        <input type="range" id="min-count" min="1" max="6" value="1" step="1">
+        <output id="min-count-out">1</output>회 이상
       </div>
     </section>
 
@@ -274,7 +275,7 @@ const gNodes = gRoot.append('g').attr('class', 'nodes');
 
 let state = {
   disabledTeams: new Set(),
-  minCount: 2,
+  minCount: 1,
   selectedNode: null,
 };
 
@@ -476,7 +477,7 @@ function render() {
   linkSel = gLinks.selectAll('line')
     .data(data.edges, d => d.source + '→' + d.target)
     .join('line')
-    .attr('class', d => 'link ' + d.kind)
+    .attr('class', d => 'link ' + d.kind + (d.count === 1 ? ' weak' : ''))
     .attr('stroke', d => d.kind === 'cross' ? 'var(--edge-cross)' : 'var(--edge-team)')
     .attr('stroke-width', d => wScale(d.count));
 
@@ -521,9 +522,9 @@ function render() {
     .force('link', d3.forceLink(data.edges).id(d => d.id)
       .distance(d => d.kind === 'cross' ? 120 : 28)
       .strength(d => d.kind === 'cross' ? 0.15 : Math.min(0.9, 0.3 + d.count * 0.1)))
-    .force('charge', d3.forceManyBody().strength(-80))
-    .force('x', d3.forceX(d => teamAnchor[d.team].x).strength(0.12))
-    .force('y', d3.forceY(d => teamAnchor[d.team].y).strength(0.12))
+    .force('charge', d3.forceManyBody().strength(-55))
+    .force('x', d3.forceX(d => teamAnchor[d.team].x).strength(0.22))
+    .force('y', d3.forceY(d => teamAnchor[d.team].y).strength(0.22))
     .force('collide', d3.forceCollide().radius(d => (d.is_partner ? 8 : 6) + 3))
     .on('tick', ticked);
 
@@ -600,8 +601,8 @@ window.addEventListener('resize', () => {
     const angle = (i / n) * Math.PI * 2 - Math.PI / 2;
     teamAnchor[t.name] = { x: w/2 + R * Math.cos(angle), y: h/2 + R * Math.sin(angle) };
   });
-  simulation.force('x', d3.forceX(d => teamAnchor[d.team].x).strength(0.12));
-  simulation.force('y', d3.forceY(d => teamAnchor[d.team].y).strength(0.12));
+  simulation.force('x', d3.forceX(d => teamAnchor[d.team].x).strength(0.22));
+  simulation.force('y', d3.forceY(d => teamAnchor[d.team].y).strength(0.22));
   simulation.alpha(0.3).restart();
 });
 </script>
