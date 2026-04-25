@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-24T21:03:06",
+  "generated_at": "2026-04-25T10:41:40",
   "season": "26봄",
   "teams": [
     {
@@ -60,7 +60,6 @@
       "id": "김동일",
       "name": "김동일",
       "team": "감각적기획",
-      "team_idx": 2,
       "company": "네이버",
       "is_partner": true,
       "team_attendance": 0,
@@ -70,7 +69,6 @@
       "id": "김서현",
       "name": "김서현",
       "team": "감각적기획",
-      "team_idx": 2,
       "company": "HSAD",
       "is_partner": false,
       "team_attendance": 1,
@@ -80,7 +78,6 @@
       "id": "안은진",
       "name": "안은진",
       "team": "감각적기획",
-      "team_idx": 2,
       "company": "-",
       "is_partner": false,
       "team_attendance": 3,
@@ -90,17 +87,15 @@
       "id": "민희준",
       "name": "민희준",
       "team": "감각적기획",
-      "team_idx": 2,
       "company": "지마켓",
       "is_partner": false,
       "team_attendance": 2,
-      "event_attendance": 0
+      "event_attendance": 1
     },
     {
       "id": "서효정",
       "name": "서효정",
       "team": "감각적기획",
-      "team_idx": 2,
       "company": "포스코인재창조원",
       "is_partner": false,
       "team_attendance": 2,
@@ -110,7 +105,6 @@
       "id": "유지민",
       "name": "유지민",
       "team": "감각적기획",
-      "team_idx": 2,
       "company": "빅플래닛메이드",
       "is_partner": false,
       "team_attendance": 1,
@@ -120,7 +114,6 @@
       "id": "임효정",
       "name": "임효정",
       "team": "감각적기획",
-      "team_idx": 2,
       "company": "한샘",
       "is_partner": false,
       "team_attendance": 3,
@@ -130,7 +123,6 @@
       "id": "조주영",
       "name": "조주영",
       "team": "감각적기획",
-      "team_idx": 2,
       "company": "ihateflyingbugs",
       "is_partner": false,
       "team_attendance": 2,
@@ -140,17 +132,15 @@
       "id": "한미정",
       "name": "한미정",
       "team": "감각적기획",
-      "team_idx": 2,
       "company": "코스트코",
       "is_partner": false,
       "team_attendance": 2,
       "event_attendance": 0
     },
     {
-      "id": "전소영",
+      "id": "전소영 (강점차별화)",
       "name": "전소영",
       "team": "강점차별화",
-      "team_idx": 3,
       "company": "Telta",
       "is_partner": true,
       "team_attendance": 0,
@@ -160,7 +150,6 @@
       "id": "이수민",
       "name": "이수민",
       "team": "강점차별화",
-      "team_idx": 3,
       "company": "SK텔레콤",
       "is_partner": false,
       "team_attendance": 3,
@@ -170,7 +159,6 @@
       "id": "홍은지",
       "name": "홍은지",
       "team": "강점차별화",
-      "team_idx": 3,
       "company": "삼성전자",
       "is_partner": false,
       "team_attendance": 2,
@@ -180,7 +168,6 @@
       "id": "나종원",
       "name": "나종원",
       "team": "강점차별화",
-      "team_idx": 3,
       "company": "라쿠텐 코리아",
       "is_partner": false,
       "team_attendance": 3,
@@ -190,27 +177,24 @@
       "id": "박선영",
       "name": "박선영",
       "team": "강점차별화",
-      "team_idx": 3,
       "company": "이노션",
       "is_partner": false,
       "team_attendance": 3,
       "event_attendance": 0
     },
     {
-      "id": "박지영",
+      "id": "박지영 (강점차별화)",
       "name": "박지영",
       "team": "강점차별화",
-      "team_idx": 3,
       "company": "DL이앤씨",
       "is_partner": false,
       "team_attendance": 3,
-      "event_attendance": 1
+      "event_attendance": 0
     },
     {
       "id": "윤미나",
       "name": "윤미나",
       "team": "강점차별화",
-      "team_idx": 3,
       "company": "한국방송통신대학교 산학협력단",
       "is_partner": false,
       "team_attendance": 3,
@@ -220,7 +204,6 @@
       "id": "이민정",
       "name": "이민정",
       "team": "강점차별화",
-      "team_idx": 3,
       "company": "사실은대단한제작소",
       "is_partner": false,
       "team_attendance": 3,
@@ -230,7 +213,6 @@
       "id": "최혜정",
       "name": "최혜정",
       "team": "강점차별화",
-      "team_idx": 3,
       "company": "일룸",
       "is_partner": false,
       "team_attendance": 2,
@@ -240,7 +222,6 @@
       "id": "장재형",
       "name": "장재형",
       "team": "경영의전설",
-      "team_idx": 4,
       "company": "잇그린",
       "is_partner": true,
       "team_attendance": 0,
@@ -250,7 +231,6 @@
       "id": "권오림",
       "name": "권오림",
       "team": "경영의전설",
-      "team_idx": 4,
       "company": "플렉스튜디오",
       "is_partner": false,
       "team_attendance": 2,
@@ -260,7 +240,6 @@
       "id": "남은경",
       "name": "남은경",
       "team": "경영의전설",
-      "team_idx": 4,
       "company": "(주)이엠인피니",
       "is_partner": false,
       "team_attendance": 3,
@@ -270,7 +249,6 @@
       "id": "돈명진",
       "name": "돈명진",
       "team": "경영의전설",
-      "team_idx": 4,
       "company": "LX하우시스",
       "is_partner": false,
       "team_attendance": 3,
@@ -280,7 +258,6 @@
       "id": "원정현",
       "name": "원정현",
       "team": "경영의전설",
-      "team_idx": 4,
       "company": "아이큐비아(IQVIA)",
       "is_partner": false,
       "team_attendance": 3,
@@ -290,7 +267,6 @@
       "id": "이현주",
       "name": "이현주",
       "team": "경영의전설",
-      "team_idx": 4,
       "company": "디자인피버",
       "is_partner": false,
       "team_attendance": 2,
@@ -300,7 +276,6 @@
       "id": "조연준",
       "name": "조연준",
       "team": "경영의전설",
-      "team_idx": 4,
       "company": "잇그린",
       "is_partner": false,
       "team_attendance": 2,
@@ -310,7 +285,6 @@
       "id": "박양일",
       "name": "박양일",
       "team": "고급화전략",
-      "team_idx": 5,
       "company": "teaf",
       "is_partner": true,
       "team_attendance": 0,
@@ -320,27 +294,24 @@
       "id": "김성래",
       "name": "김성래",
       "team": "고급화전략",
-      "team_idx": 5,
       "company": "선미한과",
       "is_partner": false,
       "team_attendance": 2,
       "event_attendance": 0
     },
     {
-      "id": "김지현",
+      "id": "김지현 (고급화전략)",
       "name": "김지현",
       "team": "고급화전략",
-      "team_idx": 5,
       "company": "오렐린",
       "is_partner": false,
       "team_attendance": 2,
-      "event_attendance": 2
+      "event_attendance": 1
     },
     {
       "id": "방승환",
       "name": "방승환",
       "team": "고급화전략",
-      "team_idx": 5,
       "company": "앤더슨딜스",
       "is_partner": false,
       "team_attendance": 3,
@@ -350,7 +321,6 @@
       "id": "유통민",
       "name": "유통민",
       "team": "고급화전략",
-      "team_idx": 5,
       "company": "JTSnowball",
       "is_partner": false,
       "team_attendance": 2,
@@ -360,7 +330,6 @@
       "id": "장진영",
       "name": "장진영",
       "team": "고급화전략",
-      "team_idx": 5,
       "company": "PwC비즈니스서비스",
       "is_partner": false,
       "team_attendance": 3,
@@ -370,7 +339,6 @@
       "id": "한새롬",
       "name": "한새롬",
       "team": "고급화전략",
-      "team_idx": 5,
       "company": "주식회사 힛더티",
       "is_partner": false,
       "team_attendance": 2,
@@ -380,7 +348,6 @@
       "id": "김민주",
       "name": "김민주",
       "team": "고급화전략",
-      "team_idx": 5,
       "company": "폴라초이스코리아",
       "is_partner": false,
       "team_attendance": 2,
@@ -390,7 +357,6 @@
       "id": "유선화",
       "name": "유선화",
       "team": "고급화전략",
-      "team_idx": 5,
       "company": "HBAF",
       "is_partner": false,
       "team_attendance": 2,
@@ -400,7 +366,6 @@
       "id": "윤다희",
       "name": "윤다희",
       "team": "고급화전략",
-      "team_idx": 5,
       "company": "버슨",
       "is_partner": false,
       "team_attendance": 3,
@@ -410,7 +375,6 @@
       "id": "조진서",
       "name": "조진서",
       "team": "고급화전략",
-      "team_idx": 5,
       "company": "오호츠크 퍼블리싱",
       "is_partner": false,
       "team_attendance": 2,
@@ -420,7 +384,6 @@
       "id": "최이슬",
       "name": "최이슬",
       "team": "고급화전략",
-      "team_idx": 5,
       "company": "CJ올리브영",
       "is_partner": false,
       "team_attendance": 3,
@@ -430,7 +393,6 @@
       "id": "김성남",
       "name": "김성남",
       "team": "리더십첫줄",
-      "team_idx": 6,
       "company": "HR컨설턴트",
       "is_partner": true,
       "team_attendance": 0,
@@ -440,7 +402,6 @@
       "id": "김희원",
       "name": "김희원",
       "team": "리더십첫줄",
-      "team_idx": 6,
       "company": "플렉스튜디오",
       "is_partner": false,
       "team_attendance": 3,
@@ -450,7 +411,6 @@
       "id": "이영주",
       "name": "이영주",
       "team": "리더십첫줄",
-      "team_idx": 6,
       "company": "서울대학교 산학협력단",
       "is_partner": false,
       "team_attendance": 3,
@@ -460,7 +420,6 @@
       "id": "권나윤",
       "name": "권나윤",
       "team": "리더십첫줄",
-      "team_idx": 6,
       "company": "페일블루닷컴퍼니",
       "is_partner": false,
       "team_attendance": 2,
@@ -470,7 +429,6 @@
       "id": "석지윤",
       "name": "석지윤",
       "team": "리더십첫줄",
-      "team_idx": 6,
       "company": "약사",
       "is_partner": false,
       "team_attendance": 3,
@@ -480,7 +438,6 @@
       "id": "주선경",
       "name": "주선경",
       "team": "리더십첫줄",
-      "team_idx": 6,
       "company": "어댑트",
       "is_partner": false,
       "team_attendance": 3,
@@ -490,7 +447,6 @@
       "id": "심현보",
       "name": "심현보",
       "team": "리더의서재",
-      "team_idx": 7,
       "company": "Kearney",
       "is_partner": true,
       "team_attendance": 0,
@@ -500,7 +456,6 @@
       "id": "이현정",
       "name": "이현정",
       "team": "리더의서재",
-      "team_idx": 7,
       "company": "추다 CHU DA",
       "is_partner": false,
       "team_attendance": 3,
@@ -510,7 +465,6 @@
       "id": "권수은",
       "name": "권수은",
       "team": "리더의서재",
-      "team_idx": 7,
       "company": "삼성서울병원",
       "is_partner": false,
       "team_attendance": 2,
@@ -520,17 +474,15 @@
       "id": "박지영 (리더의서재)",
       "name": "박지영",
       "team": "리더의서재",
-      "team_idx": 7,
       "company": "DL이앤씨",
       "is_partner": false,
       "team_attendance": 2,
-      "event_attendance": 0
+      "event_attendance": 1
     },
     {
       "id": "손상희",
       "name": "손상희",
       "team": "리더의서재",
-      "team_idx": 7,
       "company": "LG경영연구원",
       "is_partner": false,
       "team_attendance": 2,
@@ -540,7 +492,6 @@
       "id": "엄선용",
       "name": "엄선용",
       "team": "리더의서재",
-      "team_idx": 7,
       "company": "아이레",
       "is_partner": false,
       "team_attendance": 3,
@@ -550,7 +501,6 @@
       "id": "윤왕교",
       "name": "윤왕교",
       "team": "리더의서재",
-      "team_idx": 7,
       "company": "금호오토파츠",
       "is_partner": false,
       "team_attendance": 2,
@@ -560,7 +510,6 @@
       "id": "임아영",
       "name": "임아영",
       "team": "리더의서재",
-      "team_idx": 7,
       "company": "Morphic",
       "is_partner": false,
       "team_attendance": 1,
@@ -570,7 +519,6 @@
       "id": "김민정",
       "name": "김민정",
       "team": "마케팅디깅",
-      "team_idx": 8,
       "company": "오늘의집",
       "is_partner": true,
       "team_attendance": 0,
@@ -580,7 +528,6 @@
       "id": "강동훈",
       "name": "강동훈",
       "team": "마케팅디깅",
-      "team_idx": 8,
       "company": "(주)오디스랩",
       "is_partner": false,
       "team_attendance": 1,
@@ -590,7 +537,6 @@
       "id": "송선혜",
       "name": "송선혜",
       "team": "마케팅디깅",
-      "team_idx": 8,
       "company": "플렉스튜디오",
       "is_partner": false,
       "team_attendance": 3,
@@ -600,7 +546,6 @@
       "id": "윤지성",
       "name": "윤지성",
       "team": "마케팅디깅",
-      "team_idx": 8,
       "company": "Remerge",
       "is_partner": false,
       "team_attendance": 3,
@@ -610,7 +555,6 @@
       "id": "황성준",
       "name": "황성준",
       "team": "마케팅디깅",
-      "team_idx": 8,
       "company": "바이트댄스",
       "is_partner": false,
       "team_attendance": 3,
@@ -620,7 +564,6 @@
       "id": "김한나",
       "name": "김한나",
       "team": "마케팅디깅",
-      "team_idx": 8,
       "company": "LG전자",
       "is_partner": false,
       "team_attendance": 3,
@@ -630,7 +573,6 @@
       "id": "이지현",
       "name": "이지현",
       "team": "마케팅디깅",
-      "team_idx": 8,
       "company": "네이버웹툰",
       "is_partner": false,
       "team_attendance": 0,
@@ -640,7 +582,6 @@
       "id": "이태희",
       "name": "이태희",
       "team": "마케팅디깅",
-      "team_idx": 8,
       "company": "HuskyFox",
       "is_partner": false,
       "team_attendance": 3,
@@ -650,7 +591,6 @@
       "id": "임성우",
       "name": "임성우",
       "team": "마케팅디깅",
-      "team_idx": 8,
       "company": "삼성전자",
       "is_partner": false,
       "team_attendance": 1,
@@ -660,17 +600,15 @@
       "id": "이도희",
       "name": "이도희",
       "team": "마케팅디깅",
-      "team_idx": 8,
       "company": "레드햇",
       "is_partner": false,
       "team_attendance": 2,
-      "event_attendance": 1
+      "event_attendance": 0
     },
     {
       "id": "박민우",
       "name": "박민우",
       "team": "소통의기술",
-      "team_idx": 9,
       "company": "보이스랩",
       "is_partner": true,
       "team_attendance": 1,
@@ -680,17 +618,15 @@
       "id": "송서현",
       "name": "송서현",
       "team": "소통의기술",
-      "team_idx": 9,
       "company": "서울특별시청",
       "is_partner": false,
       "team_attendance": 3,
-      "event_attendance": 2
+      "event_attendance": 1
     },
     {
       "id": "김다영",
       "name": "김다영",
       "team": "소통의기술",
-      "team_idx": 9,
       "company": "(주)다다씨앤씨",
       "is_partner": false,
       "team_attendance": 4,
@@ -700,7 +636,6 @@
       "id": "서지희",
       "name": "서지희",
       "team": "소통의기술",
-      "team_idx": 9,
       "company": "신젠타코리아",
       "is_partner": false,
       "team_attendance": 3,
@@ -710,7 +645,6 @@
       "id": "이승원",
       "name": "이승원",
       "team": "소통의기술",
-      "team_idx": 9,
       "company": "HD현대일렉트릭",
       "is_partner": false,
       "team_attendance": 1,
@@ -720,7 +654,6 @@
       "id": "전소영 (소통의기술)",
       "name": "전소영",
       "team": "소통의기술",
-      "team_idx": 9,
       "company": "아모레퍼시픽",
       "is_partner": false,
       "team_attendance": 1,
@@ -730,7 +663,6 @@
       "id": "홍수경",
       "name": "홍수경",
       "team": "소통의기술",
-      "team_idx": 9,
       "company": "대한항공",
       "is_partner": false,
       "team_attendance": 3,
@@ -740,7 +672,6 @@
       "id": "김보경",
       "name": "김보경",
       "team": "저스트두잇",
-      "team_idx": 10,
       "company": "금은보화",
       "is_partner": true,
       "team_attendance": 0,
@@ -750,7 +681,6 @@
       "id": "강국주",
       "name": "강국주",
       "team": "저스트두잇",
-      "team_idx": 10,
       "company": "위즈팜",
       "is_partner": false,
       "team_attendance": 2,
@@ -760,7 +690,6 @@
       "id": "김규리",
       "name": "김규리",
       "team": "저스트두잇",
-      "team_idx": 10,
       "company": "프리랜서",
       "is_partner": false,
       "team_attendance": 3,
@@ -770,7 +699,6 @@
       "id": "박소현",
       "name": "박소현",
       "team": "저스트두잇",
-      "team_idx": 10,
       "company": "fadó",
       "is_partner": false,
       "team_attendance": 3,
@@ -780,7 +708,6 @@
       "id": "이홍진",
       "name": "이홍진",
       "team": "저스트두잇",
-      "team_idx": 10,
       "company": "다이소코리아",
       "is_partner": false,
       "team_attendance": 3,
@@ -790,7 +717,6 @@
       "id": "유희경",
       "name": "유희경",
       "team": "저스트두잇",
-      "team_idx": 10,
       "company": "매일경제신문",
       "is_partner": false,
       "team_attendance": 3,
@@ -800,7 +726,6 @@
       "id": "송진우",
       "name": "송진우",
       "team": "전략가의일",
-      "team_idx": 11,
       "company": "우버 택시 코리아",
       "is_partner": true,
       "team_attendance": 0,
@@ -810,7 +735,6 @@
       "id": "강혜원",
       "name": "강혜원",
       "team": "전략가의일",
-      "team_idx": 11,
       "company": "바커케미칼코리아",
       "is_partner": false,
       "team_attendance": 2,
@@ -820,7 +744,6 @@
       "id": "김보정",
       "name": "김보정",
       "team": "전략가의일",
-      "team_idx": 11,
       "company": "슈미트/똑똑",
       "is_partner": false,
       "team_attendance": 2,
@@ -830,7 +753,6 @@
       "id": "김향주",
       "name": "김향주",
       "team": "전략가의일",
-      "team_idx": 11,
       "company": "더퍼스트터치",
       "is_partner": false,
       "team_attendance": 3,
@@ -840,7 +762,6 @@
       "id": "박명근",
       "name": "박명근",
       "team": "전략가의일",
-      "team_idx": 11,
       "company": "NVIDIA",
       "is_partner": false,
       "team_attendance": 2,
@@ -850,7 +771,6 @@
       "id": "박상연",
       "name": "박상연",
       "team": "전략가의일",
-      "team_idx": 11,
       "company": "에피원스튜디오",
       "is_partner": false,
       "team_attendance": 3,
@@ -860,7 +780,6 @@
       "id": "안정민",
       "name": "안정민",
       "team": "전략가의일",
-      "team_idx": 11,
       "company": "GS에너지",
       "is_partner": false,
       "team_attendance": 3,
@@ -870,7 +789,6 @@
       "id": "이정민",
       "name": "이정민",
       "team": "전략가의일",
-      "team_idx": 11,
       "company": "매스프레소",
       "is_partner": false,
       "team_attendance": 2,
@@ -880,7 +798,6 @@
       "id": "이한별",
       "name": "이한별",
       "team": "전략가의일",
-      "team_idx": 11,
       "company": "LG에너지솔루션",
       "is_partner": false,
       "team_attendance": 3,
@@ -890,7 +807,6 @@
       "id": "홍아람",
       "name": "홍아람",
       "team": "전략가의일",
-      "team_idx": 11,
       "company": "Apex dynamic",
       "is_partner": false,
       "team_attendance": 3,
@@ -900,7 +816,6 @@
       "id": "김유일",
       "name": "김유일",
       "team": "전략가의일",
-      "team_idx": 11,
       "company": "테크트로닉인더스트리즈코리아",
       "is_partner": false,
       "team_attendance": 3,
@@ -910,7 +825,6 @@
       "id": "김재연",
       "name": "김재연",
       "team": "전략가의일",
-      "team_idx": 11,
       "company": "대한항공",
       "is_partner": false,
       "team_attendance": 3,
@@ -920,7 +834,6 @@
       "id": "박승표",
       "name": "박승표",
       "team": "전략가의일",
-      "team_idx": 11,
       "company": "스케일업스쿼드",
       "is_partner": false,
       "team_attendance": 3,
@@ -930,7 +843,6 @@
       "id": "이수림",
       "name": "이수림",
       "team": "전략가의일",
-      "team_idx": 11,
       "company": "오뚜기",
       "is_partner": false,
       "team_attendance": 3,
@@ -940,7 +852,6 @@
       "id": "이은혁",
       "name": "이은혁",
       "team": "전략가의일",
-      "team_idx": 11,
       "company": "삼양홀딩스",
       "is_partner": false,
       "team_attendance": 3,
@@ -950,7 +861,6 @@
       "id": "이정은",
       "name": "이정은",
       "team": "전략가의일",
-      "team_idx": 11,
       "company": "필더필",
       "is_partner": false,
       "team_attendance": 3,
@@ -960,7 +870,6 @@
       "id": "장지웅",
       "name": "장지웅",
       "team": "전략가의일",
-      "team_idx": 11,
       "company": "삼성바이오로직스",
       "is_partner": false,
       "team_attendance": 3,
@@ -970,7 +879,6 @@
       "id": "조현국",
       "name": "조현국",
       "team": "전략가의일",
-      "team_idx": 11,
       "company": "오뚜기",
       "is_partner": false,
       "team_attendance": 3,
@@ -980,7 +888,6 @@
       "id": "김재윤",
       "name": "김재윤",
       "team": "팀오호츠크",
-      "team_idx": 12,
       "company": "HFK",
       "is_partner": true,
       "team_attendance": 0,
@@ -990,7 +897,6 @@
       "id": "정호준",
       "name": "정호준",
       "team": "팀오호츠크",
-      "team_idx": 12,
       "company": "삼성전자",
       "is_partner": false,
       "team_attendance": 1,
@@ -1000,7 +906,6 @@
       "id": "김하나",
       "name": "김하나",
       "team": "팀오호츠크",
-      "team_idx": 12,
       "company": "HERE Technologies",
       "is_partner": false,
       "team_attendance": 2,
@@ -1010,7 +915,6 @@
       "id": "박지원",
       "name": "박지원",
       "team": "팀오호츠크",
-      "team_idx": 12,
       "company": "LINE+",
       "is_partner": false,
       "team_attendance": 2,
@@ -1020,7 +924,6 @@
       "id": "신선아",
       "name": "신선아",
       "team": "팀오호츠크",
-      "team_idx": 12,
       "company": "오아시스마켓",
       "is_partner": false,
       "team_attendance": 2,
@@ -1030,7 +933,6 @@
       "id": "윤다혜",
       "name": "윤다혜",
       "team": "팀오호츠크",
-      "team_idx": 12,
       "company": "Emirates Shipping Line",
       "is_partner": false,
       "team_attendance": 2,
@@ -1040,7 +942,6 @@
       "id": "이수연",
       "name": "이수연",
       "team": "팀오호츠크",
-      "team_idx": 12,
       "company": "부산시립미술관",
       "is_partner": false,
       "team_attendance": 0,
@@ -1050,17 +951,15 @@
       "id": "이주영",
       "name": "이주영",
       "team": "팀오호츠크",
-      "team_idx": 12,
       "company": "더플레이컴퍼니",
       "is_partner": false,
       "team_attendance": 2,
       "event_attendance": 0
     },
     {
-      "id": "이슬기",
+      "id": "이슬기 (AI부사수)",
       "name": "이슬기",
       "team": "AI부사수",
-      "team_idx": 0,
       "company": "HFK",
       "is_partner": true,
       "team_attendance": 0,
@@ -1070,7 +969,6 @@
       "id": "김준형",
       "name": "김준형",
       "team": "AI부사수",
-      "team_idx": 0,
       "company": "SK텔레콤",
       "is_partner": false,
       "team_attendance": 3,
@@ -1080,7 +978,6 @@
       "id": "이다은",
       "name": "이다은",
       "team": "AI부사수",
-      "team_idx": 0,
       "company": "머쉬룸컴퍼니(레디투킥)",
       "is_partner": false,
       "team_attendance": 2,
@@ -1090,7 +987,6 @@
       "id": "강주현",
       "name": "강주현",
       "team": "AI부사수",
-      "team_idx": 0,
       "company": "NE능률",
       "is_partner": false,
       "team_attendance": 3,
@@ -1100,27 +996,24 @@
       "id": "금가람",
       "name": "금가람",
       "team": "AI부사수",
-      "team_idx": 0,
       "company": "우리밀",
       "is_partner": false,
       "team_attendance": 2,
       "event_attendance": 2
     },
     {
-      "id": "김경아",
+      "id": "김경아 (AI부사수)",
       "name": "김경아",
       "team": "AI부사수",
-      "team_idx": 0,
       "company": "(주)트립레이어",
       "is_partner": false,
       "team_attendance": 3,
-      "event_attendance": 2
+      "event_attendance": 0
     },
     {
       "id": "김지애",
       "name": "김지애",
       "team": "AI부사수",
-      "team_idx": 0,
       "company": "경기도어린이박물관",
       "is_partner": false,
       "team_attendance": 2,
@@ -1130,17 +1023,15 @@
       "id": "김지현 (AI부사수)",
       "name": "김지현",
       "team": "AI부사수",
-      "team_idx": 0,
       "company": "몽베스트",
       "is_partner": false,
       "team_attendance": 3,
-      "event_attendance": 0
+      "event_attendance": 1
     },
     {
       "id": "김화진",
       "name": "김화진",
       "team": "AI부사수",
-      "team_idx": 0,
       "company": "현대해상",
       "is_partner": false,
       "team_attendance": 3,
@@ -1150,7 +1041,6 @@
       "id": "박경문",
       "name": "박경문",
       "team": "AI부사수",
-      "team_idx": 0,
       "company": "금융감독원",
       "is_partner": false,
       "team_attendance": 3,
@@ -1160,7 +1050,6 @@
       "id": "박정연",
       "name": "박정연",
       "team": "AI부사수",
-      "team_idx": 0,
       "company": "TD7VII INC",
       "is_partner": false,
       "team_attendance": 3,
@@ -1170,7 +1059,6 @@
       "id": "신상호",
       "name": "신상호",
       "team": "AI부사수",
-      "team_idx": 0,
       "company": "(주)에어코드",
       "is_partner": false,
       "team_attendance": 2,
@@ -1180,7 +1068,6 @@
       "id": "유효영",
       "name": "유효영",
       "team": "AI부사수",
-      "team_idx": 0,
       "company": "퍼플식스스튜디오",
       "is_partner": false,
       "team_attendance": 3,
@@ -1190,7 +1077,6 @@
       "id": "이세림",
       "name": "이세림",
       "team": "AI부사수",
-      "team_idx": 0,
       "company": "SK텔레콤",
       "is_partner": false,
       "team_attendance": 3,
@@ -1200,7 +1086,6 @@
       "id": "이수정",
       "name": "이수정",
       "team": "AI부사수",
-      "team_idx": 0,
       "company": "아웃사이트",
       "is_partner": false,
       "team_attendance": 3,
@@ -1210,7 +1095,6 @@
       "id": "이지은",
       "name": "이지은",
       "team": "AI부사수",
-      "team_idx": 0,
       "company": "CJ제일제당",
       "is_partner": false,
       "team_attendance": 3,
@@ -1220,7 +1104,6 @@
       "id": "정나리",
       "name": "정나리",
       "team": "AI부사수",
-      "team_idx": 0,
       "company": "LVMH BEAUTY",
       "is_partner": false,
       "team_attendance": 3,
@@ -1230,7 +1113,6 @@
       "id": "허재영",
       "name": "허재영",
       "team": "AI부사수",
-      "team_idx": 0,
       "company": "현대자동차",
       "is_partner": false,
       "team_attendance": 3,
@@ -1240,7 +1122,6 @@
       "id": "황인중",
       "name": "황인중",
       "team": "AI부사수",
-      "team_idx": 0,
       "company": "금화 세무회계",
       "is_partner": false,
       "team_attendance": 3,
@@ -1250,7 +1131,6 @@
       "id": "이 림",
       "name": "이 림",
       "team": "AI핸즈온",
-      "team_idx": 1,
       "company": "이미커피",
       "is_partner": true,
       "team_attendance": 0,
@@ -1260,7 +1140,6 @@
       "id": "김혜림",
       "name": "김혜림",
       "team": "AI핸즈온",
-      "team_idx": 1,
       "company": "카카오페이",
       "is_partner": false,
       "team_attendance": 3,
@@ -1270,7 +1149,6 @@
       "id": "민세원",
       "name": "민세원",
       "team": "AI핸즈온",
-      "team_idx": 1,
       "company": "(주)트레이",
       "is_partner": false,
       "team_attendance": 3,
@@ -1280,17 +1158,15 @@
       "id": "김경아 (AI핸즈온)",
       "name": "김경아",
       "team": "AI핸즈온",
-      "team_idx": 1,
       "company": "아이스크림아트",
       "is_partner": false,
       "team_attendance": 3,
-      "event_attendance": 0
+      "event_attendance": 2
     },
     {
       "id": "김정민",
       "name": "김정민",
       "team": "AI핸즈온",
-      "team_idx": 1,
       "company": "아모레퍼시픽",
       "is_partner": false,
       "team_attendance": 3,
@@ -1300,17 +1176,15 @@
       "id": "김준영",
       "name": "김준영",
       "team": "AI핸즈온",
-      "team_idx": 1,
       "company": "SKT",
       "is_partner": false,
       "team_attendance": 2,
-      "event_attendance": 2
+      "event_attendance": 3
     },
     {
       "id": "김효현",
       "name": "김효현",
       "team": "AI핸즈온",
-      "team_idx": 1,
       "company": "나인바운드랩",
       "is_partner": false,
       "team_attendance": 3,
@@ -1320,7 +1194,6 @@
       "id": "박윤승",
       "name": "박윤승",
       "team": "AI핸즈온",
-      "team_idx": 1,
       "company": "카카오페이",
       "is_partner": false,
       "team_attendance": 2,
@@ -1330,7 +1203,6 @@
       "id": "박재희",
       "name": "박재희",
       "team": "AI핸즈온",
-      "team_idx": 1,
       "company": "이노크라스",
       "is_partner": false,
       "team_attendance": 2,
@@ -1340,7 +1212,6 @@
       "id": "신승환",
       "name": "신승환",
       "team": "AI핸즈온",
-      "team_idx": 1,
       "company": "위펀",
       "is_partner": false,
       "team_attendance": 2,
@@ -1350,7 +1221,6 @@
       "id": "신현주",
       "name": "신현주",
       "team": "AI핸즈온",
-      "team_idx": 1,
       "company": "주한캐나다대사관",
       "is_partner": false,
       "team_attendance": 2,
@@ -1360,7 +1230,6 @@
       "id": "오지영",
       "name": "오지영",
       "team": "AI핸즈온",
-      "team_idx": 1,
       "company": "버핏서울",
       "is_partner": false,
       "team_attendance": 3,
@@ -1370,7 +1239,6 @@
       "id": "이다혜",
       "name": "이다혜",
       "team": "AI핸즈온",
-      "team_idx": 1,
       "company": "롯데e커머스",
       "is_partner": false,
       "team_attendance": 3,
@@ -1380,7 +1248,6 @@
       "id": "이슬기 (AI핸즈온)",
       "name": "이슬기",
       "team": "AI핸즈온",
-      "team_idx": 1,
       "company": "쿠팡",
       "is_partner": false,
       "team_attendance": 2,
@@ -1390,7 +1257,6 @@
       "id": "이정준",
       "name": "이정준",
       "team": "AI핸즈온",
-      "team_idx": 1,
       "company": "메모리올",
       "is_partner": false,
       "team_attendance": 3,
@@ -1400,7 +1266,6 @@
       "id": "이파라",
       "name": "이파라",
       "team": "AI핸즈온",
-      "team_idx": 1,
       "company": "-",
       "is_partner": false,
       "team_attendance": 2,
@@ -1410,7 +1275,6 @@
       "id": "전신애",
       "name": "전신애",
       "team": "AI핸즈온",
-      "team_idx": 1,
       "company": "비아트리스코리아",
       "is_partner": false,
       "team_attendance": 3,
@@ -1420,7 +1284,6 @@
       "id": "정서연",
       "name": "정서연",
       "team": "AI핸즈온",
-      "team_idx": 1,
       "company": "CJ 올리브영",
       "is_partner": false,
       "team_attendance": 3,
@@ -1430,7 +1293,6 @@
       "id": "조혜진",
       "name": "조혜진",
       "team": "AI핸즈온",
-      "team_idx": 1,
       "company": "-",
       "is_partner": false,
       "team_attendance": 3,
@@ -1704,7 +1566,7 @@
     },
     {
       "source": "나종원",
-      "target": "박지영",
+      "target": "박지영 (강점차별화)",
       "count": 3,
       "team_count": 3,
       "event_count": 0,
@@ -1736,7 +1598,7 @@
     },
     {
       "source": "나종원",
-      "target": "전소영",
+      "target": "전소영 (강점차별화)",
       "count": 3,
       "team_count": 3,
       "event_count": 0,
@@ -1752,7 +1614,7 @@
     },
     {
       "source": "박선영",
-      "target": "박지영",
+      "target": "박지영 (강점차별화)",
       "count": 2,
       "team_count": 2,
       "event_count": 0,
@@ -1784,7 +1646,7 @@
     },
     {
       "source": "박선영",
-      "target": "전소영",
+      "target": "전소영 (강점차별화)",
       "count": 3,
       "team_count": 3,
       "event_count": 0,
@@ -1799,7 +1661,7 @@
       "kind": "team"
     },
     {
-      "source": "박지영",
+      "source": "박지영 (강점차별화)",
       "target": "윤미나",
       "count": 2,
       "team_count": 2,
@@ -1807,7 +1669,7 @@
       "kind": "team"
     },
     {
-      "source": "박지영",
+      "source": "박지영 (강점차별화)",
       "target": "이민정",
       "count": 2,
       "team_count": 2,
@@ -1815,7 +1677,7 @@
       "kind": "team"
     },
     {
-      "source": "박지영",
+      "source": "박지영 (강점차별화)",
       "target": "이수민",
       "count": 2,
       "team_count": 2,
@@ -1823,15 +1685,15 @@
       "kind": "team"
     },
     {
-      "source": "박지영",
-      "target": "전소영",
+      "source": "박지영 (강점차별화)",
+      "target": "전소영 (강점차별화)",
       "count": 3,
       "team_count": 3,
       "event_count": 0,
       "kind": "team"
     },
     {
-      "source": "박지영",
+      "source": "박지영 (강점차별화)",
       "target": "최혜정",
       "count": 1,
       "team_count": 1,
@@ -1856,7 +1718,7 @@
     },
     {
       "source": "윤미나",
-      "target": "전소영",
+      "target": "전소영 (강점차별화)",
       "count": 3,
       "team_count": 3,
       "event_count": 0,
@@ -1880,7 +1742,7 @@
     },
     {
       "source": "이민정",
-      "target": "전소영",
+      "target": "전소영 (강점차별화)",
       "count": 3,
       "team_count": 3,
       "event_count": 0,
@@ -1896,7 +1758,7 @@
     },
     {
       "source": "이수민",
-      "target": "전소영",
+      "target": "전소영 (강점차별화)",
       "count": 3,
       "team_count": 3,
       "event_count": 0,
@@ -1911,7 +1773,7 @@
       "kind": "team"
     },
     {
-      "source": "전소영",
+      "source": "전소영 (강점차별화)",
       "target": "최혜정",
       "count": 2,
       "team_count": 2,
@@ -1951,7 +1813,7 @@
       "kind": "team"
     },
     {
-      "source": "전소영",
+      "source": "전소영 (강점차별화)",
       "target": "홍은지",
       "count": 2,
       "team_count": 2,
@@ -1975,7 +1837,7 @@
       "kind": "team"
     },
     {
-      "source": "박지영",
+      "source": "박지영 (강점차별화)",
       "target": "홍은지",
       "count": 1,
       "team_count": 1,
@@ -2160,7 +2022,7 @@
     },
     {
       "source": "김민주",
-      "target": "김지현",
+      "target": "김지현 (고급화전략)",
       "count": 2,
       "team_count": 2,
       "event_count": 0,
@@ -2240,7 +2102,7 @@
     },
     {
       "source": "김성래",
-      "target": "김지현",
+      "target": "김지현 (고급화전략)",
       "count": 2,
       "team_count": 2,
       "event_count": 0,
@@ -2319,7 +2181,7 @@
       "kind": "team"
     },
     {
-      "source": "김지현",
+      "source": "김지현 (고급화전략)",
       "target": "박양일",
       "count": 2,
       "team_count": 2,
@@ -2327,7 +2189,7 @@
       "kind": "team"
     },
     {
-      "source": "김지현",
+      "source": "김지현 (고급화전략)",
       "target": "방승환",
       "count": 2,
       "team_count": 2,
@@ -2335,7 +2197,7 @@
       "kind": "team"
     },
     {
-      "source": "김지현",
+      "source": "김지현 (고급화전략)",
       "target": "유선화",
       "count": 1,
       "team_count": 1,
@@ -2343,7 +2205,7 @@
       "kind": "team"
     },
     {
-      "source": "김지현",
+      "source": "김지현 (고급화전략)",
       "target": "유통민",
       "count": 1,
       "team_count": 1,
@@ -2351,7 +2213,7 @@
       "kind": "team"
     },
     {
-      "source": "김지현",
+      "source": "김지현 (고급화전략)",
       "target": "윤다희",
       "count": 2,
       "team_count": 2,
@@ -2359,15 +2221,15 @@
       "kind": "team"
     },
     {
-      "source": "김지현",
+      "source": "김지현 (고급화전략)",
       "target": "장진영",
-      "count": 4,
+      "count": 3,
       "team_count": 2,
-      "event_count": 2,
+      "event_count": 1,
       "kind": "team"
     },
     {
-      "source": "김지현",
+      "source": "김지현 (고급화전략)",
       "target": "조진서",
       "count": 1,
       "team_count": 1,
@@ -2375,7 +2237,7 @@
       "kind": "team"
     },
     {
-      "source": "김지현",
+      "source": "김지현 (고급화전략)",
       "target": "최이슬",
       "count": 2,
       "team_count": 2,
@@ -2383,11 +2245,11 @@
       "kind": "team"
     },
     {
-      "source": "김지현",
+      "source": "김지현 (고급화전략)",
       "target": "한새롬",
-      "count": 4,
+      "count": 3,
       "team_count": 2,
-      "event_count": 2,
+      "event_count": 1,
       "kind": "team"
     },
     {
@@ -2967,52 +2829,52 @@
       "kind": "team"
     },
     {
-      "source": "박지영",
+      "source": "박지영 (리더의서재)",
       "target": "손상희",
       "count": 1,
       "team_count": 1,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
-      "source": "박지영",
+      "source": "박지영 (리더의서재)",
       "target": "심현보",
       "count": 2,
       "team_count": 2,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
-      "source": "박지영",
+      "source": "박지영 (리더의서재)",
       "target": "엄선용",
       "count": 2,
       "team_count": 2,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
-      "source": "박지영",
+      "source": "박지영 (리더의서재)",
       "target": "윤왕교",
       "count": 1,
       "team_count": 1,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
-      "source": "박지영",
+      "source": "박지영 (리더의서재)",
       "target": "이현정",
       "count": 2,
       "team_count": 2,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
       "source": "권수은",
-      "target": "박지영",
+      "target": "박지영 (리더의서재)",
       "count": 1,
       "team_count": 1,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
       "source": "강동훈",
@@ -3249,9 +3111,9 @@
     {
       "source": "김한나",
       "target": "이도희",
-      "count": 3,
+      "count": 2,
       "team_count": 2,
-      "event_count": 1,
+      "event_count": 0,
       "kind": "team"
     },
     {
@@ -3265,9 +3127,9 @@
     {
       "source": "윤지성",
       "target": "이도희",
-      "count": 3,
+      "count": 2,
       "team_count": 2,
-      "event_count": 1,
+      "event_count": 0,
       "kind": "team"
     },
     {
@@ -3305,9 +3167,9 @@
     {
       "source": "김다영",
       "target": "송서현",
-      "count": 4,
+      "count": 3,
       "team_count": 3,
-      "event_count": 1,
+      "event_count": 0,
       "kind": "team"
     },
     {
@@ -3368,43 +3230,43 @@
     },
     {
       "source": "김다영",
-      "target": "전소영",
+      "target": "전소영 (소통의기술)",
       "count": 1,
       "team_count": 1,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
       "source": "박민우",
-      "target": "전소영",
+      "target": "전소영 (소통의기술)",
       "count": 1,
       "team_count": 1,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
       "source": "서지희",
-      "target": "전소영",
+      "target": "전소영 (소통의기술)",
       "count": 1,
       "team_count": 1,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
       "source": "송서현",
-      "target": "전소영",
+      "target": "전소영 (소통의기술)",
       "count": 1,
       "team_count": 1,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
-      "source": "전소영",
+      "source": "전소영 (소통의기술)",
       "target": "홍수경",
       "count": 1,
       "team_count": 1,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
       "source": "김다영",
@@ -4936,7 +4798,7 @@
     },
     {
       "source": "강주현",
-      "target": "김경아",
+      "target": "김경아 (AI부사수)",
       "count": 3,
       "team_count": 3,
       "event_count": 0,
@@ -4960,11 +4822,11 @@
     },
     {
       "source": "강주현",
-      "target": "김지현",
+      "target": "김지현 (AI부사수)",
       "count": 3,
       "team_count": 3,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
       "source": "강주현",
@@ -5032,7 +4894,7 @@
     },
     {
       "source": "강주현",
-      "target": "이슬기",
+      "target": "이슬기 (AI부사수)",
       "count": 3,
       "team_count": 3,
       "event_count": 0,
@@ -5071,15 +4933,15 @@
       "kind": "team"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI부사수)",
       "target": "김준형",
-      "count": 5,
+      "count": 3,
       "team_count": 3,
-      "event_count": 2,
+      "event_count": 0,
       "kind": "team"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI부사수)",
       "target": "김지애",
       "count": 2,
       "team_count": 2,
@@ -5087,15 +4949,15 @@
       "kind": "team"
     },
     {
-      "source": "김경아",
-      "target": "김지현",
-      "count": 4,
+      "source": "김경아 (AI부사수)",
+      "target": "김지현 (AI부사수)",
+      "count": 3,
       "team_count": 3,
-      "event_count": 1,
-      "kind": "cross"
+      "event_count": 0,
+      "kind": "team"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI부사수)",
       "target": "김화진",
       "count": 3,
       "team_count": 3,
@@ -5103,7 +4965,7 @@
       "kind": "team"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI부사수)",
       "target": "박경문",
       "count": 3,
       "team_count": 3,
@@ -5111,7 +4973,7 @@
       "kind": "team"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI부사수)",
       "target": "박정연",
       "count": 3,
       "team_count": 3,
@@ -5119,7 +4981,7 @@
       "kind": "team"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI부사수)",
       "target": "신상호",
       "count": 2,
       "team_count": 2,
@@ -5127,7 +4989,7 @@
       "kind": "team"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI부사수)",
       "target": "유효영",
       "count": 3,
       "team_count": 3,
@@ -5135,7 +4997,7 @@
       "kind": "team"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI부사수)",
       "target": "이다은",
       "count": 2,
       "team_count": 2,
@@ -5143,7 +5005,7 @@
       "kind": "team"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI부사수)",
       "target": "이세림",
       "count": 3,
       "team_count": 3,
@@ -5151,23 +5013,23 @@
       "kind": "team"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI부사수)",
       "target": "이수정",
-      "count": 4,
+      "count": 3,
       "team_count": 3,
-      "event_count": 1,
-      "kind": "team"
-    },
-    {
-      "source": "김경아",
-      "target": "이슬기",
-      "count": 5,
-      "team_count": 5,
       "event_count": 0,
       "kind": "team"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI부사수)",
+      "target": "이슬기 (AI부사수)",
+      "count": 3,
+      "team_count": 3,
+      "event_count": 0,
+      "kind": "team"
+    },
+    {
+      "source": "김경아 (AI부사수)",
       "target": "이지은",
       "count": 3,
       "team_count": 3,
@@ -5175,7 +5037,7 @@
       "kind": "team"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI부사수)",
       "target": "정나리",
       "count": 3,
       "team_count": 3,
@@ -5183,7 +5045,7 @@
       "kind": "team"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI부사수)",
       "target": "허재영",
       "count": 3,
       "team_count": 3,
@@ -5191,7 +5053,7 @@
       "kind": "team"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI부사수)",
       "target": "황인중",
       "count": 3,
       "team_count": 3,
@@ -5208,11 +5070,11 @@
     },
     {
       "source": "김준형",
-      "target": "김지현",
-      "count": 5,
+      "target": "김지현 (AI부사수)",
+      "count": 4,
       "team_count": 3,
-      "event_count": 2,
-      "kind": "cross"
+      "event_count": 1,
+      "kind": "team"
     },
     {
       "source": "김준형",
@@ -5280,7 +5142,7 @@
     },
     {
       "source": "김준형",
-      "target": "이슬기",
+      "target": "이슬기 (AI부사수)",
       "count": 3,
       "team_count": 3,
       "event_count": 0,
@@ -5320,11 +5182,11 @@
     },
     {
       "source": "김지애",
-      "target": "김지현",
+      "target": "김지현 (AI부사수)",
       "count": 2,
       "team_count": 2,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
       "source": "김지애",
@@ -5392,7 +5254,7 @@
     },
     {
       "source": "김지애",
-      "target": "이슬기",
+      "target": "이슬기 (AI부사수)",
       "count": 2,
       "team_count": 2,
       "event_count": 0,
@@ -5431,108 +5293,108 @@
       "kind": "team"
     },
     {
-      "source": "김지현",
+      "source": "김지현 (AI부사수)",
       "target": "김화진",
       "count": 3,
       "team_count": 3,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
-      "source": "김지현",
+      "source": "김지현 (AI부사수)",
       "target": "박경문",
       "count": 4,
       "team_count": 3,
       "event_count": 1,
-      "kind": "cross"
+      "kind": "team"
     },
     {
-      "source": "김지현",
+      "source": "김지현 (AI부사수)",
       "target": "박정연",
       "count": 4,
       "team_count": 3,
       "event_count": 1,
-      "kind": "cross"
+      "kind": "team"
     },
     {
-      "source": "김지현",
+      "source": "김지현 (AI부사수)",
       "target": "신상호",
       "count": 2,
       "team_count": 2,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
-      "source": "김지현",
+      "source": "김지현 (AI부사수)",
       "target": "유효영",
       "count": 4,
       "team_count": 3,
       "event_count": 1,
-      "kind": "cross"
+      "kind": "team"
     },
     {
-      "source": "김지현",
+      "source": "김지현 (AI부사수)",
       "target": "이다은",
       "count": 2,
       "team_count": 2,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
-      "source": "김지현",
+      "source": "김지현 (AI부사수)",
       "target": "이세림",
       "count": 3,
       "team_count": 3,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
-      "source": "김지현",
+      "source": "김지현 (AI부사수)",
       "target": "이수정",
       "count": 3,
       "team_count": 3,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
-      "source": "김지현",
-      "target": "이슬기",
+      "source": "김지현 (AI부사수)",
+      "target": "이슬기 (AI부사수)",
       "count": 3,
       "team_count": 3,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
-      "source": "김지현",
+      "source": "김지현 (AI부사수)",
       "target": "이지은",
       "count": 3,
       "team_count": 3,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
-      "source": "김지현",
+      "source": "김지현 (AI부사수)",
       "target": "정나리",
       "count": 3,
       "team_count": 3,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
-      "source": "김지현",
+      "source": "김지현 (AI부사수)",
       "target": "허재영",
       "count": 4,
       "team_count": 3,
       "event_count": 1,
-      "kind": "cross"
+      "kind": "team"
     },
     {
-      "source": "김지현",
+      "source": "김지현 (AI부사수)",
       "target": "황인중",
       "count": 3,
       "team_count": 3,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
       "source": "김화진",
@@ -5592,7 +5454,7 @@
     },
     {
       "source": "김화진",
-      "target": "이슬기",
+      "target": "이슬기 (AI부사수)",
       "count": 3,
       "team_count": 3,
       "event_count": 0,
@@ -5680,7 +5542,7 @@
     },
     {
       "source": "박경문",
-      "target": "이슬기",
+      "target": "이슬기 (AI부사수)",
       "count": 3,
       "team_count": 3,
       "event_count": 0,
@@ -5760,7 +5622,7 @@
     },
     {
       "source": "박정연",
-      "target": "이슬기",
+      "target": "이슬기 (AI부사수)",
       "count": 3,
       "team_count": 3,
       "event_count": 0,
@@ -5832,7 +5694,7 @@
     },
     {
       "source": "신상호",
-      "target": "이슬기",
+      "target": "이슬기 (AI부사수)",
       "count": 2,
       "team_count": 2,
       "event_count": 0,
@@ -5896,7 +5758,7 @@
     },
     {
       "source": "유효영",
-      "target": "이슬기",
+      "target": "이슬기 (AI부사수)",
       "count": 3,
       "team_count": 3,
       "event_count": 0,
@@ -5952,7 +5814,7 @@
     },
     {
       "source": "이다은",
-      "target": "이슬기",
+      "target": "이슬기 (AI부사수)",
       "count": 2,
       "team_count": 2,
       "event_count": 0,
@@ -6000,7 +5862,7 @@
     },
     {
       "source": "이세림",
-      "target": "이슬기",
+      "target": "이슬기 (AI부사수)",
       "count": 3,
       "team_count": 3,
       "event_count": 0,
@@ -6040,7 +5902,7 @@
     },
     {
       "source": "이수정",
-      "target": "이슬기",
+      "target": "이슬기 (AI부사수)",
       "count": 3,
       "team_count": 3,
       "event_count": 0,
@@ -6079,7 +5941,7 @@
       "kind": "team"
     },
     {
-      "source": "이슬기",
+      "source": "이슬기 (AI부사수)",
       "target": "이지은",
       "count": 3,
       "team_count": 3,
@@ -6087,7 +5949,7 @@
       "kind": "team"
     },
     {
-      "source": "이슬기",
+      "source": "이슬기 (AI부사수)",
       "target": "정나리",
       "count": 3,
       "team_count": 3,
@@ -6095,7 +5957,7 @@
       "kind": "team"
     },
     {
-      "source": "이슬기",
+      "source": "이슬기 (AI부사수)",
       "target": "허재영",
       "count": 3,
       "team_count": 3,
@@ -6103,7 +5965,7 @@
       "kind": "team"
     },
     {
-      "source": "이슬기",
+      "source": "이슬기 (AI부사수)",
       "target": "황인중",
       "count": 3,
       "team_count": 3,
@@ -6168,10 +6030,10 @@
     },
     {
       "source": "금가람",
-      "target": "김경아",
-      "count": 4,
+      "target": "김경아 (AI부사수)",
+      "count": 2,
       "team_count": 2,
-      "event_count": 2,
+      "event_count": 0,
       "kind": "team"
     },
     {
@@ -6192,11 +6054,11 @@
     },
     {
       "source": "금가람",
-      "target": "김지현",
-      "count": 3,
+      "target": "김지현 (AI부사수)",
+      "count": 2,
       "team_count": 2,
-      "event_count": 1,
-      "kind": "cross"
+      "event_count": 0,
+      "kind": "team"
     },
     {
       "source": "금가람",
@@ -6264,7 +6126,7 @@
     },
     {
       "source": "금가람",
-      "target": "이슬기",
+      "target": "이슬기 (AI부사수)",
       "count": 2,
       "team_count": 2,
       "event_count": 0,
@@ -6303,116 +6165,116 @@
       "kind": "team"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI핸즈온)",
       "target": "김정민",
       "count": 4,
       "team_count": 3,
       "event_count": 1,
-      "kind": "cross"
+      "kind": "team"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI핸즈온)",
       "target": "김준영",
       "count": 4,
       "team_count": 2,
       "event_count": 2,
-      "kind": "cross"
+      "kind": "team"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI핸즈온)",
       "target": "김혜림",
       "count": 3,
       "team_count": 3,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI핸즈온)",
       "target": "김효현",
       "count": 3,
       "team_count": 3,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI핸즈온)",
       "target": "민세원",
       "count": 3,
       "team_count": 3,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI핸즈온)",
       "target": "박윤승",
       "count": 2,
       "team_count": 2,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI핸즈온)",
       "target": "신현주",
       "count": 2,
       "team_count": 2,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI핸즈온)",
       "target": "오지영",
       "count": 4,
       "team_count": 3,
       "event_count": 1,
-      "kind": "cross"
+      "kind": "team"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI핸즈온)",
       "target": "이 림",
       "count": 3,
       "team_count": 3,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI핸즈온)",
       "target": "이다혜",
       "count": 3,
       "team_count": 3,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI핸즈온)",
       "target": "이정준",
       "count": 4,
       "team_count": 3,
       "event_count": 1,
-      "kind": "cross"
+      "kind": "team"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI핸즈온)",
       "target": "전신애",
       "count": 3,
       "team_count": 3,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI핸즈온)",
       "target": "정서연",
       "count": 3,
       "team_count": 3,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI핸즈온)",
       "target": "조혜진",
       "count": 4,
       "team_count": 3,
       "event_count": 1,
-      "kind": "cross"
+      "kind": "team"
     },
     {
       "source": "김정민",
@@ -7143,28 +7005,36 @@
       "kind": "team"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI핸즈온)",
       "target": "박재희",
       "count": 2,
       "team_count": 2,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI핸즈온)",
       "target": "신승환",
       "count": 2,
       "team_count": 2,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI핸즈온)",
+      "target": "이슬기 (AI핸즈온)",
+      "count": 2,
+      "team_count": 2,
+      "event_count": 0,
+      "kind": "team"
+    },
+    {
+      "source": "김경아 (AI핸즈온)",
       "target": "이파라",
       "count": 3,
       "team_count": 2,
       "event_count": 1,
-      "kind": "cross"
+      "kind": "team"
     },
     {
       "source": "김정민",
@@ -7184,11 +7054,11 @@
     },
     {
       "source": "김정민",
-      "target": "이슬기",
+      "target": "이슬기 (AI핸즈온)",
       "count": 2,
       "team_count": 2,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
       "source": "김정민",
@@ -7216,11 +7086,11 @@
     },
     {
       "source": "김준영",
-      "target": "이슬기",
+      "target": "이슬기 (AI핸즈온)",
       "count": 1,
       "team_count": 1,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
       "source": "김준영",
@@ -7248,11 +7118,11 @@
     },
     {
       "source": "김혜림",
-      "target": "이슬기",
+      "target": "이슬기 (AI핸즈온)",
       "count": 2,
       "team_count": 2,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
       "source": "김혜림",
@@ -7280,11 +7150,11 @@
     },
     {
       "source": "김효현",
-      "target": "이슬기",
+      "target": "이슬기 (AI핸즈온)",
       "count": 2,
       "team_count": 2,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
       "source": "김효현",
@@ -7312,11 +7182,11 @@
     },
     {
       "source": "민세원",
-      "target": "이슬기",
+      "target": "이슬기 (AI핸즈온)",
       "count": 2,
       "team_count": 2,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
       "source": "민세원",
@@ -7368,11 +7238,11 @@
     },
     {
       "source": "박재희",
-      "target": "이슬기",
+      "target": "이슬기 (AI핸즈온)",
       "count": 2,
       "team_count": 2,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
       "source": "박재희",
@@ -7448,11 +7318,11 @@
     },
     {
       "source": "신승환",
-      "target": "이슬기",
+      "target": "이슬기 (AI핸즈온)",
       "count": 2,
       "team_count": 2,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
       "source": "신승환",
@@ -7496,11 +7366,11 @@
     },
     {
       "source": "신현주",
-      "target": "이슬기",
+      "target": "이슬기 (AI핸즈온)",
       "count": 1,
       "team_count": 1,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
       "source": "신현주",
@@ -7512,11 +7382,11 @@
     },
     {
       "source": "오지영",
-      "target": "이슬기",
+      "target": "이슬기 (AI핸즈온)",
       "count": 2,
       "team_count": 2,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
       "source": "오지영",
@@ -7528,11 +7398,11 @@
     },
     {
       "source": "이 림",
-      "target": "이슬기",
+      "target": "이슬기 (AI핸즈온)",
       "count": 2,
       "team_count": 2,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
       "source": "이 림",
@@ -7544,11 +7414,11 @@
     },
     {
       "source": "이다혜",
-      "target": "이슬기",
+      "target": "이슬기 (AI핸즈온)",
       "count": 2,
       "team_count": 2,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
       "source": "이다혜",
@@ -7559,44 +7429,44 @@
       "kind": "team"
     },
     {
-      "source": "이슬기",
+      "source": "이슬기 (AI핸즈온)",
       "target": "이정준",
       "count": 2,
       "team_count": 2,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
-      "source": "이슬기",
+      "source": "이슬기 (AI핸즈온)",
       "target": "이파라",
       "count": 2,
       "team_count": 2,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
-      "source": "이슬기",
+      "source": "이슬기 (AI핸즈온)",
       "target": "전신애",
       "count": 2,
       "team_count": 2,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
-      "source": "이슬기",
+      "source": "이슬기 (AI핸즈온)",
       "target": "정서연",
       "count": 2,
       "team_count": 2,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
-      "source": "이슬기",
+      "source": "이슬기 (AI핸즈온)",
       "target": "조혜진",
       "count": 2,
       "team_count": 2,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
       "source": "이정준",
@@ -7648,11 +7518,11 @@
     },
     {
       "source": "박윤승",
-      "target": "이슬기",
+      "target": "이슬기 (AI핸즈온)",
       "count": 1,
       "team_count": 1,
       "event_count": 0,
-      "kind": "cross"
+      "kind": "team"
     },
     {
       "source": "박윤승",
@@ -7672,7 +7542,7 @@
     },
     {
       "source": "권나윤",
-      "target": "김경아",
+      "target": "김경아 (AI핸즈온)",
       "count": 1,
       "team_count": 0,
       "event_count": 1,
@@ -7712,7 +7582,7 @@
     },
     {
       "source": "권나윤",
-      "target": "김지현",
+      "target": "김지현 (고급화전략)",
       "count": 1,
       "team_count": 0,
       "event_count": 1,
@@ -7804,6 +7674,14 @@
       "count": 1,
       "team_count": 0,
       "event_count": 1,
+      "kind": "cross"
+    },
+    {
+      "source": "금가람",
+      "target": "김경아 (AI핸즈온)",
+      "count": 2,
+      "team_count": 0,
+      "event_count": 2,
       "kind": "cross"
     },
     {
@@ -7832,6 +7710,14 @@
     },
     {
       "source": "금가람",
+      "target": "김지현 (고급화전략)",
+      "count": 1,
+      "team_count": 0,
+      "event_count": 1,
+      "kind": "cross"
+    },
+    {
+      "source": "금가람",
       "target": "김한나",
       "count": 1,
       "team_count": 0,
@@ -7919,7 +7805,7 @@
       "kind": "cross"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI핸즈온)",
       "target": "김동일",
       "count": 1,
       "team_count": 0,
@@ -7927,7 +7813,23 @@
       "kind": "cross"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI핸즈온)",
+      "target": "김준형",
+      "count": 2,
+      "team_count": 0,
+      "event_count": 2,
+      "kind": "cross"
+    },
+    {
+      "source": "김경아 (AI핸즈온)",
+      "target": "김지현 (고급화전략)",
+      "count": 1,
+      "team_count": 0,
+      "event_count": 1,
+      "kind": "cross"
+    },
+    {
+      "source": "김경아 (AI핸즈온)",
       "target": "김한나",
       "count": 1,
       "team_count": 0,
@@ -7935,7 +7837,7 @@
       "kind": "cross"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI핸즈온)",
       "target": "남은경",
       "count": 1,
       "team_count": 0,
@@ -7943,7 +7845,7 @@
       "kind": "cross"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI핸즈온)",
       "target": "박상연",
       "count": 1,
       "team_count": 0,
@@ -7951,7 +7853,7 @@
       "kind": "cross"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI핸즈온)",
       "target": "송선혜",
       "count": 1,
       "team_count": 0,
@@ -7959,7 +7861,7 @@
       "kind": "cross"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI핸즈온)",
       "target": "윤왕교",
       "count": 1,
       "team_count": 0,
@@ -7967,7 +7869,7 @@
       "kind": "cross"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI핸즈온)",
       "target": "이수민",
       "count": 2,
       "team_count": 0,
@@ -7975,7 +7877,7 @@
       "kind": "cross"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI핸즈온)",
       "target": "장진영",
       "count": 1,
       "team_count": 0,
@@ -7983,7 +7885,7 @@
       "kind": "cross"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI핸즈온)",
       "target": "한새롬",
       "count": 1,
       "team_count": 0,
@@ -8016,7 +7918,7 @@
     },
     {
       "source": "김동일",
-      "target": "김지현",
+      "target": "김지현 (고급화전략)",
       "count": 1,
       "team_count": 0,
       "event_count": 1,
@@ -8120,7 +8022,7 @@
     },
     {
       "source": "김정민",
-      "target": "김지현",
+      "target": "김지현 (고급화전략)",
       "count": 1,
       "team_count": 0,
       "event_count": 1,
@@ -8193,14 +8095,14 @@
     {
       "source": "김준영",
       "target": "김준형",
-      "count": 2,
+      "count": 3,
       "team_count": 0,
-      "event_count": 2,
+      "event_count": 3,
       "kind": "cross"
     },
     {
       "source": "김준영",
-      "target": "김지현",
+      "target": "김지현 (고급화전략)",
       "count": 1,
       "team_count": 0,
       "event_count": 1,
@@ -8209,9 +8111,9 @@
     {
       "source": "김준영",
       "target": "김한나",
-      "count": 1,
+      "count": 2,
       "team_count": 0,
-      "event_count": 1,
+      "event_count": 2,
       "kind": "cross"
     },
     {
@@ -8225,9 +8127,9 @@
     {
       "source": "김준영",
       "target": "박상연",
-      "count": 1,
+      "count": 2,
       "team_count": 0,
-      "event_count": 1,
+      "event_count": 2,
       "kind": "cross"
     },
     {
@@ -8257,14 +8159,22 @@
     {
       "source": "김준영",
       "target": "장진영",
-      "count": 1,
+      "count": 2,
       "team_count": 0,
-      "event_count": 1,
+      "event_count": 2,
       "kind": "cross"
     },
     {
       "source": "김준영",
       "target": "한새롬",
+      "count": 2,
+      "team_count": 0,
+      "event_count": 2,
+      "kind": "cross"
+    },
+    {
+      "source": "김준형",
+      "target": "김지현 (고급화전략)",
       "count": 1,
       "team_count": 0,
       "event_count": 1,
@@ -8359,15 +8269,15 @@
       "kind": "cross"
     },
     {
-      "source": "김지현",
+      "source": "김지현 (고급화전략)",
       "target": "김한나",
-      "count": 2,
+      "count": 1,
       "team_count": 0,
-      "event_count": 2,
+      "event_count": 1,
       "kind": "cross"
     },
     {
-      "source": "김지현",
+      "source": "김지현 (고급화전략)",
       "target": "남은경",
       "count": 1,
       "team_count": 0,
@@ -8375,15 +8285,15 @@
       "kind": "cross"
     },
     {
-      "source": "김지현",
+      "source": "김지현 (고급화전략)",
       "target": "박상연",
-      "count": 2,
+      "count": 1,
       "team_count": 0,
-      "event_count": 2,
+      "event_count": 1,
       "kind": "cross"
     },
     {
-      "source": "김지현",
+      "source": "김지현 (고급화전략)",
       "target": "송선혜",
       "count": 1,
       "team_count": 0,
@@ -8391,7 +8301,7 @@
       "kind": "cross"
     },
     {
-      "source": "김지현",
+      "source": "김지현 (고급화전략)",
       "target": "오지영",
       "count": 1,
       "team_count": 0,
@@ -8399,7 +8309,7 @@
       "kind": "cross"
     },
     {
-      "source": "김지현",
+      "source": "김지현 (고급화전략)",
       "target": "윤왕교",
       "count": 1,
       "team_count": 0,
@@ -8407,7 +8317,7 @@
       "kind": "cross"
     },
     {
-      "source": "김지현",
+      "source": "김지현 (고급화전략)",
       "target": "이수민",
       "count": 1,
       "team_count": 0,
@@ -8415,7 +8325,7 @@
       "kind": "cross"
     },
     {
-      "source": "김지현",
+      "source": "김지현 (고급화전략)",
       "target": "이정준",
       "count": 1,
       "team_count": 0,
@@ -8423,7 +8333,7 @@
       "kind": "cross"
     },
     {
-      "source": "김지현",
+      "source": "김지현 (고급화전략)",
       "target": "조혜진",
       "count": 1,
       "team_count": 0,
@@ -8895,7 +8805,7 @@
       "kind": "cross"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI핸즈온)",
       "target": "김규리",
       "count": 1,
       "team_count": 0,
@@ -8903,7 +8813,7 @@
       "kind": "cross"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI핸즈온)",
       "target": "김희원",
       "count": 1,
       "team_count": 0,
@@ -8911,7 +8821,7 @@
       "kind": "cross"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI핸즈온)",
       "target": "박소현",
       "count": 1,
       "team_count": 0,
@@ -8919,7 +8829,7 @@
       "kind": "cross"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI핸즈온)",
       "target": "박지원",
       "count": 1,
       "team_count": 0,
@@ -8927,7 +8837,7 @@
       "kind": "cross"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI핸즈온)",
       "target": "석지윤",
       "count": 1,
       "team_count": 0,
@@ -8935,7 +8845,7 @@
       "kind": "cross"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI핸즈온)",
       "target": "송서현",
       "count": 1,
       "team_count": 0,
@@ -8943,7 +8853,15 @@
       "kind": "cross"
     },
     {
-      "source": "김경아",
+      "source": "김경아 (AI핸즈온)",
+      "target": "이수정",
+      "count": 1,
+      "team_count": 0,
+      "event_count": 1,
+      "kind": "cross"
+    },
+    {
+      "source": "김경아 (AI핸즈온)",
       "target": "이영주",
       "count": 1,
       "team_count": 0,
@@ -8953,9 +8871,9 @@
     {
       "source": "김규리",
       "target": "김준영",
-      "count": 1,
+      "count": 2,
       "team_count": 0,
-      "event_count": 1,
+      "event_count": 2,
       "kind": "cross"
     },
     {
@@ -8993,9 +8911,9 @@
     {
       "source": "김규리",
       "target": "송서현",
-      "count": 2,
+      "count": 1,
       "team_count": 0,
-      "event_count": 2,
+      "event_count": 1,
       "kind": "cross"
     },
     {
@@ -9081,9 +8999,9 @@
     {
       "source": "김준영",
       "target": "이영주",
-      "count": 1,
+      "count": 2,
       "team_count": 0,
-      "event_count": 1,
+      "event_count": 2,
       "kind": "cross"
     },
     {
@@ -9121,9 +9039,9 @@
     {
       "source": "김준형",
       "target": "송서현",
-      "count": 2,
+      "count": 1,
       "team_count": 0,
-      "event_count": 2,
+      "event_count": 1,
       "kind": "cross"
     },
     {
@@ -9345,9 +9263,9 @@
     {
       "source": "송서현",
       "target": "이영주",
-      "count": 2,
+      "count": 1,
       "team_count": 0,
-      "event_count": 2,
+      "event_count": 1,
       "kind": "cross"
     },
     {
@@ -9416,7 +9334,7 @@
     },
     {
       "source": "김규리",
-      "target": "김지현",
+      "target": "김지현 (AI부사수)",
       "count": 1,
       "team_count": 0,
       "event_count": 1,
@@ -9433,6 +9351,14 @@
     {
       "source": "김규리",
       "target": "김향주",
+      "count": 1,
+      "team_count": 0,
+      "event_count": 1,
+      "kind": "cross"
+    },
+    {
+      "source": "김규리",
+      "target": "민희준",
       "count": 1,
       "team_count": 0,
       "event_count": 1,
@@ -9464,7 +9390,7 @@
     },
     {
       "source": "김규리",
-      "target": "박지영",
+      "target": "박지영 (리더의서재)",
       "count": 1,
       "team_count": 0,
       "event_count": 1,
@@ -9481,14 +9407,6 @@
     {
       "source": "김규리",
       "target": "윤지성",
-      "count": 1,
-      "team_count": 0,
-      "event_count": 1,
-      "kind": "cross"
-    },
-    {
-      "source": "김규리",
-      "target": "이도희",
       "count": 1,
       "team_count": 0,
       "event_count": 1,
@@ -9529,6 +9447,14 @@
     {
       "source": "김규리",
       "target": "허재영",
+      "count": 1,
+      "team_count": 0,
+      "event_count": 1,
+      "kind": "cross"
+    },
+    {
+      "source": "김다영",
+      "target": "김준영",
       "count": 1,
       "team_count": 0,
       "event_count": 1,
@@ -9544,7 +9470,7 @@
     },
     {
       "source": "김다영",
-      "target": "김지현",
+      "target": "김지현 (AI부사수)",
       "count": 1,
       "team_count": 0,
       "event_count": 1,
@@ -9568,6 +9494,14 @@
     },
     {
       "source": "김다영",
+      "target": "민희준",
+      "count": 1,
+      "team_count": 0,
+      "event_count": 1,
+      "kind": "cross"
+    },
+    {
+      "source": "김다영",
       "target": "박경문",
       "count": 1,
       "team_count": 0,
@@ -9592,7 +9526,7 @@
     },
     {
       "source": "김다영",
-      "target": "박지영",
+      "target": "박지영 (리더의서재)",
       "count": 1,
       "team_count": 0,
       "event_count": 1,
@@ -9609,14 +9543,6 @@
     {
       "source": "김다영",
       "target": "윤지성",
-      "count": 1,
-      "team_count": 0,
-      "event_count": 1,
-      "kind": "cross"
-    },
-    {
-      "source": "김다영",
-      "target": "이도희",
       "count": 1,
       "team_count": 0,
       "event_count": 1,
@@ -9671,6 +9597,94 @@
       "kind": "cross"
     },
     {
+      "source": "김준영",
+      "target": "김지현 (AI부사수)",
+      "count": 1,
+      "team_count": 0,
+      "event_count": 1,
+      "kind": "cross"
+    },
+    {
+      "source": "김준영",
+      "target": "김향주",
+      "count": 1,
+      "team_count": 0,
+      "event_count": 1,
+      "kind": "cross"
+    },
+    {
+      "source": "김준영",
+      "target": "민희준",
+      "count": 1,
+      "team_count": 0,
+      "event_count": 1,
+      "kind": "cross"
+    },
+    {
+      "source": "김준영",
+      "target": "박경문",
+      "count": 1,
+      "team_count": 0,
+      "event_count": 1,
+      "kind": "cross"
+    },
+    {
+      "source": "김준영",
+      "target": "박정연",
+      "count": 1,
+      "team_count": 0,
+      "event_count": 1,
+      "kind": "cross"
+    },
+    {
+      "source": "김준영",
+      "target": "박지영 (리더의서재)",
+      "count": 1,
+      "team_count": 0,
+      "event_count": 1,
+      "kind": "cross"
+    },
+    {
+      "source": "김준영",
+      "target": "유효영",
+      "count": 1,
+      "team_count": 0,
+      "event_count": 1,
+      "kind": "cross"
+    },
+    {
+      "source": "김준영",
+      "target": "윤지성",
+      "count": 1,
+      "team_count": 0,
+      "event_count": 1,
+      "kind": "cross"
+    },
+    {
+      "source": "김준영",
+      "target": "이정민",
+      "count": 1,
+      "team_count": 0,
+      "event_count": 1,
+      "kind": "cross"
+    },
+    {
+      "source": "김준영",
+      "target": "이한별",
+      "count": 1,
+      "team_count": 0,
+      "event_count": 1,
+      "kind": "cross"
+    },
+    {
+      "source": "김준영",
+      "target": "허재영",
+      "count": 1,
+      "team_count": 0,
+      "event_count": 1,
+      "kind": "cross"
+    },
+    {
       "source": "김준형",
       "target": "김향주",
       "count": 1,
@@ -9680,7 +9694,15 @@
     },
     {
       "source": "김준형",
-      "target": "박지영",
+      "target": "민희준",
+      "count": 1,
+      "team_count": 0,
+      "event_count": 1,
+      "kind": "cross"
+    },
+    {
+      "source": "김준형",
+      "target": "박지영 (리더의서재)",
       "count": 1,
       "team_count": 0,
       "event_count": 1,
@@ -9689,14 +9711,6 @@
     {
       "source": "김준형",
       "target": "윤지성",
-      "count": 1,
-      "team_count": 0,
-      "event_count": 1,
-      "kind": "cross"
-    },
-    {
-      "source": "김준형",
-      "target": "이도희",
       "count": 1,
       "team_count": 0,
       "event_count": 1,
@@ -9719,7 +9733,15 @@
       "kind": "cross"
     },
     {
-      "source": "김지현",
+      "source": "김지현 (AI부사수)",
+      "target": "김한나",
+      "count": 1,
+      "team_count": 0,
+      "event_count": 1,
+      "kind": "cross"
+    },
+    {
+      "source": "김지현 (AI부사수)",
       "target": "김향주",
       "count": 1,
       "team_count": 0,
@@ -9727,23 +9749,31 @@
       "kind": "cross"
     },
     {
-      "source": "김지현",
-      "target": "박지영",
+      "source": "김지현 (AI부사수)",
+      "target": "민희준",
       "count": 1,
       "team_count": 0,
       "event_count": 1,
       "kind": "cross"
     },
     {
-      "source": "김지현",
-      "target": "송서현",
+      "source": "김지현 (AI부사수)",
+      "target": "박상연",
       "count": 1,
       "team_count": 0,
       "event_count": 1,
       "kind": "cross"
     },
     {
-      "source": "김지현",
+      "source": "김지현 (AI부사수)",
+      "target": "박지영 (리더의서재)",
+      "count": 1,
+      "team_count": 0,
+      "event_count": 1,
+      "kind": "cross"
+    },
+    {
+      "source": "김지현 (AI부사수)",
       "target": "윤지성",
       "count": 1,
       "team_count": 0,
@@ -9751,15 +9781,7 @@
       "kind": "cross"
     },
     {
-      "source": "김지현",
-      "target": "이도희",
-      "count": 1,
-      "team_count": 0,
-      "event_count": 1,
-      "kind": "cross"
-    },
-    {
-      "source": "김지현",
+      "source": "김지현 (AI부사수)",
       "target": "이영주",
       "count": 1,
       "team_count": 0,
@@ -9767,7 +9789,7 @@
       "kind": "cross"
     },
     {
-      "source": "김지현",
+      "source": "김지현 (AI부사수)",
       "target": "이정민",
       "count": 1,
       "team_count": 0,
@@ -9775,8 +9797,24 @@
       "kind": "cross"
     },
     {
-      "source": "김지현",
+      "source": "김지현 (AI부사수)",
       "target": "이한별",
+      "count": 1,
+      "team_count": 0,
+      "event_count": 1,
+      "kind": "cross"
+    },
+    {
+      "source": "김지현 (AI부사수)",
+      "target": "장진영",
+      "count": 1,
+      "team_count": 0,
+      "event_count": 1,
+      "kind": "cross"
+    },
+    {
+      "source": "김지현 (AI부사수)",
+      "target": "한새롬",
       "count": 1,
       "team_count": 0,
       "event_count": 1,
@@ -9785,6 +9823,14 @@
     {
       "source": "김한나",
       "target": "김향주",
+      "count": 1,
+      "team_count": 0,
+      "event_count": 1,
+      "kind": "cross"
+    },
+    {
+      "source": "김한나",
+      "target": "민희준",
       "count": 1,
       "team_count": 0,
       "event_count": 1,
@@ -9808,15 +9854,7 @@
     },
     {
       "source": "김한나",
-      "target": "박지영",
-      "count": 1,
-      "team_count": 0,
-      "event_count": 1,
-      "kind": "cross"
-    },
-    {
-      "source": "김한나",
-      "target": "송서현",
+      "target": "박지영 (리더의서재)",
       "count": 1,
       "team_count": 0,
       "event_count": 1,
@@ -9864,6 +9902,14 @@
     },
     {
       "source": "김향주",
+      "target": "민희준",
+      "count": 1,
+      "team_count": 0,
+      "event_count": 1,
+      "kind": "cross"
+    },
+    {
+      "source": "김향주",
       "target": "박경문",
       "count": 1,
       "team_count": 0,
@@ -9880,15 +9926,7 @@
     },
     {
       "source": "김향주",
-      "target": "박지영",
-      "count": 1,
-      "team_count": 0,
-      "event_count": 1,
-      "kind": "cross"
-    },
-    {
-      "source": "김향주",
-      "target": "송서현",
+      "target": "박지영 (리더의서재)",
       "count": 1,
       "team_count": 0,
       "event_count": 1,
@@ -9905,14 +9943,6 @@
     {
       "source": "김향주",
       "target": "윤지성",
-      "count": 1,
-      "team_count": 0,
-      "event_count": 1,
-      "kind": "cross"
-    },
-    {
-      "source": "김향주",
-      "target": "이도희",
       "count": 1,
       "team_count": 0,
       "event_count": 1,
@@ -9944,6 +9974,102 @@
     },
     {
       "source": "김향주",
+      "target": "허재영",
+      "count": 1,
+      "team_count": 0,
+      "event_count": 1,
+      "kind": "cross"
+    },
+    {
+      "source": "민희준",
+      "target": "박경문",
+      "count": 1,
+      "team_count": 0,
+      "event_count": 1,
+      "kind": "cross"
+    },
+    {
+      "source": "민희준",
+      "target": "박상연",
+      "count": 1,
+      "team_count": 0,
+      "event_count": 1,
+      "kind": "cross"
+    },
+    {
+      "source": "민희준",
+      "target": "박정연",
+      "count": 1,
+      "team_count": 0,
+      "event_count": 1,
+      "kind": "cross"
+    },
+    {
+      "source": "민희준",
+      "target": "박지영 (리더의서재)",
+      "count": 1,
+      "team_count": 0,
+      "event_count": 1,
+      "kind": "cross"
+    },
+    {
+      "source": "민희준",
+      "target": "유효영",
+      "count": 1,
+      "team_count": 0,
+      "event_count": 1,
+      "kind": "cross"
+    },
+    {
+      "source": "민희준",
+      "target": "윤지성",
+      "count": 1,
+      "team_count": 0,
+      "event_count": 1,
+      "kind": "cross"
+    },
+    {
+      "source": "민희준",
+      "target": "이영주",
+      "count": 1,
+      "team_count": 0,
+      "event_count": 1,
+      "kind": "cross"
+    },
+    {
+      "source": "민희준",
+      "target": "이정민",
+      "count": 1,
+      "team_count": 0,
+      "event_count": 1,
+      "kind": "cross"
+    },
+    {
+      "source": "민희준",
+      "target": "이한별",
+      "count": 1,
+      "team_count": 0,
+      "event_count": 1,
+      "kind": "cross"
+    },
+    {
+      "source": "민희준",
+      "target": "장진영",
+      "count": 1,
+      "team_count": 0,
+      "event_count": 1,
+      "kind": "cross"
+    },
+    {
+      "source": "민희준",
+      "target": "한새롬",
+      "count": 1,
+      "team_count": 0,
+      "event_count": 1,
+      "kind": "cross"
+    },
+    {
+      "source": "민희준",
       "target": "허재영",
       "count": 1,
       "team_count": 0,
@@ -9960,15 +10086,7 @@
     },
     {
       "source": "박경문",
-      "target": "박지영",
-      "count": 1,
-      "team_count": 0,
-      "event_count": 1,
-      "kind": "cross"
-    },
-    {
-      "source": "박경문",
-      "target": "송서현",
+      "target": "박지영 (리더의서재)",
       "count": 1,
       "team_count": 0,
       "event_count": 1,
@@ -9977,14 +10095,6 @@
     {
       "source": "박경문",
       "target": "윤지성",
-      "count": 1,
-      "team_count": 0,
-      "event_count": 1,
-      "kind": "cross"
-    },
-    {
-      "source": "박경문",
-      "target": "이도희",
       "count": 1,
       "team_count": 0,
       "event_count": 1,
@@ -10040,15 +10150,7 @@
     },
     {
       "source": "박상연",
-      "target": "박지영",
-      "count": 1,
-      "team_count": 0,
-      "event_count": 1,
-      "kind": "cross"
-    },
-    {
-      "source": "박상연",
-      "target": "송서현",
+      "target": "박지영 (리더의서재)",
       "count": 1,
       "team_count": 0,
       "event_count": 1,
@@ -10072,14 +10174,6 @@
     },
     {
       "source": "박상연",
-      "target": "이도희",
-      "count": 1,
-      "team_count": 0,
-      "event_count": 1,
-      "kind": "cross"
-    },
-    {
-      "source": "박상연",
       "target": "이영주",
       "count": 1,
       "team_count": 0,
@@ -10096,15 +10190,7 @@
     },
     {
       "source": "박정연",
-      "target": "박지영",
-      "count": 1,
-      "team_count": 0,
-      "event_count": 1,
-      "kind": "cross"
-    },
-    {
-      "source": "박정연",
-      "target": "송서현",
+      "target": "박지영 (리더의서재)",
       "count": 1,
       "team_count": 0,
       "event_count": 1,
@@ -10113,14 +10199,6 @@
     {
       "source": "박정연",
       "target": "윤지성",
-      "count": 1,
-      "team_count": 0,
-      "event_count": 1,
-      "kind": "cross"
-    },
-    {
-      "source": "박정연",
-      "target": "이도희",
       "count": 1,
       "team_count": 0,
       "event_count": 1,
@@ -10167,15 +10245,7 @@
       "kind": "cross"
     },
     {
-      "source": "박지영",
-      "target": "송서현",
-      "count": 1,
-      "team_count": 0,
-      "event_count": 1,
-      "kind": "cross"
-    },
-    {
-      "source": "박지영",
+      "source": "박지영 (리더의서재)",
       "target": "유효영",
       "count": 1,
       "team_count": 0,
@@ -10183,7 +10253,7 @@
       "kind": "cross"
     },
     {
-      "source": "박지영",
+      "source": "박지영 (리더의서재)",
       "target": "윤지성",
       "count": 1,
       "team_count": 0,
@@ -10191,15 +10261,7 @@
       "kind": "cross"
     },
     {
-      "source": "박지영",
-      "target": "이도희",
-      "count": 1,
-      "team_count": 0,
-      "event_count": 1,
-      "kind": "cross"
-    },
-    {
-      "source": "박지영",
+      "source": "박지영 (리더의서재)",
       "target": "이영주",
       "count": 1,
       "team_count": 0,
@@ -10207,7 +10269,7 @@
       "kind": "cross"
     },
     {
-      "source": "박지영",
+      "source": "박지영 (리더의서재)",
       "target": "이정민",
       "count": 1,
       "team_count": 0,
@@ -10215,7 +10277,7 @@
       "kind": "cross"
     },
     {
-      "source": "박지영",
+      "source": "박지영 (리더의서재)",
       "target": "이한별",
       "count": 1,
       "team_count": 0,
@@ -10223,7 +10285,7 @@
       "kind": "cross"
     },
     {
-      "source": "박지영",
+      "source": "박지영 (리더의서재)",
       "target": "장진영",
       "count": 1,
       "team_count": 0,
@@ -10231,7 +10293,7 @@
       "kind": "cross"
     },
     {
-      "source": "박지영",
+      "source": "박지영 (리더의서재)",
       "target": "한새롬",
       "count": 1,
       "team_count": 0,
@@ -10239,71 +10301,7 @@
       "kind": "cross"
     },
     {
-      "source": "박지영",
-      "target": "허재영",
-      "count": 1,
-      "team_count": 0,
-      "event_count": 1,
-      "kind": "cross"
-    },
-    {
-      "source": "송서현",
-      "target": "유효영",
-      "count": 1,
-      "team_count": 0,
-      "event_count": 1,
-      "kind": "cross"
-    },
-    {
-      "source": "송서현",
-      "target": "윤지성",
-      "count": 1,
-      "team_count": 0,
-      "event_count": 1,
-      "kind": "cross"
-    },
-    {
-      "source": "송서현",
-      "target": "이도희",
-      "count": 1,
-      "team_count": 0,
-      "event_count": 1,
-      "kind": "cross"
-    },
-    {
-      "source": "송서현",
-      "target": "이정민",
-      "count": 1,
-      "team_count": 0,
-      "event_count": 1,
-      "kind": "cross"
-    },
-    {
-      "source": "송서현",
-      "target": "이한별",
-      "count": 1,
-      "team_count": 0,
-      "event_count": 1,
-      "kind": "cross"
-    },
-    {
-      "source": "송서현",
-      "target": "장진영",
-      "count": 1,
-      "team_count": 0,
-      "event_count": 1,
-      "kind": "cross"
-    },
-    {
-      "source": "송서현",
-      "target": "한새롬",
-      "count": 1,
-      "team_count": 0,
-      "event_count": 1,
-      "kind": "cross"
-    },
-    {
-      "source": "송서현",
+      "source": "박지영 (리더의서재)",
       "target": "허재영",
       "count": 1,
       "team_count": 0,
@@ -10320,14 +10318,6 @@
     },
     {
       "source": "유효영",
-      "target": "이도희",
-      "count": 1,
-      "team_count": 0,
-      "event_count": 1,
-      "kind": "cross"
-    },
-    {
-      "source": "유효영",
       "target": "이영주",
       "count": 1,
       "team_count": 0,
@@ -10408,54 +10398,6 @@
     },
     {
       "source": "윤지성",
-      "target": "허재영",
-      "count": 1,
-      "team_count": 0,
-      "event_count": 1,
-      "kind": "cross"
-    },
-    {
-      "source": "이도희",
-      "target": "이영주",
-      "count": 1,
-      "team_count": 0,
-      "event_count": 1,
-      "kind": "cross"
-    },
-    {
-      "source": "이도희",
-      "target": "이정민",
-      "count": 1,
-      "team_count": 0,
-      "event_count": 1,
-      "kind": "cross"
-    },
-    {
-      "source": "이도희",
-      "target": "이한별",
-      "count": 1,
-      "team_count": 0,
-      "event_count": 1,
-      "kind": "cross"
-    },
-    {
-      "source": "이도희",
-      "target": "장진영",
-      "count": 1,
-      "team_count": 0,
-      "event_count": 1,
-      "kind": "cross"
-    },
-    {
-      "source": "이도희",
-      "target": "한새롬",
-      "count": 1,
-      "team_count": 0,
-      "event_count": 1,
-      "kind": "cross"
-    },
-    {
-      "source": "이도희",
       "target": "허재영",
       "count": 1,
       "team_count": 0,
@@ -10569,7 +10511,7 @@
   ],
   "stats": {
     "node_count": 138,
-    "edge_count": 1141,
+    "edge_count": 1151,
     "team_count": 13
   }
 }
