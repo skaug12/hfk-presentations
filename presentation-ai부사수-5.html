@@ -808,6 +808,47 @@
   </div>
 </section>
 
+<!-- ===== 13.7: OUTPUT 6 - 세션 관리 ===== -->
+<section>
+  <div class="label">Output 6 &middot; 운영 팁</div>
+  <h2>세션 관리 &mdash; 한 번에 너무 많이 띄우지 않기</h2>
+  <div class="grid grid-2" style="gap:20px;">
+    <div>
+      <div class="card" style="padding:16px 22px; margin-bottom:12px;">
+        <h3 class="accent">2주간 부딪힌 문제</h3>
+        <ul style="margin-top:6px;">
+          <li>스킬 여러 개를 동시에 돌리느라 <span class="bold">세션을 5~6개씩 띄워둠</span></li>
+          <li>어느 세션이 어디까지 진행됐는지 머리로 추적 안 됨</li>
+          <li>화면을 옮길 때마다 맥락이 끊겨 집중력이 흩어짐</li>
+          <li>병렬로 굴리면 빨라질 줄 알았는데, 오히려 <span class="accent bold">스트레스가 높아짐</span></li>
+        </ul>
+      </div>
+      <div class="card" style="padding:14px 22px;">
+        <h3 class="accent2">왜 이렇게 되나</h3>
+        <p style="margin-top:6px;">AI 세션은 띄우는 비용이 거의 0이라 자꾸 더 띄우게 됨. 하지만 <span class="bold">진행 상황을 챙기는 일</span>은 사람 몫이고, 그 비용은 세션 수에 비례해서 늘어납니다.</p>
+      </div>
+    </div>
+    <div>
+      <div class="card" style="padding:16px 22px; margin-bottom:12px;">
+        <h3 class="accent3">지금 들이고 있는 습관</h3>
+        <ul style="margin-top:6px;">
+          <li>옆에 둔 종이 노트에 <span class="bold">세션별 진행 상황을 손으로 적기</span></li>
+          <li>"무슨 작업 / 어디까지 / 다음 할 일" 한 줄씩</li>
+          <li>한 세션이 막히면 노트에 표시하고 다른 세션으로 이동</li>
+          <li>다 끝난 항목엔 줄을 그어 시야에서 지움</li>
+        </ul>
+        <p class="dim" style="margin-top:8px;">디지털 노트보다 종이가 좋은 이유: <span class="bold">화면 바깥에 있어야</span> 스위칭 비용이 안 듦.</p>
+      </div>
+      <div class="qblock">
+        <p style="font-size:0.56em; color:var(--text); margin:0; line-height:1.7;">
+          <span class="accent2 bold">배운 것</span> &mdash;
+          AI 세션을 늘리는 일과 <span class="bold">사람의 주의를 관리하는 일</span>은 별개. 세션은 손이 추적할 수 있는 만큼만.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ===== 14: PART 3 HEADER ===== -->
 <section>
   <div style="display:flex; flex-direction:column; justify-content:center; height:100%;">
@@ -1293,10 +1334,10 @@
   const sections = [
     [0, 1],                                                // 타이틀 + 3회차 리캡
     [2, 3, 4, 5, 6, 7, 8, 9, 10, 11],                      // AI 트렌드 (인트로 + Opus x2 + 갑론을박 + Figma x2 + Skills + Skill vs Agent + 성찰 x2)
-    [12, 13, 14, 15, 16, 17, 18, 19],                      // 2주 작업 (3가지 조건 + 인트로 + Overview + Output 1~5)
-    [20, 21, 22, 23, 24],                                  // T 자세히
-    [25, 26, 27, 28, 29, 30, 31],                          // 워크숍 (인트로 + Step 1~4 + 예시 + 마무리)
-    [32, 33]                                               // 예고 + 클로징
+    [12, 13, 14, 15, 16, 17, 18, 19, 20],                  // 2주 작업 (3가지 조건 + 인트로 + Overview + Output 1~6)
+    [21, 22, 23, 24, 25],                                  // T 자세히
+    [26, 27, 28, 29, 30, 31, 32],                          // 워크숍 (인트로 + Step 1~4 + 예시 + 마무리)
+    [33, 34]                                               // 예고 + 클로징
   ];
 
   function goSection(idx) {
