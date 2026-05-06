@@ -649,6 +649,7 @@
         <li><span class="bold">5/2</span> 파트너 프로필 갤러리 8회 반복 보정 후 <span class="accent2 bold">normalize-profile-gallery 스킬화</span> · 직장인문학 imweb 6회차 구조 수정 · 사전 읽을 거리 섹션 추가 · 컨퍼런스콜 링크 1차 사고 + 1차 fix · sync-products 카테고리·판매상태 정본화 메모리 등록</li>
         <li><span class="bold">5/3</span> <span class="accent2 bold">팀 추천 위젯 신규</span>(직무·연차 65개 조합 → top 3 + 키워드 refine) · 컨퍼런스콜 링크 2차 사고 → <span class="accent2 bold">md_to_imweb_html 변환기 영구 fix</span> · CLAUDE.md 옵시디언 본문 보호 룰 강화</li>
         <li><span class="bold">5/5</span> heypop 캘린더 일정 정리 · 5회차 발표 준비 · 데일리 노트 루틴</li>
+        <li><span class="bold">5/6</span> <span class="accent2 bold">thehfk.org 라이브 UX 진단</span> · 8페이지 병렬 분석 → 7문제 + 8개선안 + 진행 순서 (HFK·ODC 안내 정비 / 사전·재등록 운영 전략 / 결제 차단 옵션)</li>
       </ul>
     </div>
     <div class="card" style="padding:14px 20px;">
@@ -1010,6 +1011,61 @@
         <p style="font-size:0.56em; color:var(--text); margin:0; line-height:1.7;">
           <span class="accent bold">교훈</span> &mdash;
           메모리는 <span class="bold">진단용</span>, 코드 fix가 <span class="accent2 bold">영구 해결</span>. 같은 사고 두 번이면 코드를 의심.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Output 9: thehfk.org 라이브 UX 진단 (5/6) ===== -->
+<section>
+  <div class="label">Output 9 &middot; thehfk.org 라이브 UX 진단 (5/6)</div>
+  <h2>5년차 사이트, AI 부사수와 다시 보기</h2>
+  <div class="grid grid-2" style="gap:20px;">
+    <div>
+      <div class="card" style="padding:14px 20px; margin-bottom:12px;">
+        <h3 class="accent">의뢰 (오늘 30분)</h3>
+        <ul style="margin-top:6px;">
+          <li>"HFK·ODC 멤버십 안내 정비"라는 한 줄 의뢰로 시작</li>
+          <li>운영자가 9가지 질문 + <span class="bold">시즌 복제 모델</span>(clone-and-move-product) 운영 룰 한 번에 공유</li>
+          <li>AI가 워크스페이스의 상품 노트·스킬 정의를 읽고 맥락 흡수</li>
+          <li>thehfk.org 메인 + <span class="bold">8개 페이지 병렬 fetch</span></li>
+        </ul>
+      </div>
+      <div class="card" style="padding:14px 20px;">
+        <h3 class="accent3">발견 7가지 (우선순위순)</h3>
+        <ul style="margin-top:6px;">
+          <li><span class="accent5 bold">🔴 /earlybird 404</span> &mdash; 메인 CTA 링크가 깨져 있음</li>
+          <li><span class="accent5 bold">🔴 메인 시즌 카피 outdated</span> &mdash; 봄 마감일이 5월에도 노출</li>
+          <li><span class="accent2 bold">🟡 ODC 멤버십 페이지 자체가 없음</span></li>
+          <li>🟡 팀 카드 ↔ 상세 동선 불명확 (25팀 vs 28팀 숫자 불일치)</li>
+          <li>🟡 멤버십 안내가 5장으로 분산 (about_membership과 membership 중복)</li>
+          <li>🟢 /archive 텍스트 나열뿐, 후기·하트 자산 묻힘</li>
+          <li>🟢 재등록 비공개 흐름이 사이트에 안 보임</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <div class="card" style="padding:14px 20px; margin-bottom:12px;">
+        <h3 class="accent2">왜 A 사분면 작업인가</h3>
+        <p style="margin-top:6px;">thehfk.org는 5년 넘게 운영 중인 사이트. <span class="bold">"이미 잘하는 영역"</span>의 정의 그대로.</p>
+        <p style="margin-top:6px;">매일 보던 사람은 <span class="accent5 bold">메인 CTA가 깨진 걸</span> 못 봅니다. 익숙해지면 안 보여요. AI는 익숙하지 않아서 즉시 보입니다.</p>
+        <p class="dim" style="margin-top:6px;">A의 핵심: <span class="accent2 bold">한 줄기로 묶는 진단</span>. 7개 문제가 사실은 한 가지 구조 문제(<span class="bold">'보기'와 '결제'의 미분리</span>)에서 파생됨.</p>
+      </div>
+      <div class="card" style="padding:14px 20px; margin-bottom:12px;">
+        <h3 class="accent">개선안 → 진행 순서</h3>
+        <ul style="margin-top:6px;">
+          <li><span class="bold">이번 주</span>: /earlybird 404 + 메인 시즌 카피</li>
+          <li><span class="bold">재등록 마감 후</span>: 멤버십 안내 본문 + IA 정리</li>
+          <li><span class="bold">여름 오픈 전</span>: ODC 멤버십 페이지 신설</li>
+          <li><span class="bold">시즌 진행 중</span>: 팀 카탈로그 + /archive 강화</li>
+          <li><span class="bold">장기</span>: 옵시디언 ↔ 사이트 자동 동기화 스킬</li>
+        </ul>
+      </div>
+      <div class="qblock">
+        <p style="font-size:0.56em; color:var(--text); margin:0; line-height:1.7;">
+          <span class="accent2 bold">패턴</span> &mdash;
+          AI 부사수에게 <span class="bold">우리 운영 룰을 먼저 알려주면</span>, 답이 우리 맥락 안으로 들어옵니다. 일반론이 아니라 <span class="accent2 bold">우리 다음 액션</span>이 되어 돌아옵니다.
         </p>
       </div>
     </div>
