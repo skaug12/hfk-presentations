@@ -8,6 +8,11 @@
 (function () {
   var target = "https://thehfk.github.io/hfk-ai-bss";
   var path = location.pathname.replace(/^\/hfk-presentations/, "");
+  var personal = {"/presentation-yonsei-mba.html": 1, "/briefing260403.html": 1, "/qr-cheatsheet-mba.png": 1};
+  if (personal[path]) {
+    location.replace("https://seulkilog.today/yonsei-mba" + path);
+    return;
+  }
   location.replace(target + path + location.search + location.hash);
 })();
 </script>
