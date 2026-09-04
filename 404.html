@@ -1,23 +1,35 @@
 <!DOCTYPE html>
-<html lang="ko">
-<head>
-<meta charset="UTF-8">
-<meta name="robots" content="noindex">
-<title>페이지 이동됨</title>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>옮겨진 자료입니다</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+  body{margin:0;padding:80px 20px;background:#f0eae2;color:#2d2523;
+       font-family:'Pretendard',-apple-system,sans-serif;letter-spacing:-0.02em;text-align:center}
+  h1{font-size:26px;font-weight:700;margin:0 0 12px}
+  p{font-size:16px;line-height:1.7;color:#7a6a60;margin:0 0 24px}
+  a{color:#980000;font-weight:700}
+</style></head>
+<body>
+  <h1 id="h">옮겨진 자료입니다</h1>
+  <p id="p">이 레포는 더 이상 쓰지 않습니다.</p>
+  <p><a id="a" href="https://seulkilog.today/ai-bss/">AI 부사수 발표 목록</a></p>
 <script>
+// 옛 주소로 온 요청을 현재 위치로 넘긴다.
+//   presentation-ai부사수*        → seulkilog.today/ai-bss/
+//   presentation-ai-workshop*, presentation-ai-creative*, briefing-*  → .../ai-workshop/
+//   그 외 HFK 페이지              → thehfk.github.io/hfk-ai-bss/
 (function () {
-  var target = "https://thehfk.github.io/hfk-ai-bss";
-  var path = location.pathname.replace(/^\/hfk-presentations/, "");
-  var personal = {"/presentation-yonsei-mba.html": 1, "/briefing260403.html": 1, "/qr-cheatsheet-mba.png": 1};
-  if (personal[path]) {
-    location.replace("https://seulkilog.today/yonsei-mba" + path);
-    return;
-  }
-  location.replace(target + path + location.search + location.hash);
+  var file = decodeURIComponent(location.pathname.split('/').pop() || '');
+  if (!file || !/\.html?$/i.test(file)) return;
+  var to;
+  if (/^presentation-ai부사수/.test(file)) to = 'https://seulkilog.today/ai-bss/' + encodeURIComponent(file);
+  else if (/^(presentation-ai-workshop|presentation-ai-creative|briefing-)/.test(file))
+    to = 'https://seulkilog.today/ai-workshop/' + encodeURIComponent(file);
+  else to = 'https://thehfk.github.io/hfk-ai-bss/' + encodeURIComponent(file);
+  document.getElementById('p').innerHTML = '새 주소로 이동합니다.<br><a href="' + to + '">바로 열기</a>';
+  document.getElementById('a').style.display = 'none';
+  location.replace(to);
 })();
 </script>
-</head>
-<body>
-<p>페이지가 이동했습니다: <a href="https://thehfk.github.io/hfk-ai-bss/">https://thehfk.github.io/hfk-ai-bss/</a></p>
-</body>
-</html>
+</body></html>
